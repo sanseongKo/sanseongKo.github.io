@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fe6bc8c-5fef-4a25-8882-1fb84d4c024a" name="Default Changelist" comment="commit">
-      <change beforePath="$PROJECT_DIR$/author/sanseongKo/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/author/sanseongKo/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tag/java/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tag/java/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tag/jekyll/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tag/jekyll/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tag/python/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tag/python/feed.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9fe6bc8c-5fef-4a25-8882-1fb84d4c024a" name="Default Changelist" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +43,7 @@
       <workItem from="1621768556167" duration="635000" />
       <workItem from="1621769534036" duration="1506000" />
       <workItem from="1621771064197" duration="1930000" />
+      <workItem from="1621811533899" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1621769744385</created>
