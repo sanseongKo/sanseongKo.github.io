@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>IT기반기술교육 블로그</description>
+    <link>
+    https://sanseongKo.github.io</link>
+    
+      
+      <item>
+        <title>Python 강좌(2) - Python 제어문</title>
+        
+          <description>&lt;p&gt;이 글은 pyhon의 제어문에 대한 내용 입니다.!!
+&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
+    &lt;!-- 날짜, 확장자 제외한 파일 이름을 쓰는 것 --&gt;
+&lt;/ul&gt;
+</description>
+        
+        <pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/python-control-statement</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/python-control-statement</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Python 강좌(1) - Python 기본</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
+    &lt;!-- 날짜, 확장자 제외한 파일 이름을 쓰는 것 --&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 글은 pyhon basic에 입니다.!!&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/python-basic</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/python-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 강좌(1)</title>
+        
+          <description>&lt;p&gt;이 글은 pyhon basic에 입니다.!!&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/jekyll-basic</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/jekyll-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Jekyll 강좌(1)</title>
+        
+          <description>&lt;p&gt;이 글은 java basic에 입니다.!!&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/java-basic</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/java-basic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Gettysburg Address</title>
+        
+          <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 19 Nov 1863 19:18:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/gettysburg-address</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/gettysburg-address</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
