@@ -2,9 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> - Articles</title>
-    <description>IT기반기술교육 블로그</description>
+    <description>온리 공부를 위한 블로그</description>
     <link>
     https://sanseongKo.github.io</link>
+    
+      
+      <item>
+        <title>첫 포스팅!</title>
+        
+          <description>&lt;p&gt;우역곡절 끝에 지킬을 이용하여 깃허브 블로그 페이지를 만들었다.(travis ci는 하다가 포기…)&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 25 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/newPosting</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/newPosting</guid>
+      </item>
+      
     
       
       <item>
@@ -200,20 +215,6 @@ exclude:
         <link>
         https://sanseongKo.github.io/python-basic</link>
         <guid isPermaLink="true">https://sanseongKo.github.io/python-basic</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Jekyll 강좌(1)</title>
-        
-          <description>&lt;p&gt;이 글은 pyhon basic에 입니다.!!&lt;/p&gt;
-</description>
-        
-        <pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
-        <link>
-        https://sanseongKo.github.io/jekyll-basic</link>
-        <guid isPermaLink="true">https://sanseongKo.github.io/jekyll-basic</guid>
       </item>
       
     
