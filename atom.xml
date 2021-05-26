@@ -37,6 +37,22 @@
     
       
       <item>
+        <title>Algorithm Stack and Queue 개념정리</title>
+        
+          <description>&lt;p&gt;오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 
+스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/algorithm-stackqueue</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/algorithm-stackqueue</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java .equals(), hashcode(), ==의 차이점</title>
         
           <description>&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
