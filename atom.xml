@@ -8,6 +8,51 @@
     
       
       <item>
+        <title>Java ORM이란?</title>
+        
+          <description>&lt;p&gt;MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/java-orm</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/java-orm</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Java JPA란?</title>
+        
+          <description>
+</description>
+        
+        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/java-jpa</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/java-jpa</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Java .equals(), hashcode(), ==의 차이점</title>
+        
+          <description>&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
+&lt;img src=&quot;./assets/built/images/holololol.jpg&quot; alt=&quot;ex_screenshot&quot; /&gt;호롤ㄹ로로ㄹㄹㄹ&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 26 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/java-evshash</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/java-evshash</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Algorithm Hash 개념정리</title>
         
           <description>&lt;p&gt;오늘은 Hash에 대하여 정리를 해보려고 한다.&lt;/p&gt;
@@ -233,22 +278,6 @@ exclude:
         <link>
         https://sanseongKo.github.io/python-basic</link>
         <guid isPermaLink="true">https://sanseongKo.github.io/python-basic</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Java .equals(), hashcode(), ==의 차이점</title>
-        
-          <description>&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
-&lt;img src=&quot;./assets/built/images/holololol.jpg&quot; alt=&quot;ex_screenshot&quot; /&gt;호롤ㄹ로로ㄹㄹㄹ&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
-        <link>
-        https://sanseongKo.github.io/java-evshash</link>
-        <guid isPermaLink="true">https://sanseongKo.github.io/java-evshash</guid>
       </item>
       
     
