@@ -238,15 +238,17 @@ exclude:
     
       
       <item>
-        <title>Jekyll 강좌(1)</title>
+        <title>Java .equals(), hashcode(), ==의 차이점</title>
         
-          <description>&lt;p&gt;이 글은 java basic에 입니다.!!&lt;/p&gt;
+          <description>&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
+&lt;img src=&quot;./assets/built/images/holololol.jpg&quot; alt=&quot;ex_screenshot&quot; /&gt;호롤ㄹ로로ㄹㄹㄹ&lt;/p&gt;
+
 </description>
         
         <pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
         <link>
-        https://sanseongKo.github.io/java-basic</link>
-        <guid isPermaLink="true">https://sanseongKo.github.io/java-basic</guid>
+        https://sanseongKo.github.io/java-evshash</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/java-evshash</guid>
       </item>
       
     

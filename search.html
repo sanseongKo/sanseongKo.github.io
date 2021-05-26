@@ -216,12 +216,12 @@ into the {body} of the default.hbs template -->
     }
     ,
     
-    "java-basic": {
-        "title": "Jekyll 강좌(1)",
+    "java-evshash": {
+        "title": "Java .equals(), hashcode(), ==의 차이점",
             "author": "Ko",
             "category": "",
-            "content": "이 글은 java basic에 입니다.!!",
-        "url": "/java-basic"
+            "content": "오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?호롤ㄹ로로ㄹㄹㄹ1. 자바에서의 ==연산자==연산자는 비교하는 값이 primitive type(int, double, boolean 등등) 일때는 값이 같은지 비교 하고 그 외의 객체, reference type(Array, Class 등등)일 때는 가리키는 주소가 같은지 비교하고 리턴값은 같으면 true, 다르면 false이다.위와 같이 String으로 변수 선언할 경우 reference type이지만 메모리의 힙영역에 “String”이라는 값이 할당되고 a,b모두 할당된 주소 값을 참조하기 때문에 true가 반환된다.String a = new String(\"String\");String b = new String(\"String\");하지만 위의 코드와 같이 생성자를 이용하여 각 a,b가 각 각각 따로 힙영역에 값을 할당 받을 경우 주소 값이 다르기 때문에 false가 출력된다.배열의 경우에도 안의 내용이 같더라도 힙영역에 따로 선언되기 때문에 false가 출력된다.이와 같이, primitive type일땐 값을 비교, reference type일땐 힙영역에 할당된 주소 값을 비교한다.2. 자바에서의 .equals()equals() 메소드(Object 클래스의 메소드)의 경우 쉽게 말하면 내용을 비교한다.(배열의 경우 위의 코드에서 array1.equals(array2)라하면 false가 나온다)정확하게는 equals메소드에 정의되어 있는 내용대로 값들을 비교해 나간다. 스트링의 equals메소드에 대한 글은 코딩하는 흑구이분이 정리를 잘해주신 것 같다. 배열의 경우 Arrays 클래스를 import하여 그 안에 있는 equals메소드를 써야한다.다만, 내용이 동일하더라도 안에 값이 같은지 확인을 못할 경우가 있다.예를 들면,public class Person {    private String name;    private int age;        public String getName() {        return name;    }    public void setName(String name) {        this.name = name;    }    public int getAge() {        return age;    }    public void setAge(int age) {        this.age = age;    }    public Person(String name, int age) {        super();        this.name = name;        this.age = age;    }    @Override    public String toString() {        return \"Person [name=\" + name + \", age=\" + age + \"]\";    }}이렇게 Person객체를 만들어 아래 정보를 삽입하였다면,Person person1 = new Person(\"name\", 27);Person person2 = new Person(\"name\", 27);System.out.println(person1 == person2);//falseSystem.out.println(person1.equals(person2));//falseperson1 == person2는 당연히 false가 나올 것이지만, person.equals(person2)도 false가 나오게 된다. 이는 안의 내용중 name만 맞아도 같은 것으로봐야하는지 아니면 27까지도 같이 확인을 해야하는지 모르기 때문이다. 이럴 경우에 equals메소드를 오버라이딩하여 다시 정의 해주도록 하자.3. 자바에서의 .hashCode()equals메소드하면 항상 같이 나오는 것이 hashCode()이다. 왜냐하면, 안에 내용이 같더라도 각 객체의 해시코드가 다를 경우가 있기 때문이다. 예를들어,위의 경우에서 equals를 다시 정의하여 같은 값으로 볼 수 있게 정의하였다고 하여도 hash함수를 쓰는 객체가 있다면, 이를 다른 객체로 볼 수 있기 때문이다.예를 들어, HashSet은 중복을 제거하고 저장해주는 클래스이다. 하지만 person1과 person2를 HashSet안에 담을 경우 해쉬코드가 다르기 때문에 다른 객체라고판단, 따로 담아 저장해둔다. 이럴 경우도 대비하여 equals메소드를 오버라이딩할때 HashCode도 같이 재정의하여 문제가 없도록 하여야 한다.",
+        "url": "/java-evshash"
     }
     
     
