@@ -37,7 +37,21 @@
     
       
       <item>
-        <title>Algorithm Stack and Queue 개념정리</title>
+        <title>Algorithm Heap에 관하여</title>
+        
+          <description>&lt;p&gt;오늘은 알고리즘 힙에 관하여 알아보겠다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/algorithm-heap</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/algorithm-heap</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Algorithm Stack and Queue에 관하여</title>
         
           <description>&lt;p&gt;오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 
 스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.&lt;/p&gt;
@@ -69,7 +83,7 @@
     
       
       <item>
-        <title>Algorithm Hash 개념정리</title>
+        <title>Algorithm Hash에 관하여</title>
         
           <description>&lt;p&gt;오늘은 Hash에 대하여 정리를 해보려고 한다.&lt;/p&gt;
 
