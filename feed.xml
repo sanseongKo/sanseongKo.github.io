@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-05-28T18:07:52+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Algorithm Stack and Queue에 관하여</title><link href="https://sanseongko.github.io/algorithm-stackqueue" rel="alternate" type="text/html" title="Algorithm Stack and Queue에 관하여" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-stackqueue</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-stackqueue">&lt;p&gt;오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-05-29T23:59:42+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Algorithm Heap에 관하여</title><link href="https://sanseongko.github.io/algorithm-heap" rel="alternate" type="text/html" title="Algorithm Heap에 관하여" /><published>2021-05-28T00:00:00+09:00</published><updated>2021-05-28T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-heap</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-heap">&lt;p&gt;오늘은 자료구조 힙에 관하여 알아보자.&lt;/p&gt;
+
+&lt;h3&gt;완전 이진 트리&lt;/h3&gt;
+&lt;p&gt;힙 자료구조를 알아보기 전에 완전 이진 트리에 관하여 알아둬야 할 필요가 있다. 
+완전 이진 트리란 이진 트리증 왼쪽부터 차례대로 채워져 있는 트리를 의미한다. 사진으로 보면 더욱 쉽게 이해가 가능하다.
+&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/binarytree.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;위 사진에서 왼쪽은 왼쪽부터 차례대로 채워져 있는 상태이므로 완전 이진 트리라 할 수 있으며, 사진의 오른쪽은 왼쪽 노드가 다 채워져 있지 않은 상태
+이기 때문에 완전 이진 트리가 아니다.&lt;/p&gt;
+
+&lt;h3&gt;힙(Heap) 자료구조&lt;/h3&gt;
+&lt;p&gt;자료 구조 힙이란, 완전 이진 트리의 일종으로 우선순위 큐를 구현할때 자주 사용되는 알고리즘이다. 또한, 여러개의 값들 중 최댓값이나 최솟값을 빠르게
+찾아낼 수 있도록 만들어진 자료구조이다. 힙은 일종의 반정렬 상태를 유지하며, 중복된 값을 허용한다.&lt;/p&gt;
+
+&lt;p&gt;힙에서 부모 노드와 자식 노드의 관계는 아래의 규칙을 따른다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;왼쪽 자식의 인덱스 = (부모의 인덱스)*2&lt;/li&gt;
+  &lt;li&gt;오른쪽 자식의 인덱스 = (부모의 인덱스)*2+1&lt;/li&gt;
+  &lt;li&gt;부모의 인덱스 = (자식의 인덱스)/2
+&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/heapnode.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+&lt;b&gt;힙의 종류&lt;/b&gt;
+-최대 힙
+    &lt;ul&gt;
+      &lt;li&gt;부모 노드의 키 값이 자식 노드의 키 값보다 크거나 같은 완전 이진트리를 의미한다.
+-최소 힙&lt;/li&gt;
+      &lt;li&gt;부모 노드의 키 값이 자식 노드의 키 값보다 작거나 같은 완전 이진 트리를 의미한다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/heaptree.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;힙의 삽입 과정&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;힙에 새로운 요소가 들어오면, 힙의 마지막 노드에 이어서 삽입하게 된다.&lt;/li&gt;
+  &lt;li&gt;새로운 노드를 부모노드들과 교환하여 힙의 성질을 만족시킨다.
+아래의 과정으로 확인할 수 있다.
+&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/heapprogress.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;힙의 삭제 과정&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;최대 힙에서 최대값은 루트 노드(1번노드)이므로 루트노드가 삭제된다&lt;/li&gt;
+  &lt;li&gt;삭제된 루트 노드엔 힙의 가장 마지막 노드를 가져와서 위치 시킨 뒤&lt;/li&gt;
+  &lt;li&gt;자식 노드들과 비교하여 힙을 재구성한다.
+아래의 과정으로 확인할 수 있다.
+&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/heapdelete.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 자료구조 힙에 관하여 알아보자.</summary></entry><entry><title type="html">Algorithm Stack and Queue에 관하여</title><link href="https://sanseongko.github.io/algorithm-stackqueue" rel="alternate" type="text/html" title="Algorithm Stack and Queue에 관하여" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-stackqueue</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-stackqueue">&lt;p&gt;오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 
 스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.&lt;/p&gt;
 
 &lt;h3&gt;스택(Stack)이란?&lt;/h3&gt;
@@ -135,7 +182,7 @@ RDBMS는 &lt;b&gt;기본키(primary key)&lt;/b&gt;를 이용하여 동일성을 
 
 &lt;p&gt;출처 
 https://geonlee.tistory.com/207 [빠리의 택시 운전사]
-&lt;a href=&quot;http://www.incodom.kr/ORM#h_702209f3f35878a32ee91352ddc6bbe7&quot;&gt;장점과 단점&lt;/a&gt;&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.</summary></entry><entry><title type="html">Java JPA란?</title><link href="https://sanseongko.github.io/java-jpa" rel="alternate" type="text/html" title="Java JPA란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-jpa</id><content type="html" xml:base="https://sanseongko.github.io/java-jpa"></content><author><name>Ko</name></author><category term="java" /><summary type="html"></summary></entry><entry><title type="html">Algorithm Heap에 관하여</title><link href="https://sanseongko.github.io/algorithm-heap" rel="alternate" type="text/html" title="Algorithm Heap에 관하여" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-heap</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-heap">&lt;p&gt;오늘은 알고리즘 힙에 관하여 알아보겠다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 알고리즘 힙에 관하여 알아보겠다.</summary></entry><entry><title type="html">Java .equals(), hashcode(), ==의 차이점</title><link href="https://sanseongko.github.io/java-evshash" rel="alternate" type="text/html" title="Java .equals(), hashcode(), ==의 차이점" /><published>2021-05-26T00:00:00+09:00</published><updated>2021-05-26T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-evshash</id><content type="html" xml:base="https://sanseongko.github.io/java-evshash">&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
+&lt;a href=&quot;http://www.incodom.kr/ORM#h_702209f3f35878a32ee91352ddc6bbe7&quot;&gt;장점과 단점&lt;/a&gt;&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.</summary></entry><entry><title type="html">Java JPA란?</title><link href="https://sanseongko.github.io/java-jpa" rel="alternate" type="text/html" title="Java JPA란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-jpa</id><content type="html" xml:base="https://sanseongko.github.io/java-jpa"></content><author><name>Ko</name></author><category term="java" /><summary type="html"></summary></entry><entry><title type="html">Java .equals(), hashcode(), ==의 차이점</title><link href="https://sanseongko.github.io/java-evshash" rel="alternate" type="text/html" title="Java .equals(), hashcode(), ==의 차이점" /><published>2021-05-26T00:00:00+09:00</published><updated>2021-05-26T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-evshash</id><content type="html" xml:base="https://sanseongko.github.io/java-evshash">&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
 &lt;img src=&quot;./assets/built/images/holololol.jpg&quot; alt=&quot;ex_screenshot&quot; /&gt;호롤ㄹ로로ㄹㄹㄹ&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;1. 자바에서의 ==연산자&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;

@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>Algorithm Heap에 관하여</title>
+        
+          <description>&lt;p&gt;오늘은 자료구조 힙에 관하여 알아보자.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 28 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/algorithm-heap</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/algorithm-heap</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java ORM이란?</title>
         
           <description>&lt;p&gt;MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.&lt;/p&gt;
@@ -32,20 +47,6 @@
         <link>
         https://sanseongKo.github.io/java-jpa</link>
         <guid isPermaLink="true">https://sanseongKo.github.io/java-jpa</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Algorithm Heap에 관하여</title>
-        
-          <description>&lt;p&gt;오늘은 알고리즘 힙에 관하여 알아보겠다.&lt;/p&gt;
-</description>
-        
-        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
-        <link>
-        https://sanseongKo.github.io/algorithm-heap</link>
-        <guid isPermaLink="true">https://sanseongKo.github.io/algorithm-heap</guid>
       </item>
       
     
