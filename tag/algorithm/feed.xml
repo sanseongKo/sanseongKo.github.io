@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-05-29T23:59:42+09:00</updated>
+  <updated>2021-05-30T00:01:49+09:00</updated>
   <id>https://sanseongko.github.io/tag/algorithm/feed.xml</id>
 
   
@@ -56,7 +56,7 @@
   &lt;li&gt;왼쪽 자식의 인덱스 = (부모의 인덱스)*2&lt;/li&gt;
   &lt;li&gt;오른쪽 자식의 인덱스 = (부모의 인덱스)*2+1&lt;/li&gt;
   &lt;li&gt;부모의 인덱스 = (자식의 인덱스)/2
-&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/heapnode.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+&lt;img src=&quot;./assets/built/images/algorithm/heap/heapnode.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
 &lt;b&gt;힙의 종류&lt;/b&gt;
 -최대 힙
     &lt;ul&gt;
@@ -67,14 +67,14 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/heaptree.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/heap/heaptree.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;힙의 삽입 과정&lt;/b&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;힙에 새로운 요소가 들어오면, 힙의 마지막 노드에 이어서 삽입하게 된다.&lt;/li&gt;
   &lt;li&gt;새로운 노드를 부모노드들과 교환하여 힙의 성질을 만족시킨다.
 아래의 과정으로 확인할 수 있다.
-&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/heapprogress.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;./assets/built/images/algorithm/heap/heapprogress.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;b&gt;힙의 삭제 과정&lt;/b&gt;&lt;/p&gt;
@@ -83,7 +83,7 @@
   &lt;li&gt;삭제된 루트 노드엔 힙의 가장 마지막 노드를 가져와서 위치 시킨 뒤&lt;/li&gt;
   &lt;li&gt;자식 노드들과 비교하여 힙을 재구성한다.
 아래의 과정으로 확인할 수 있다.
-&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/heapdelete.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/li&gt;
+&lt;img src=&quot;./assets/built/images/algorithm/heap/heapdelete.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
 
       
