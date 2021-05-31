@@ -11,7 +11,7 @@
 
 
 
-    <title>Algorithm Hash에 관하여</title>
+    <title>Algorithm 정렬에 관하여</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -47,24 +47,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="온리 공부를 위한 블로그" />
     <link rel="shortcut icon" href="https://sanseongKo.github.io/assets/built/images/favicon.jpg" type="image/png" />
-    <link rel="canonical" href="https://sanseongKo.github.io/algorithm-hash" />
+    <link rel="canonical" href="https://sanseongKo.github.io/algorithm-sort" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="SanseongKo's Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Algorithm Hash에 관하여" />
-    <meta property="og:description" content="오늘은 Hash에 대하여 정리를 해보려고 한다. 주 언어가 Java이다보니 HashMap은 많이 써보았지만, 정확하게 정리를 해본적은 없는 듯하여 정리를 해보려한다. 내가 알고 있던 Hash에선 키와 값이 있으며, 키를 인덱스로 가지고 있기 때문에 시간복잡도가 O(1)이라는 것. 1 해시 해시는 임의의 크기를 가진 데이터를 고정된 데이터 크기로 변화시키는 것을 말하며, 해시함수를 사용하여 값을" />
-    <meta property="og:url" content="https://sanseongKo.github.io/algorithm-hash" />
+    <meta property="og:title" content="Algorithm 정렬에 관하여" />
+    <meta property="og:description" content="오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. 여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다. 선택 정렬(Selection Sort) 선택 정렬은 집합 내에서 가장 작은 수를 선택하고 교환하는 것을 반복하는 정렬이다. 처음 인덱스에서 제일 작은 수를 찾아 교환하게 된다. 그 이후 비교하는 수의 인덱스를 하나씩 늘려가며 작은" />
+    <meta property="og:url" content="https://sanseongKo.github.io/algorithm-sort" />
     <meta property="og:image" content="https://sanseongKo.github.io/assets/built/images/algorithm/algorithm.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-05-25T00:00:00+09:00" />
-    <meta property="article:modified_time" content="2021-05-25T00:00:00+09:00" />
+    <meta property="article:published_time" content="2021-05-31T00:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-05-31T00:00:00+09:00" />
     <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Algorithm Hash에 관하여" />
-    <meta name="twitter:description" content="오늘은 Hash에 대하여 정리를 해보려고 한다. 주 언어가 Java이다보니 HashMap은 많이 써보았지만, 정확하게 정리를 해본적은 없는 듯하여 정리를 해보려한다. 내가 알고 있던 Hash에선 키와 값이 있으며, 키를 인덱스로 가지고 있기 때문에 시간복잡도가 O(1)이라는 것. 1 해시 해시는 임의의 크기를 가진 데이터를 고정된 데이터 크기로 변화시키는 것을 말하며, 해시함수를 사용하여 값을" />
+    <meta name="twitter:title" content="Algorithm 정렬에 관하여" />
+    <meta name="twitter:description" content="오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. 여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다. 선택 정렬(Selection Sort) 선택 정렬은 집합 내에서 가장 작은 수를 선택하고 교환하는 것을 반복하는 정렬이다. 처음 인덱스에서 제일 작은 수를 찾아 교환하게 된다. 그 이후 비교하는 수의 인덱스를 하나씩 늘려가며 작은" />
     <meta name="twitter:url" content="https://sanseongKo.github.io/" />
     <meta name="twitter:image" content="https://sanseongKo.github.io/assets/built/images/algorithm/algorithm.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -85,7 +85,7 @@
         "name": "SanseongKo's Blog",
         "logo": "https://sanseongKo.github.io/"
     },
-    "url": "https://sanseongKo.github.io/algorithm-hash",
+    "url": "https://sanseongKo.github.io/algorithm-sort",
     "image": {
         "@type": "ImageObject",
         "url": "https://sanseongKo.github.io/assets/built/images/algorithm/algorithm.png",
@@ -94,9 +94,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://sanseongKo.github.io/algorithm-hash"
+        "@id": "https://sanseongKo.github.io/algorithm-sort"
     },
-    "description": "오늘은 Hash에 대하여 정리를 해보려고 한다. 주 언어가 Java이다보니 HashMap은 많이 써보았지만, 정확하게 정리를 해본적은 없는 듯하여 정리를 해보려한다. 내가 알고 있던 Hash에선 키와 값이 있으며, 키를 인덱스로 가지고 있기 때문에 시간복잡도가 O(1)이라는 것. 1 해시 해시는 임의의 크기를 가진 데이터를 고정된 데이터 크기로 변화시키는 것을 말하며, 해시함수를 사용하여 값을"
+    "description": "오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. 여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다. 선택 정렬(Selection Sort) 선택 정렬은 집합 내에서 가장 작은 수를 선택하고 교환하는 것을 반복하는 정렬이다. 처음 인덱스에서 제일 작은 수를 찾아 교환하게 된다. 그 이후 비교하는 수의 인덱스를 하나씩 늘려가며 작은"
 }
     </script>
 
@@ -109,7 +109,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Algorithm Hash에 관하여" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Algorithm 정렬에 관하여" href="/feed.xml" />
 
 
 </head>
@@ -171,7 +171,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="25 May 2021">25 May 2021</time>
+                    <time class="post-full-meta-date" datetime="31 May 2021">31 May 2021</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -181,7 +181,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">Algorithm Hash에 관하여</h1>
+                <h1 class="post-full-title">Algorithm 정렬에 관하여</h1>
             </header>
 
             
@@ -191,69 +191,71 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>오늘은 Hash에 대하여 정리를 해보려고 한다.</p>
+                    <p>오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. <br />
+여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다.</p>
 
-<p>주 언어가 Java이다보니 HashMap은 많이 써보았지만, 정확하게 정리를 해본적은 없는 듯하여 정리를 해보려한다.</p>
+<h3>선택 정렬(Selection Sort)</h3>
+<p>선택 정렬은 집합 내에서 가장 작은 수를 선택하고 교환하는 것을 반복하는 정렬이다.
+<img src="./assets/built/images/algorithm/sort/selectionsort.png" alt="ex_screenshot" />
+처음 인덱스에서 제일 작은 수를 찾아 교환하게 된다. 그 이후 비교하는 수의 인덱스를 하나씩 늘려가며 작은 수를 찾는 것을 반복한다.
+<br />
+선택 정령은 구현이 쉬운 편에 속하며, 비교 횟수는 많지만 교환 횟수는 적기 때문에 많은 교환이 자료 상태에서 효율적으로 사용된다.</p>
 
-<p>내가 알고 있던 Hash에선 키와 값이 있으며, 키를 인덱스로 가지고 있기 때문에 시간복잡도가 O(1)이라는 것.</p>
+<h3>삽입 정렬(Insertion Sort)</h3>
+<p><img src="./assets/built/images/algorithm/sort/insertionsort.png" alt="ex_screenshot" /></p>
 
-<h3>1 해시</h3>
-<ul>
-  <li>해시는 임의의 크기를 가진 데이터를 고정된 데이터 크기로 변화시키는 것을 말하며,</li>
-  <li>해시함수를 사용하여 값을 계산하여 나온 고정된 길이의 값을 해시값이라고 부른다.</li>
-  <li>여러 분야에 사용되며, 복잡하지 않은 알고리즘으로 이루어져 CPU,메모리 등 시스템 자원을 덜 소모한다고 한다.</li>
-  <li>여러분야 사용되고 여러가지(MDn, SHA-n 등) 해시 알고리즘이 있지만(자세하게 다룰일이 있으면 추가해야지)</li>
-</ul>
+<p>사진과 함께 이해하면 쉽다. 선택된 수와 그 수의 왼쪽과 비교하여 선택된 수보다 작은 수가 나올 때까지 정렬하는 방법이다.</p>
 
-<p><img src="./assets/built/images/algorithm/hash/hash_hash.png" alt="ex_screenshot" /></p>
+<h3>버블 정렬(Bubble Sort)
+버블 정렬은 선택된 값의 좌측 값이 선택된 값보다 크다면 교환하는 방법을 말한다.
+좌측 값만 비교하면 되기 때문에 구현이 단순하다.
+![ex_screenshot](./assets/built/images/algorithm/sort/bubblesort.png)
 
-<h3>2 해시 충돌</h3>
-<p>해시 충돌은 해시함수를 거친 키값이 같은 값들. 즉, 다른 데이터의 키 값(해시값)들이 동일할 경우 해시 충돌이 발생한다.
-이 충돌은 해시 테이블의 성능을 떨어뜨린다. 
-해시 충돌을 방지하려면 해시 함수를 잘 정의하면 된다. 하지만 해시함수의 입력값은 무한하지만, 
-출력값의 가짓수는 유한(출력값, 즉 키가 유한하지 않다면 해시기법을 사용하는 의미가 없다.)하므로 
-해시 충돌은 반드시 발생한다.(비둘기집 원리)</p>
 
-<p>이러한 해시충돌을 방지할 방법은 크게 2가지가 있다.
-<b>체이닝(Chaining)</b>
-버킷내에 LinkedList를 할당하여, Bucket에 데이터를 저장하다가 해시 충돌이 발생하면 연결리스트로 데이터를 연결하는 방식이다.</p>
+<b>선택 정렬, 삽입 정렬, 버블 정렬 모두 O(N^2)의 시간 복잡도를 가지고 있다. 다만 실제로는, 선택 정렬이 버블 정렬보다 조금 더 빠르다. 또한,
+삽입 정렬의 경우 최선의 경우엔 O(N)의 시간복잡도를 가져 굉장히 빠른 정렬 방법이 될 수 있고, 이러한 이유로 다른 정렬 알고리즘의 일부로 사용되기도 한다.</b>
 
-<p><b>개방 주소법(Open Addressing)</b>
-해시 충돌이 발생하면 다른 Bucket에 데이터를 삽입하는 방식이다.
-체이닝은 주소값은 동일한 상태로 LinkedList를 이용하여 늘려가기 때문에, 주소값이 변경되지는 않는다는 부분과 차이가 있다.
-<img src="./assets/built/images/algorithm/hash/hash_chaining1.PNG" alt="ex_screenshot" /></p>
+<h3>쉘 정렬(Shell Sort)</h3>
+![ex_screenshot](./assets/built/images/algorithm/sort/shellsort.png)
 
-<p><b>3가지 개방 주소법</b></p>
-<ul>
-  <li><b>선형 탐색<Linear Probing="">&lt;/b&gt;: 해시 충돌 시 다음 버킷 혹은 몇개를 건너뛰어 데이터를 삽입</Linear></b></li>
-  <li><b>제곱 탐색<Quadratic Probing="">&lt;/b&gt;: 해시 충돌 시 제곱만큼 건너뛴 버켓에 데이터를 삽입</Quadratic></b></li>
-  <li><b>이중 해시<Double Hashing="">&lt;/b&gt;: 해시 충돌 시 다른 해시 함수를 한 번 더 적용한 결과를 이용</Double></b></li>
-</ul>
+쉘 정령은 선택 정렬과 개념이 같은데 차이가 있는 점은 쉘 정렬은 간격만큼 옆으로 이동한다는 것이다.
+사진에서 보이듯 간격을 설정하고 그 간격의 크기를 줄여나가면서 정렬을 해나간다. 
+시간복잡도는 평균 O(N^1.5)이자만 최악의 경우O(N^2)의 시간복잡도를 가지게 된다.
 
-<p><img src="./assets/built/images/algorithm/hash/hash_openaddressing.PNG" alt="ex_screenshot" /></p>
+<h3>퀵 정렬(Quick Sort)</h3>
+![ex_screenshot](./assets/built/images/algorithm/sort/quicksort.png)
+퀵 정렬은 축 값을 지정하고 그 축의 촤측 처음 인덱스 부터 오른쪽으로 이동하며, 자신보다 크거나 같은 값을 비교하여 교환하고 우측 끝 인덱스 부터 왼
+쪽으로 이동하며, 자신보다 작거나 같은 값을 비교하여 교환한다. 그 이후 사진에서 보이는 대로 left 인덱스가 right 인덱스보다 크다면 처음 배열을 분할한다.
+배열이 분리되면 축 값을 다시 잡고 위의 과정을 반복하여 정렬한다.
+시간 복잡도에서는 보통 O(NlogN)으로 실행 시간이 준수한 편이지만, 축값에 따라서 시간복잡도가 크게 달라지며, 최악(역순)일 경우 O(N^2)의 시간 복잡
+도를 가지기 때문에 축 값을 잘 지정하는 것이 좋다.
 
-<h3>해시를 이용한 자료구조</h3>
-<p>해시를 이용한 자료구조엔 <b>HashMap, HashTable</b>이 있다.
-둘의 차이는 <b>동기화 지원</b>이 가능하냐 안하냐의 차이(synchronized)가 있다고 한다.</p>
+<h3>병합 정렬(Merge Sort)</h3>
+![ex_screenshot](./assets/built/images/algorithm/sort/mergesort.png)
+병합 정렬은 분할할 부분의 값을 정하고 그 부분을 기준으로 최소 단위까지 나누어 병합시에 각 부분을 순차 비교 후 임시 배열에 삽입하고, 원래 배열에 
+임시 배열을 넣어준다. 이 과정을 반복하는 것이 병합 정렬이다.
+퀵 정렬과 비슷하게 원래 배열을 나누어 정렬하는 정렬 법이다. 그렇기 때문에 분할하는 과정에서 logN만큼의 시간이 걸리고 결국 O(NlogN)의 시간 복잡도를
+가지게 된다. 다만, 퀵 정렬과 달리 분할해줘야 하는 기준점 설정없이 절반으로 나누어 분할하기 때문에 기준점에 따라 시간이 증가하거나 줄어들지 않는다.
+따라서 항상 같은 시간복잡도를 가지게 되고 안정성이 있기 때문에, 정렬법들중 준수한 정렬 법이다. 
+하지만, 분할하여 임시배열에 배열을 분할된 배열을 저장하다보니, 추가적인 메모리가 필요하고, 이를 기준으로 퀵을 써야할지 병합을 써야할지 기준을 정하면 된다. 
 
-<h3>해시 자료구조의 시간 복잡도</h3>
-<p>해시함수로 만들어진 키값들은 고유한 인덱스를 가지게 되어 바로 접근할 수 있다.
-그러므로 평균 O(1)의 시간복잡도를 가지고 있지만, 데이터 충돌이 발생할 경우 Chaining에 연결된 리스트들까지
-검색해야 하므로 O(N)까지 시간복잡도가 증가할 수 있다.
-충돌을 방지하는 방법들은 데이터의 규칙성(클러스터링)을 방지하기 위한 방식이지만 공간을 많이 사용한다는 치명적인 단점이 있다.</p>
+<h3>힙 정렬(Heap Sort)</h3>
+힙정렬은 힙알고리즘을 기본으로 짜여진 정렬이다. 그렇다면 루트 노드에는 항상 제일 우선순위인 값이 삽입되어 있을 것이다. 그렇다면 그 루트를 출력하고
+힙에서 제거한다. 이 과정을 반복하여 정렬하는 방법이다.
+힙 정렬은 추가적인 메모리를 필요로 하지 않기 때문에, 항상 O(NlogN)의 시간 복잡도를 보여준다.  
 
-<p>만약 테이블이 꽉 차있는 경우라면 테이블을 확장해주어야 하는데, 이는 매우 심각한 성능의 저하를 불러오기 때문에 가급적이면 확장을 하지 않도록 테이블을 설계해주어야 한다.</p>
 
-<p>(통계적으로 해시 테이블의 공간 사용률이 70% ~ 80%정도가 되면 해시의 충돌이 빈번하게 발생하여 성능이 저하되기 시작한다고 한다.)</p>
 
-<p>또한 해시 테이블에서 자주 사용하게 되는 데이터를 Cache에 적용하면 효율을 높일 수 있다. 자주 hit하게 되는 데이터를 캐시에서 바로 찾음으로써 해시 테이블의 성능을 향상시킬 수 있다</p>
 
-<p><img src="./assets/built/images/algorithm/hash/hash_chaining_time.PNG" alt="ex_screenshot" /></p>
 
-<p>출처 
-https://mangkyu.tistory.com/102 [MangKyu’s Diary]
-https://preamtree.tistory.com/20 [Preamtree의 행복로그]</p>
 
+
+
+<br /><br /><br /><br />
+출처: https://namu.wiki/w/%EC%A0%95%EB%A0%AC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
+출처: https://yabmoons.tistory.com/250 [얍문's Coding World..]
+출처: https://roka88.dev/98 [이병록의 개발 블로그]
+</h3>
 
                 </div>
             </section>
@@ -303,9 +305,9 @@ https://preamtree.tistory.com/20 [Preamtree의 행복로그]</p>
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'https://sanseongKo.github.io/algorithm-hash';
-                            var this_page_identifier = '/algorithm-hash';
-                            var this_page_title = 'Algorithm Hash에 관하여';
+                            var this_page_url = 'https://sanseongKo.github.io/algorithm-sort';
+                            var this_page_identifier = '/algorithm-sort';
+                            var this_page_title = 'Algorithm 정렬에 관하여';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -350,11 +352,6 @@ https://preamtree.tistory.com/20 [Preamtree의 행복로그]</p>
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/algorithm-sort">Algorithm 정렬에 관하여</a></li>
-                                        
-                                    
                                   
                                 
                                   
@@ -385,6 +382,11 @@ https://preamtree.tistory.com/20 [Preamtree의 행복로그]</p>
                                 
                                   
                                     
+                                        
+                                        
+                                            <li><a href="/algorithm-hash">Algorithm Hash에 관하여</a></li>
+                                        
+                                    
                                   
                                 
                                   
@@ -408,16 +410,19 @@ https://preamtree.tistory.com/20 [Preamtree의 행복로그]</p>
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
                 
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/java-evshash">
+            <a class="post-card-image-link" href="/java-restapi">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/java/java.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/java-evshash">
+            <a class="post-card-content-link" href="/java-restapi">
                 <header class="post-card-header">
                     
                         
@@ -427,58 +432,11 @@ https://preamtree.tistory.com/20 [Preamtree의 행복로그]</p>
                         
                     
 
-                    <h2 class="post-card-title">Java .equals(), hashcode(), ==의 차이점</h2>
+                    <h2 class="post-card-title">Java RESTful API 개념 정리</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
-호롤ㄹ로로ㄹㄹㄹ
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      2 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
-
-            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
-            
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/newPosting">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/thumbnail_for_firstposting.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/newPosting">
-                <header class="post-card-header">
-                    
-
-                    <h2 class="post-card-title">첫 포스팅!</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>
-
-
-
-
-</p>
+                        <p>오늘은 RESTful API에 대하여 정리해보려고 한다. RESTful API를 알기전에 REST와 RESTful의 차이를 알아야 한다. REST란, 분산시스템 설계를 위한 아키텍처 스타일이다. 즉, 제약 조건의 집합이라고 볼 수 있다. 그렇다면, RESTful은 무엇일까? RESTful은 제약조건의 집합</p>
                     
                 </section>
             </a>
@@ -511,18 +469,18 @@ https://preamtree.tistory.com/20 [Preamtree의 행복로그]</p>
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Algorithm Hash에 관하여</div>
+    <div class="floating-header-title">Algorithm 정렬에 관하여</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Algorithm+Hash%EC%97%90+%EA%B4%80%ED%95%98%EC%97%AC&amp;url=https://sanseongKo.github.io/algorithm-hash"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Algorithm+%EC%A0%95%EB%A0%AC%EC%97%90+%EA%B4%80%ED%95%98%EC%97%AC&amp;url=https://sanseongKo.github.io/algorithm-sort"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://sanseongKo.github.io/algorithm-hash"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://sanseongKo.github.io/algorithm-sort"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

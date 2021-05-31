@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-05-30T22:51:37+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Java RESTful API 개념 정리</title><link href="https://sanseongko.github.io/java-restapi" rel="alternate" type="text/html" title="Java RESTful API 개념 정리" /><published>2021-05-30T00:00:00+09:00</published><updated>2021-05-30T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-restapi</id><content type="html" xml:base="https://sanseongko.github.io/java-restapi">&lt;p&gt;오늘은 RESTful API에 대하여 정리해보려고 한다.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-05-31T23:21:08+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Algorithm 정렬에 관하여</title><link href="https://sanseongko.github.io/algorithm-sort" rel="alternate" type="text/html" title="Algorithm 정렬에 관하여" /><published>2021-05-31T00:00:00+09:00</published><updated>2021-05-31T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-sort</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-sort">&lt;p&gt;오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. &lt;br /&gt;
+여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다.&lt;/p&gt;
+
+&lt;h3&gt;선택 정렬(Selection Sort)&lt;/h3&gt;
+&lt;p&gt;선택 정렬은 집합 내에서 가장 작은 수를 선택하고 교환하는 것을 반복하는 정렬이다.
+&lt;img src=&quot;./assets/built/images/algorithm/sort/selectionsort.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+처음 인덱스에서 제일 작은 수를 찾아 교환하게 된다. 그 이후 비교하는 수의 인덱스를 하나씩 늘려가며 작은 수를 찾는 것을 반복한다.
+&lt;br /&gt;
+선택 정령은 구현이 쉬운 편에 속하며, 비교 횟수는 많지만 교환 횟수는 적기 때문에 많은 교환이 자료 상태에서 효율적으로 사용된다.&lt;/p&gt;
+
+&lt;h3&gt;삽입 정렬(Insertion Sort)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/sort/insertionsort.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;사진과 함께 이해하면 쉽다. 선택된 수와 그 수의 왼쪽과 비교하여 선택된 수보다 작은 수가 나올 때까지 정렬하는 방법이다.&lt;/p&gt;
+
+&lt;h3&gt;버블 정렬(Bubble Sort)
+버블 정렬은 선택된 값의 좌측 값이 선택된 값보다 크다면 교환하는 방법을 말한다.
+좌측 값만 비교하면 되기 때문에 구현이 단순하다.
+![ex_screenshot](./assets/built/images/algorithm/sort/bubblesort.png)
+
+
+&lt;b&gt;선택 정렬, 삽입 정렬, 버블 정렬 모두 O(N^2)의 시간 복잡도를 가지고 있다. 다만 실제로는, 선택 정렬이 버블 정렬보다 조금 더 빠르다. 또한,
+삽입 정렬의 경우 최선의 경우엔 O(N)의 시간복잡도를 가져 굉장히 빠른 정렬 방법이 될 수 있고, 이러한 이유로 다른 정렬 알고리즘의 일부로 사용되기도 한다.&lt;/b&gt;
+
+&lt;h3&gt;쉘 정렬(Shell Sort)&lt;/h3&gt;
+![ex_screenshot](./assets/built/images/algorithm/sort/shellsort.png)
+
+쉘 정령은 선택 정렬과 개념이 같은데 차이가 있는 점은 쉘 정렬은 간격만큼 옆으로 이동한다는 것이다.
+사진에서 보이듯 간격을 설정하고 그 간격의 크기를 줄여나가면서 정렬을 해나간다. 
+시간복잡도는 평균 O(N^1.5)이자만 최악의 경우O(N^2)의 시간복잡도를 가지게 된다.
+
+&lt;h3&gt;퀵 정렬(Quick Sort)&lt;/h3&gt;
+![ex_screenshot](./assets/built/images/algorithm/sort/quicksort.png)
+퀵 정렬은 축 값을 지정하고 그 축의 촤측 처음 인덱스 부터 오른쪽으로 이동하며, 자신보다 크거나 같은 값을 비교하여 교환하고 우측 끝 인덱스 부터 왼
+쪽으로 이동하며, 자신보다 작거나 같은 값을 비교하여 교환한다. 그 이후 사진에서 보이는 대로 left 인덱스가 right 인덱스보다 크다면 처음 배열을 분할한다.
+배열이 분리되면 축 값을 다시 잡고 위의 과정을 반복하여 정렬한다.
+시간 복잡도에서는 보통 O(NlogN)으로 실행 시간이 준수한 편이지만, 축값에 따라서 시간복잡도가 크게 달라지며, 최악(역순)일 경우 O(N^2)의 시간 복잡
+도를 가지기 때문에 축 값을 잘 지정하는 것이 좋다.
+
+&lt;h3&gt;병합 정렬(Merge Sort)&lt;/h3&gt;
+![ex_screenshot](./assets/built/images/algorithm/sort/mergesort.png)
+병합 정렬은 분할할 부분의 값을 정하고 그 부분을 기준으로 최소 단위까지 나누어 병합시에 각 부분을 순차 비교 후 임시 배열에 삽입하고, 원래 배열에 
+임시 배열을 넣어준다. 이 과정을 반복하는 것이 병합 정렬이다.
+퀵 정렬과 비슷하게 원래 배열을 나누어 정렬하는 정렬 법이다. 그렇기 때문에 분할하는 과정에서 logN만큼의 시간이 걸리고 결국 O(NlogN)의 시간 복잡도를
+가지게 된다. 다만, 퀵 정렬과 달리 분할해줘야 하는 기준점 설정없이 절반으로 나누어 분할하기 때문에 기준점에 따라 시간이 증가하거나 줄어들지 않는다.
+따라서 항상 같은 시간복잡도를 가지게 되고 안정성이 있기 때문에, 정렬법들중 준수한 정렬 법이다. 
+하지만, 분할하여 임시배열에 배열을 분할된 배열을 저장하다보니, 추가적인 메모리가 필요하고, 이를 기준으로 퀵을 써야할지 병합을 써야할지 기준을 정하면 된다. 
+
+&lt;h3&gt;힙 정렬(Heap Sort)&lt;/h3&gt;
+힙정렬은 힙알고리즘을 기본으로 짜여진 정렬이다. 그렇다면 루트 노드에는 항상 제일 우선순위인 값이 삽입되어 있을 것이다. 그렇다면 그 루트를 출력하고
+힙에서 제거한다. 이 과정을 반복하여 정렬하는 방법이다.
+힙 정렬은 추가적인 메모리를 필요로 하지 않기 때문에, 항상 O(NlogN)의 시간 복잡도를 보여준다.  
+
+
+
+
+
+
+
+
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+출처: https://namu.wiki/w/%EC%A0%95%EB%A0%AC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
+출처: https://yabmoons.tistory.com/250 [얍문's Coding World..]
+출처: https://roka88.dev/98 [이병록의 개발 블로그]
+&lt;/h3&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. 여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다.</summary></entry><entry><title type="html">Java RESTful API 개념 정리</title><link href="https://sanseongko.github.io/java-restapi" rel="alternate" type="text/html" title="Java RESTful API 개념 정리" /><published>2021-05-30T00:00:00+09:00</published><updated>2021-05-30T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-restapi</id><content type="html" xml:base="https://sanseongko.github.io/java-restapi">&lt;p&gt;오늘은 RESTful API에 대하여 정리해보려고 한다.
 RESTful API를 알기전에 REST와 RESTful의 차이를 알아야 한다.
 REST란, 분산시스템 설계를 위한 &lt;b&gt;아키텍처 스타일&lt;/b&gt;이다. 즉, 제약 조건의 집합이라고 볼 수 있다. 
 그렇다면, RESTful은 무엇일까? RESTful은 제약조건의 집합 즉, 아키텍처 스타일, 아키텍처 원칙을 모두 만족하는 것을 의미한다.&lt;/p&gt;
@@ -109,68 +173,7 @@ https://meetup.toast.com/posts/92
   &lt;li&gt;자식 노드들과 비교하여 힙을 재구성한다.
 아래의 과정으로 확인할 수 있다.
 &lt;img src=&quot;./assets/built/images/algorithm/heap/heapdelete.PNG&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 자료구조 힙에 관하여 알아보자.</summary></entry><entry><title type="html">Algorithm Stack and Queue에 관하여</title><link href="https://sanseongko.github.io/algorithm-stackqueue" rel="alternate" type="text/html" title="Algorithm Stack and Queue에 관하여" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-stackqueue</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-stackqueue">&lt;p&gt;오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 
-스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.&lt;/p&gt;
-
-&lt;h3&gt;스택(Stack)이란?&lt;/h3&gt;
-&lt;p&gt;스택은 Last In First Out (LIFO), 즉 &lt;b&gt;후입선출&lt;/b&gt;구조를 가지고 있다.
-또한, 한쪽에서 삽입과 삭제가 이루어 지는 구조이기도 하다.
-&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/stack.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
-위의 사진은 흔히 볼 수 있는 스택의 형태를 가지고 있고, push는 자료의 삽입, pop은 자료의 배출이라고 보면 된다. 사진에서도 볼 수 있듯 한쪽에서 
-삽입되고, 한 쪽에서 삭제가 되는 것을 볼 수가 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;그럼 스택은 어디서 쓰일까?&lt;b&gt; 예를 들자면, 브라우저의 뒤로가기 버튼을 생각하면된다. 가장 마지막에 거쳐온 곳을 보여줘야하니 제일 마지막의 정보를
-제일 처음 보여준다와 의미가 통한다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
-
-&lt;h3&gt;큐(Queue)란?&lt;/h3&gt;
-&lt;p&gt;큐는 스택과 다르게 First In First Out(FIFO) 즉, &lt;b&gt;선입선출&lt;/b&gt;구조를 가지고 있다. 스택은 한쪽에서 삽입과 삭제가 일어난다고 했는데, 그렇다면 큐는?
-큐는 제일 먼저들어간 것이 제일 처음 나오게 되므로, 삽입되는 곳에서는 이미 마지막으로 들어온 것이 버티고 있어 나가지 못한다. 그렇기 때문에 한쪽 끝(front)에서
-삽입되어 다른 쪽 끝(rear)에서 삭제된다.
-&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/queue.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
-사진으로 보아도 스택과는 다르게 push되는 곳과 pop되는 곳의 위치가 다른 것을 확인할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;그럼 큐는 어디서 쓰일까?&lt;b&gt; 예를 들자면, 대기줄이 필요할때 먼저온 사람이 먼저 정보를 받는 형태 또는 데이터 유입속도가 데이터 소모속도 보다
-빠를때 쓰일 수 있다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
-
-&lt;h3&gt;Java에서 Stack 사용법&lt;/h3&gt;
-&lt;p&gt;Stack 선언&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elelment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//element는 스택에 담기는 자료형이 어떤 자료형인지&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Stack 값 삽입&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Stack 값 삭제&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//제일 마지막에 들어간 수 출력과 삭제&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택에 저장되어 있는 전체 값 삭제&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Stack 처음 나올 값 확인&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//값만 출력 삭제x&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Stack의 기타 메소드&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택의 크기 출력(ex.값이 2개들어 있다면 2를 출력)&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택이 비어 있는지 체크&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택에 해당 값이 있는지 체크(boolean으로 리턴)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3&gt;Java에서 Queue 사용법&lt;/h3&gt;
-&lt;p&gt;Queue 선언&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elelment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//element는 큐에 담기는 자료형이 어떤 자료형인지&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;자바에서 큐는 LinkedList로 객체선언을 해주어야 사용이 가능함을 잊지말자.
-Queue 값 삽입&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;offer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//삽입에 성공하면 true를 반환하고, 큐에 여유 공간이 없어 삽입에 실패하면 IllegalStateException을 발생&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Queue 값 삭제&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//제일 마지막에 들어간 수 출력과 삭제(비어있다면 null)&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//큐에 첫번째 값 제거&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//큐 초기화&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Queue 처음 나올 값 확인&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//값만 출력 삭제x&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.</summary></entry><entry><title type="html">Java ORM이란?</title><link href="https://sanseongko.github.io/java-orm" rel="alternate" type="text/html" title="Java ORM이란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-orm</id><content type="html" xml:base="https://sanseongko.github.io/java-orm">&lt;p&gt;MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 자료구조 힙에 관하여 알아보자.</summary></entry><entry><title type="html">Java ORM이란?</title><link href="https://sanseongko.github.io/java-orm" rel="alternate" type="text/html" title="Java ORM이란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-orm</id><content type="html" xml:base="https://sanseongko.github.io/java-orm">&lt;p&gt;MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.&lt;/p&gt;
 
 &lt;h3&gt;ORM이란?&lt;/h3&gt;
 &lt;p&gt;Object Relational Mapping, 말 그대로 객체-관계 매핑이라는 것이다.
@@ -246,7 +249,68 @@ RDBMS는 &lt;b&gt;기본키(primary key)&lt;/b&gt;를 이용하여 동일성을 
 
 &lt;p&gt;출처 
 https://geonlee.tistory.com/207 [빠리의 택시 운전사]
-&lt;a href=&quot;http://www.incodom.kr/ORM#h_702209f3f35878a32ee91352ddc6bbe7&quot;&gt;장점과 단점&lt;/a&gt;&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.</summary></entry><entry><title type="html">Java JPA란?</title><link href="https://sanseongko.github.io/java-jpa" rel="alternate" type="text/html" title="Java JPA란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-jpa</id><content type="html" xml:base="https://sanseongko.github.io/java-jpa"></content><author><name>Ko</name></author><category term="java" /><summary type="html"></summary></entry><entry><title type="html">Java .equals(), hashcode(), ==의 차이점</title><link href="https://sanseongko.github.io/java-evshash" rel="alternate" type="text/html" title="Java .equals(), hashcode(), ==의 차이점" /><published>2021-05-26T00:00:00+09:00</published><updated>2021-05-26T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-evshash</id><content type="html" xml:base="https://sanseongko.github.io/java-evshash">&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
+&lt;a href=&quot;http://www.incodom.kr/ORM#h_702209f3f35878a32ee91352ddc6bbe7&quot;&gt;장점과 단점&lt;/a&gt;&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.</summary></entry><entry><title type="html">Java JPA란?</title><link href="https://sanseongko.github.io/java-jpa" rel="alternate" type="text/html" title="Java JPA란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-jpa</id><content type="html" xml:base="https://sanseongko.github.io/java-jpa"></content><author><name>Ko</name></author><category term="java" /><summary type="html"></summary></entry><entry><title type="html">Algorithm Stack and Queue에 관하여</title><link href="https://sanseongko.github.io/algorithm-stackqueue" rel="alternate" type="text/html" title="Algorithm Stack and Queue에 관하여" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-stackqueue</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-stackqueue">&lt;p&gt;오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 
+스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.&lt;/p&gt;
+
+&lt;h3&gt;스택(Stack)이란?&lt;/h3&gt;
+&lt;p&gt;스택은 Last In First Out (LIFO), 즉 &lt;b&gt;후입선출&lt;/b&gt;구조를 가지고 있다.
+또한, 한쪽에서 삽입과 삭제가 이루어 지는 구조이기도 하다.
+&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/stack.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+위의 사진은 흔히 볼 수 있는 스택의 형태를 가지고 있고, push는 자료의 삽입, pop은 자료의 배출이라고 보면 된다. 사진에서도 볼 수 있듯 한쪽에서 
+삽입되고, 한 쪽에서 삭제가 되는 것을 볼 수가 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;그럼 스택은 어디서 쓰일까?&lt;b&gt; 예를 들자면, 브라우저의 뒤로가기 버튼을 생각하면된다. 가장 마지막에 거쳐온 곳을 보여줘야하니 제일 마지막의 정보를
+제일 처음 보여준다와 의미가 통한다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;h3&gt;큐(Queue)란?&lt;/h3&gt;
+&lt;p&gt;큐는 스택과 다르게 First In First Out(FIFO) 즉, &lt;b&gt;선입선출&lt;/b&gt;구조를 가지고 있다. 스택은 한쪽에서 삽입과 삭제가 일어난다고 했는데, 그렇다면 큐는?
+큐는 제일 먼저들어간 것이 제일 처음 나오게 되므로, 삽입되는 곳에서는 이미 마지막으로 들어온 것이 버티고 있어 나가지 못한다. 그렇기 때문에 한쪽 끝(front)에서
+삽입되어 다른 쪽 끝(rear)에서 삭제된다.
+&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/queue.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+사진으로 보아도 스택과는 다르게 push되는 곳과 pop되는 곳의 위치가 다른 것을 확인할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;그럼 큐는 어디서 쓰일까?&lt;b&gt; 예를 들자면, 대기줄이 필요할때 먼저온 사람이 먼저 정보를 받는 형태 또는 데이터 유입속도가 데이터 소모속도 보다
+빠를때 쓰일 수 있다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;h3&gt;Java에서 Stack 사용법&lt;/h3&gt;
+&lt;p&gt;Stack 선언&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elelment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//element는 스택에 담기는 자료형이 어떤 자료형인지&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Stack 값 삽입&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Stack 값 삭제&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//제일 마지막에 들어간 수 출력과 삭제&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택에 저장되어 있는 전체 값 삭제&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Stack 처음 나올 값 확인&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//값만 출력 삭제x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Stack의 기타 메소드&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택의 크기 출력(ex.값이 2개들어 있다면 2를 출력)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택이 비어 있는지 체크&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택에 해당 값이 있는지 체크(boolean으로 리턴)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3&gt;Java에서 Queue 사용법&lt;/h3&gt;
+&lt;p&gt;Queue 선언&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elelment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//element는 큐에 담기는 자료형이 어떤 자료형인지&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;자바에서 큐는 LinkedList로 객체선언을 해주어야 사용이 가능함을 잊지말자.
+Queue 값 삽입&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;offer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//삽입에 성공하면 true를 반환하고, 큐에 여유 공간이 없어 삽입에 실패하면 IllegalStateException을 발생&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Queue 값 삭제&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//제일 마지막에 들어간 수 출력과 삭제(비어있다면 null)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//큐에 첫번째 값 제거&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//큐 초기화&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Queue 처음 나올 값 확인&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//값만 출력 삭제x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.</summary></entry><entry><title type="html">Java .equals(), hashcode(), ==의 차이점</title><link href="https://sanseongko.github.io/java-evshash" rel="alternate" type="text/html" title="Java .equals(), hashcode(), ==의 차이점" /><published>2021-05-26T00:00:00+09:00</published><updated>2021-05-26T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-evshash</id><content type="html" xml:base="https://sanseongko.github.io/java-evshash">&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
 &lt;img src=&quot;./assets/built/images/holololol.jpg&quot; alt=&quot;ex_screenshot&quot; /&gt;호롤ㄹ로로ㄹㄹㄹ&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;1. 자바에서의 ==연산자&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;
@@ -403,165 +467,4 @@ https://preamtree.tistory.com/20 [Preamtree의 행복로그]&lt;/p&gt;</content>
    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Hello World&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>sanseongKo</name></author><category term="python" /><summary type="html">Python 강좌는 여러 절로 구성되어 있습니다. Python 강좌(1) - Python 기본 Python 강좌(2) - Python 제어문 이 글은 pyhon basic에 입니다.!!</summary></entry><entry><title type="html">Python 강좌(2) - Python 제어문</title><link href="https://sanseongko.github.io/python-control-statement" rel="alternate" type="text/html" title="Python 강좌(2) - Python 제어문" /><published>2021-05-17T00:00:00+09:00</published><updated>2021-05-17T00:00:00+09:00</updated><id>https://sanseongko.github.io/python-control-statement</id><content type="html" xml:base="https://sanseongko.github.io/python-control-statement">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;Python 강좌는 여러 절로 구성되어 있습니다. &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-basic&quot;&gt;Python 강좌(1) - Python 기본&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./python-control-statement&quot;&gt;Python 강좌(2) - Python 제어문&lt;/a&gt;&lt;/li&gt;
-    &lt;!-- 날짜, 확장자 제외한 파일 이름을 쓰는 것 --&gt;
-&lt;/ul&gt;
-&lt;p&gt;이 글은 pyhon의 제어문에 대한 내용 입니다.!!&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;# Jekyll configuration
-markdown: kramdown
-# kramdown : markdown의 개조판.
-# markdown에서 불편한 사항을 개선한 형태.
-
-# MyData 인적 사항
-owner:
-  name:           sanseongKo
-  avatar:         photo.jpg
-  bio:            &amp;quot;Ph.D. in Computer Science&amp;quot;
-  email:          tkstjd56@naver.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  facebook:
-  github:
-  stackexchange:
-  linkedin:
-  instagram:
-  flickr:
-  tumblr:
-  # google plus id, include the &amp;#39;+&amp;#39;, eg +mmistakes
-  google_plus:
-
-highlighter: rouge
-# text highlighter로 rouge이용
-# 2016.02월 이후로 syntax highlighter는 rouge만 지원.
-# Pygments 사용불가.
-
-paginate: 20
-# 작성한 모든 post를 하나의 페이지에 열거할 수 없으니
-# pagination이 필요하고 몇개의 post를 하나의 page에서
-# 보여줄 건지를 설정.
-
-language: &amp;#39;en-uk&amp;#39;
-# 언어 설정
-
-url: https://sanseongKo.github.io
-# Google Search Console에서 사용하는 sitemap.xml 생성시
-# 이 url key값이 존재하지 않으면 sitemap.xml이
-# 정상적으로 생성되지 않는다.
-# 또한 disqus(댓글시스템)를 이용하기 위해서도 필요.
-# 자신의 github page url을 입력
-# ( https://your_github_id.github.io 형식 )
-
-baseurl: /
-
-# Website info
-title: IT Technical Training
-# 자신의 blog title.
-
-description: IT기반기술교육 블로그
-# blog home에 표시될 blog에 대한 전반적인 설명.
-
-cover: assets/built/images/blog-cover1.jpg
-# blog home에 표시될 blog cover image.
-
-logo:
-logo_dark:
-
-favicon: assets/built/images/favicon.jpg
-# favicon으로 사용할 image
-
-production_url: https://sanseong.github.io
-# 최종적으로 blog가 운영될 url
-
-source_url: https://github.com/sanseongKo/GitHubPage
-# blogmaker(jekyll source folder)에 대한 github repository
-
-# Social info
-navigation: True
-# Navigation bar link를 보여줄건지 여부
-
-subscribers: True
-# subscriber 기능을 사용할건지의 여부
-# 저는 약간의 수정을 통해 subscriber 기능대신
-# lunr.js를 이용한 검색 기능으로 대체 사용했습니다.
-# 검색기능으로 대체하기 위해서
-# `_includes/subscribe-form.html` 파일의 수정이 필요합니다.
-
-twitter:
-facebook:
-# 만약 twitter와 facebook을 이용하면 username을 입력
-
-# Disqus
-disqus: True
-disqus_shortname: xxxxxxxx
-# disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해
-# disqus를 이용할 것인지 여부와 만약 사용하면
-# disqus shortname을 입력 ( disqus username이 아님 )
-
-
-# Google Analytics
-google_analytics: UA-xxxxxxxx-x # replace with your GA tracking identifier
-# Google Analytics을 사용할 경우 GA tracking identifier를 입력
-
-# Permalinks
-permalink: /:title
-# permalink: /author/:author
-# permalink: /tag/:title
-# 각각의 post에 고정주소를 어떤 방식으로 할당할 것인지를 결정
-# 이 값을 바꾸면 작성한 포스트의 저장위치나 파일이름이 변경된다.
-
-# gems and other configs
-plugins: [jekyll-paginate, jekyll-feed, jekyll-gist]
-
-feed:
-  path: feed.xml
-
-# Travis-CI 설정입니다. 배포 빌드 자동화
-safe: False
-lsi: False
-
-username: tkstjd56
-repo: GitHubPageMaker
-# username : travis-ci와 연동하는 github의 username
-# repo: travis-ci와 연동하는 github의 repository이름
-# https://github.com/&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;
-
-branch: master
-# 사용할 branch명
-
-relative_source:
-
-destination: ../[GitHubPage]/
-#./output/
-# compile된 결과가 생성되는 폴더
-# 이 폴더안의 내용이 우리가 운영하는 블로그 내용이 컴파일되서 들어간다.
-# 이 폴더안의 내용을 github repository(https://username.github.io)에 push
-# 만약 Travis-CI를 이용할 예정이면 이 부분을 git submodule로
-# github repository(https://username.github.io)에 연결해야 한다.
-
-
-# exclude는 Jekyll컴파일 시 destination에 포함될 필요가
-# 없는것들을 명시한다. (node_modules와 필요없는 것들은 제외)
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - &amp;quot;*.Rmd&amp;quot;
-  - vendor
-  - .travis.yml
-  - node_modules
-  - assets/css
-  - assets/images
-  - _posts/angular
-  - _posts/et-cetera
- # - _posts/python
-  - _posts/typescript
-  #  - _posts/jekyll
-  - _posts/iot
-  - _posts/r
-  - _posts/economy&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/sanseongKo/dfa10e997612310abe016e8411516e8b.js&quot;&gt; &lt;/script&gt;</content><author><name>sanseongKo</name></author><category term="python" /><summary type="html">Python 강좌는 여러 절로 구성되어 있습니다. Python 강좌(1) - Python 기본 Python 강좌(2) - Python 제어문 이 글은 pyhon의 제어문에 대한 내용 입니다.!! # Jekyll configuration markdown: kramdown # kramdown : markdown의 개조판. # markdown에서 불편한 사항을 개선한 형태. # MyData 인적 사항 owner: name: sanseongKo avatar: photo.jpg bio: &amp;quot;Ph.D. in Computer Science&amp;quot; email: tkstjd56@naver.com # Social networking links used in footer. Update and remove as you like. twitter: facebook: github: stackexchange: linkedin: instagram: flickr: tumblr: # google plus id, include the &amp;#39;+&amp;#39;, eg +mmistakes google_plus: highlighter: rouge # text highlighter로 rouge이용 # 2016.02월 이후로 syntax highlighter는 rouge만 지원. # Pygments 사용불가. paginate: 20 # 작성한 모든 post를 하나의 페이지에 열거할 수 없으니 # pagination이 필요하고 몇개의 post를 하나의 page에서 # 보여줄 건지를 설정. language: &amp;#39;en-uk&amp;#39; # 언어 설정 url: https://sanseongKo.github.io # Google Search Console에서 사용하는 sitemap.xml 생성시 # 이 url key값이 존재하지 않으면 sitemap.xml이 # 정상적으로 생성되지 않는다. # 또한 disqus(댓글시스템)를 이용하기 위해서도 필요. # 자신의 github page url을 입력 # ( https://your_github_id.github.io 형식 ) baseurl: / # Website info title: IT Technical Training # 자신의 blog title. description: IT기반기술교육 블로그 # blog home에 표시될 blog에 대한 전반적인 설명. cover: assets/built/images/blog-cover1.jpg # blog home에 표시될 blog cover image. logo: logo_dark: favicon: assets/built/images/favicon.jpg # favicon으로 사용할 image production_url: https://sanseong.github.io # 최종적으로 blog가 운영될 url source_url: https://github.com/sanseongKo/GitHubPage # blogmaker(jekyll source folder)에 대한 github repository # Social info navigation: True # Navigation bar link를 보여줄건지 여부 subscribers: True # subscriber 기능을 사용할건지의 여부 # 저는 약간의 수정을 통해 subscriber 기능대신 # lunr.js를 이용한 검색 기능으로 대체 사용했습니다. # 검색기능으로 대체하기 위해서 # `_includes/subscribe-form.html` 파일의 수정이 필요합니다. twitter: facebook: # 만약 twitter와 facebook을 이용하면 username을 입력 # Disqus disqus: True disqus_shortname: xxxxxxxx # disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해 # disqus를 이용할 것인지 여부와 만약 사용하면 # disqus shortname을 입력 ( disqus username이 아님 ) # Google Analytics google_analytics: UA-xxxxxxxx-x # replace with your GA tracking identifier # Google Analytics을 사용할 경우 GA tracking identifier를 입력 # Permalinks permalink: /:title # permalink: /author/:author # permalink: /tag/:title # 각각의 post에 고정주소를 어떤 방식으로 할당할 것인지를 결정 # 이 값을 바꾸면 작성한 포스트의 저장위치나 파일이름이 변경된다. # gems and other configs plugins: [jekyll-paginate, jekyll-feed, jekyll-gist] feed: path: feed.xml # Travis-CI 설정입니다. 배포 빌드 자동화 safe: False lsi: False username: tkstjd56 repo: GitHubPageMaker # username : travis-ci와 연동하는 github의 username # repo: travis-ci와 연동하는 github의 repository이름 # https://github.com/&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt; branch: master # 사용할 branch명 relative_source: destination: ../[GitHubPage]/ #./output/ # compile된 결과가 생성되는 폴더 # 이 폴더안의 내용이 우리가 운영하는 블로그 내용이 컴파일되서 들어간다. # 이 폴더안의 내용을 github repository(https://username.github.io)에 push # 만약 Travis-CI를 이용할 예정이면 이 부분을 git submodule로 # github repository(https://username.github.io)에 연결해야 한다. # exclude는 Jekyll컴파일 시 destination에 포함될 필요가 # 없는것들을 명시한다. (node_modules와 필요없는 것들은 제외) exclude: - README.md - Rakefile - Gemfile - Gemfile.lock - changelog.md - &amp;quot;*.Rmd&amp;quot; - vendor - .travis.yml - node_modules - assets/css - assets/images - _posts/angular - _posts/et-cetera # - _posts/python - _posts/typescript # - _posts/jekyll - _posts/iot - _posts/r - _posts/economy</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>sanseongKo</name></author><category term="python" /><summary type="html">Python 강좌는 여러 절로 구성되어 있습니다. Python 강좌(1) - Python 기본 Python 강좌(2) - Python 제어문 이 글은 pyhon basic에 입니다.!!</summary></entry></feed>
