@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-05-31T23:21:08+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Algorithm 정렬에 관하여</title><link href="https://sanseongko.github.io/algorithm-sort" rel="alternate" type="text/html" title="Algorithm 정렬에 관하여" /><published>2021-05-31T00:00:00+09:00</published><updated>2021-05-31T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-sort</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-sort">&lt;p&gt;오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. &lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-05-31T23:41:08+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Algorithm 정렬에 관하여</title><link href="https://sanseongko.github.io/algorithm-sort" rel="alternate" type="text/html" title="Algorithm 정렬에 관하여" /><published>2021-05-31T00:00:00+09:00</published><updated>2021-05-31T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-sort</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-sort">&lt;p&gt;오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. &lt;br /&gt;
 여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다.&lt;/p&gt;
 
 &lt;h3&gt;선택 정렬(Selection Sort)&lt;/h3&gt;
@@ -13,56 +13,47 @@
 
 &lt;p&gt;사진과 함께 이해하면 쉽다. 선택된 수와 그 수의 왼쪽과 비교하여 선택된 수보다 작은 수가 나올 때까지 정렬하는 방법이다.&lt;/p&gt;
 
-&lt;h3&gt;버블 정렬(Bubble Sort)
-버블 정렬은 선택된 값의 좌측 값이 선택된 값보다 크다면 교환하는 방법을 말한다.
+&lt;h3&gt;버블 정렬(Bubble Sort)&lt;/h3&gt;
+&lt;p&gt;버블 정렬은 선택된 값의 좌측 값이 선택된 값보다 크다면 교환하는 방법을 말한다.
 좌측 값만 비교하면 되기 때문에 구현이 단순하다.
-![ex_screenshot](./assets/built/images/algorithm/sort/bubblesort.png)
+&lt;img src=&quot;./assets/built/images/algorithm/sort/bubblesort.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
 
-
-&lt;b&gt;선택 정렬, 삽입 정렬, 버블 정렬 모두 O(N^2)의 시간 복잡도를 가지고 있다. 다만 실제로는, 선택 정렬이 버블 정렬보다 조금 더 빠르다. 또한,
-삽입 정렬의 경우 최선의 경우엔 O(N)의 시간복잡도를 가져 굉장히 빠른 정렬 방법이 될 수 있고, 이러한 이유로 다른 정렬 알고리즘의 일부로 사용되기도 한다.&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;선택 정렬, 삽입 정렬, 버블 정렬 모두 O(N^2)의 시간 복잡도를 가지고 있다. 다만 실제로는, 선택 정렬이 버블 정렬보다 조금 더 빠르다. 또한,
+삽입 정렬의 경우 최선의 경우엔 O(N)의 시간복잡도를 가져 굉장히 빠른 정렬 방법이 될 수 있고, 이러한 이유로 다른 정렬 알고리즘의 일부로 사용되기도 한다.&lt;/b&gt;&lt;/p&gt;
 
 &lt;h3&gt;쉘 정렬(Shell Sort)&lt;/h3&gt;
-![ex_screenshot](./assets/built/images/algorithm/sort/shellsort.png)
+&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/sort/shellsort.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
 
-쉘 정령은 선택 정렬과 개념이 같은데 차이가 있는 점은 쉘 정렬은 간격만큼 옆으로 이동한다는 것이다.
+&lt;p&gt;쉘 정령은 선택 정렬과 개념이 같은데 차이가 있는 점은 쉘 정렬은 간격만큼 옆으로 이동한다는 것이다.
 사진에서 보이듯 간격을 설정하고 그 간격의 크기를 줄여나가면서 정렬을 해나간다. 
-시간복잡도는 평균 O(N^1.5)이자만 최악의 경우O(N^2)의 시간복잡도를 가지게 된다.
+시간복잡도는 평균 O(N^1.5)이자만 최악의 경우O(N^2)의 시간복잡도를 가지게 된다.&lt;/p&gt;
 
 &lt;h3&gt;퀵 정렬(Quick Sort)&lt;/h3&gt;
-![ex_screenshot](./assets/built/images/algorithm/sort/quicksort.png)
+&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/sort/quicksort.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
 퀵 정렬은 축 값을 지정하고 그 축의 촤측 처음 인덱스 부터 오른쪽으로 이동하며, 자신보다 크거나 같은 값을 비교하여 교환하고 우측 끝 인덱스 부터 왼
 쪽으로 이동하며, 자신보다 작거나 같은 값을 비교하여 교환한다. 그 이후 사진에서 보이는 대로 left 인덱스가 right 인덱스보다 크다면 처음 배열을 분할한다.
 배열이 분리되면 축 값을 다시 잡고 위의 과정을 반복하여 정렬한다.
 시간 복잡도에서는 보통 O(NlogN)으로 실행 시간이 준수한 편이지만, 축값에 따라서 시간복잡도가 크게 달라지며, 최악(역순)일 경우 O(N^2)의 시간 복잡
-도를 가지기 때문에 축 값을 잘 지정하는 것이 좋다.
+도를 가지기 때문에 축 값을 잘 지정하는 것이 좋다.&lt;/p&gt;
 
 &lt;h3&gt;병합 정렬(Merge Sort)&lt;/h3&gt;
-![ex_screenshot](./assets/built/images/algorithm/sort/mergesort.png)
+&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/sort/mergesort.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
 병합 정렬은 분할할 부분의 값을 정하고 그 부분을 기준으로 최소 단위까지 나누어 병합시에 각 부분을 순차 비교 후 임시 배열에 삽입하고, 원래 배열에 
 임시 배열을 넣어준다. 이 과정을 반복하는 것이 병합 정렬이다.
 퀵 정렬과 비슷하게 원래 배열을 나누어 정렬하는 정렬 법이다. 그렇기 때문에 분할하는 과정에서 logN만큼의 시간이 걸리고 결국 O(NlogN)의 시간 복잡도를
 가지게 된다. 다만, 퀵 정렬과 달리 분할해줘야 하는 기준점 설정없이 절반으로 나누어 분할하기 때문에 기준점에 따라 시간이 증가하거나 줄어들지 않는다.
 따라서 항상 같은 시간복잡도를 가지게 되고 안정성이 있기 때문에, 정렬법들중 준수한 정렬 법이다. 
-하지만, 분할하여 임시배열에 배열을 분할된 배열을 저장하다보니, 추가적인 메모리가 필요하고, 이를 기준으로 퀵을 써야할지 병합을 써야할지 기준을 정하면 된다. 
+하지만, 분할하여 임시배열에 배열을 분할된 배열을 저장하다보니, 추가적인 메모리가 필요하고, 이를 기준으로 퀵을 써야할지 병합을 써야할지 기준을 정하면 된다.&lt;/p&gt;
 
 &lt;h3&gt;힙 정렬(Heap Sort)&lt;/h3&gt;
-힙정렬은 힙알고리즘을 기본으로 짜여진 정렬이다. 그렇다면 루트 노드에는 항상 제일 우선순위인 값이 삽입되어 있을 것이다. 그렇다면 그 루트를 출력하고
+&lt;p&gt;힙정렬은 힙알고리즘을 기본으로 짜여진 정렬이다. 그렇다면 루트 노드에는 항상 제일 우선순위인 값이 삽입되어 있을 것이다. 그렇다면 그 루트를 출력하고
 힙에서 제거한다. 이 과정을 반복하여 정렬하는 방법이다.
-힙 정렬은 추가적인 메모리를 필요로 하지 않기 때문에, 항상 O(NlogN)의 시간 복잡도를 보여준다.  
+힙 정렬은 추가적인 메모리를 필요로 하지 않기 때문에, 항상 O(NlogN)의 시간 복잡도를 보여준다.&lt;/p&gt;
 
-
-
-
-
-
-
-
-&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
 출처: https://namu.wiki/w/%EC%A0%95%EB%A0%AC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
-출처: https://yabmoons.tistory.com/250 [얍문's Coding World..]
-출처: https://roka88.dev/98 [이병록의 개발 블로그]
-&lt;/h3&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. 여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다.</summary></entry><entry><title type="html">Java RESTful API 개념 정리</title><link href="https://sanseongko.github.io/java-restapi" rel="alternate" type="text/html" title="Java RESTful API 개념 정리" /><published>2021-05-30T00:00:00+09:00</published><updated>2021-05-30T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-restapi</id><content type="html" xml:base="https://sanseongko.github.io/java-restapi">&lt;p&gt;오늘은 RESTful API에 대하여 정리해보려고 한다.
+출처: https://yabmoons.tistory.com/250 [얍문’s Coding World..]
+출처: https://roka88.dev/98 [이병록의 개발 블로그]&lt;/p&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. 여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다.</summary></entry><entry><title type="html">Java RESTful API 개념 정리</title><link href="https://sanseongko.github.io/java-restapi" rel="alternate" type="text/html" title="Java RESTful API 개념 정리" /><published>2021-05-30T00:00:00+09:00</published><updated>2021-05-30T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-restapi</id><content type="html" xml:base="https://sanseongko.github.io/java-restapi">&lt;p&gt;오늘은 RESTful API에 대하여 정리해보려고 한다.
 RESTful API를 알기전에 REST와 RESTful의 차이를 알아야 한다.
 REST란, 분산시스템 설계를 위한 &lt;b&gt;아키텍처 스타일&lt;/b&gt;이다. 즉, 제약 조건의 집합이라고 볼 수 있다. 
 그렇다면, RESTful은 무엇일까? RESTful은 제약조건의 집합 즉, 아키텍처 스타일, 아키텍처 원칙을 모두 만족하는 것을 의미한다.&lt;/p&gt;
