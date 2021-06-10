@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/java/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-06-01T20:12:06+09:00</updated>
+  <updated>2021-06-10T23:00:14+09:00</updated>
   <id>https://sanseongko.github.io/tag/java/feed.xml</id>
 
   
@@ -30,6 +30,79 @@
   
   
 
+  
+    <entry>
+      <title type="html">Java REST API 실습</title>
+      <link href="https://sanseongko.github.io/java-restapi" rel="alternate" type="text/html" title="Java REST API 실습" />
+      <published>2021-06-10T00:00:00+09:00</published>
+      <updated>2021-06-10T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/java-restapi</id>
+      <content type="html" xml:base="https://sanseongko.github.io/java-restapi">&lt;p&gt;REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 
+어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;어떤 행동을 할 것인지 url에 나타내지 마라
+spring boot devtools&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;b3&gt;@Data&lt;/b3&gt;
+&lt;p&gt;Data어노테션의 경우 getter setter tostring hashcode equals전부 만들어주는 어노테이션으로 lombok 라이브러리에서 사용이 가능하며, 
+@Getter, @Setter, @ToString, @EqualsAndHashCode 로 나누어 사용도 가능하며, get, set, toString, eqauls, hashcode 원하는 메서드를
+사용할 수도 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;@NoArgsConstructor&lt;/b&gt;
+파라미터가 없는 생성자를 만들어주는 어노테이션이다.
+&lt;b&gt;@AllArgsConstructor&lt;/b&gt; 
+모든 파라미터로, 모든 필드에 대한 생성자를 만들어주는 어노테이션이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;@Entity&lt;/b&gt;
+@Entity는 DB의 테이블과 일대일로 매칭되는 객체의 단위이며, 기본 생성자가 필요하고, 필드에 final interface class를 사용할 수 없다. 또한 name
+을 주면 엔티티의 이름을 지정하고 @Entity가 붙은 클래스는 JPA에서 관리하게 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;@Table(name = “”)&lt;/b&gt; 
+@Table없이 테이블을 생성하게 될 경우 Entity 클래스의 카멜표기법을 유지한 상태로 테이블이 생성되기 때문에 작성해주는 것이 관례이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;@Id&lt;/b&gt;
+@Id어노테이션을 인스턴스에 붙이게 될 경우, PK와 같은 의미가 된다. 또한 @GerneratedValue를 사용할 경우 해당 변수의 수가 자동으로 증가하게 된다.
+(sequence와 같은 의미.)&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Spring Data JPA 쿼리 메소드안에 지원되는 키워드&lt;/b&gt;
+findBy 이런 형태가 쿼리 메소드 구문 이러면 자동으로 sql구문을 만들어 준다. 지원되는 키워드는 &lt;a href=&quot;https://happygrammer.tistory.com/158&quot;&gt;happygrammer&lt;/a&gt;님의
+블로그에 정리가 되어있어 링크해두겠다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;OrElseThrow 메소드&lt;/b&gt;
+해당 메소드의 경우 java.util.Optiona을 임포트하여 사용이 가능하고, 실습 중에서는
+Optional&lt;Emp&gt; org.springframework.data.repository.CrudRepository.findById(Integer id)메서드를 사용할 때 사용이 가능했다. 
+따로 에러처리를 해주지 않고, 에러가 날 경우 에러처리를 위한 클래스로 보내지는 메소드이다.&lt;/Emp&gt;&lt;/p&gt;
+
+&lt;p&gt;추가적인 부분은 현재 The type org.springframework.util.MultiValueMap cannot be resolved. It is indirectly referenced from required .class files
+에러가 나서 이후에 올려보겠다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="java" />
+      
+
+      
+        <summary type="html">REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Java RESTful API 개념 정리</title>

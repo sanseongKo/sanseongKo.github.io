@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-06-01T20:12:06+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Algorithm 완전 탐색에 관하여</title><link href="https://sanseongko.github.io/algorithm-Exhaustive-Search" rel="alternate" type="text/html" title="Algorithm 완전 탐색에 관하여" /><published>2021-06-01T00:00:00+09:00</published><updated>2021-06-01T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-Exhaustive%20Search</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-Exhaustive-Search">&lt;p&gt;오늘은 알고리즘 중 하나인 완전 탐색 알고리즘에 대하여 알아보려고 한다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-06-10T23:00:14+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Java REST API 실습</title><link href="https://sanseongko.github.io/java-restapi" rel="alternate" type="text/html" title="Java REST API 실습" /><published>2021-06-10T00:00:00+09:00</published><updated>2021-06-10T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-restapi</id><content type="html" xml:base="https://sanseongko.github.io/java-restapi">&lt;p&gt;REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 
+어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;어떤 행동을 할 것인지 url에 나타내지 마라
+spring boot devtools&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;b3&gt;@Data&lt;/b3&gt;
+&lt;p&gt;Data어노테션의 경우 getter setter tostring hashcode equals전부 만들어주는 어노테이션으로 lombok 라이브러리에서 사용이 가능하며, 
+@Getter, @Setter, @ToString, @EqualsAndHashCode 로 나누어 사용도 가능하며, get, set, toString, eqauls, hashcode 원하는 메서드를
+사용할 수도 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;@NoArgsConstructor&lt;/b&gt;
+파라미터가 없는 생성자를 만들어주는 어노테이션이다.
+&lt;b&gt;@AllArgsConstructor&lt;/b&gt; 
+모든 파라미터로, 모든 필드에 대한 생성자를 만들어주는 어노테이션이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;@Entity&lt;/b&gt;
+@Entity는 DB의 테이블과 일대일로 매칭되는 객체의 단위이며, 기본 생성자가 필요하고, 필드에 final interface class를 사용할 수 없다. 또한 name
+을 주면 엔티티의 이름을 지정하고 @Entity가 붙은 클래스는 JPA에서 관리하게 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;@Table(name = “”)&lt;/b&gt; 
+@Table없이 테이블을 생성하게 될 경우 Entity 클래스의 카멜표기법을 유지한 상태로 테이블이 생성되기 때문에 작성해주는 것이 관례이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;@Id&lt;/b&gt;
+@Id어노테이션을 인스턴스에 붙이게 될 경우, PK와 같은 의미가 된다. 또한 @GerneratedValue를 사용할 경우 해당 변수의 수가 자동으로 증가하게 된다.
+(sequence와 같은 의미.)&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Spring Data JPA 쿼리 메소드안에 지원되는 키워드&lt;/b&gt;
+findBy 이런 형태가 쿼리 메소드 구문 이러면 자동으로 sql구문을 만들어 준다. 지원되는 키워드는 &lt;a href=&quot;https://happygrammer.tistory.com/158&quot;&gt;happygrammer&lt;/a&gt;님의
+블로그에 정리가 되어있어 링크해두겠다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;OrElseThrow 메소드&lt;/b&gt;
+해당 메소드의 경우 java.util.Optiona을 임포트하여 사용이 가능하고, 실습 중에서는
+Optional&lt;Emp&gt; org.springframework.data.repository.CrudRepository.findById(Integer id)메서드를 사용할 때 사용이 가능했다. 
+따로 에러처리를 해주지 않고, 에러가 날 경우 에러처리를 위한 클래스로 보내지는 메소드이다.&lt;/Emp&gt;&lt;/p&gt;
+
+&lt;p&gt;추가적인 부분은 현재 The type org.springframework.util.MultiValueMap cannot be resolved. It is indirectly referenced from required .class files
+에러가 나서 이후에 올려보겠다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.</summary></entry><entry><title type="html">Algorithm 완전 탐색에 관하여</title><link href="https://sanseongko.github.io/algorithm-Exhaustive-Search" rel="alternate" type="text/html" title="Algorithm 완전 탐색에 관하여" /><published>2021-06-01T00:00:00+09:00</published><updated>2021-06-01T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-Exhaustive%20Search</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-Exhaustive-Search">&lt;p&gt;오늘은 알고리즘 중 하나인 완전 탐색 알고리즘에 대하여 알아보려고 한다.&lt;/p&gt;
 
 &lt;h3&gt;완전 탐색(Exhaustive Search)이란?&lt;/h3&gt;
 
@@ -206,7 +245,68 @@ https://meetup.toast.com/posts/92
   &lt;li&gt;자식 노드들과 비교하여 힙을 재구성한다.
 아래의 과정으로 확인할 수 있다.
 &lt;img src=&quot;./assets/built/images/algorithm/heap/heapdelete.PNG&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 자료구조 힙에 관하여 알아보자.</summary></entry><entry><title type="html">Java ORM이란?</title><link href="https://sanseongko.github.io/java-orm" rel="alternate" type="text/html" title="Java ORM이란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-orm</id><content type="html" xml:base="https://sanseongko.github.io/java-orm">&lt;p&gt;MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 자료구조 힙에 관하여 알아보자.</summary></entry><entry><title type="html">Algorithm Stack and Queue에 관하여</title><link href="https://sanseongko.github.io/algorithm-stackqueue" rel="alternate" type="text/html" title="Algorithm Stack and Queue에 관하여" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-stackqueue</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-stackqueue">&lt;p&gt;오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 
+스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.&lt;/p&gt;
+
+&lt;h3&gt;스택(Stack)이란?&lt;/h3&gt;
+&lt;p&gt;스택은 Last In First Out (LIFO), 즉 &lt;b&gt;후입선출&lt;/b&gt;구조를 가지고 있다.
+또한, 한쪽에서 삽입과 삭제가 이루어 지는 구조이기도 하다.
+&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/stack.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+위의 사진은 흔히 볼 수 있는 스택의 형태를 가지고 있고, push는 자료의 삽입, pop은 자료의 배출이라고 보면 된다. 사진에서도 볼 수 있듯 한쪽에서 
+삽입되고, 한 쪽에서 삭제가 되는 것을 볼 수가 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;그럼 스택은 어디서 쓰일까?&lt;b&gt; 예를 들자면, 브라우저의 뒤로가기 버튼을 생각하면된다. 가장 마지막에 거쳐온 곳을 보여줘야하니 제일 마지막의 정보를
+제일 처음 보여준다와 의미가 통한다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;h3&gt;큐(Queue)란?&lt;/h3&gt;
+&lt;p&gt;큐는 스택과 다르게 First In First Out(FIFO) 즉, &lt;b&gt;선입선출&lt;/b&gt;구조를 가지고 있다. 스택은 한쪽에서 삽입과 삭제가 일어난다고 했는데, 그렇다면 큐는?
+큐는 제일 먼저들어간 것이 제일 처음 나오게 되므로, 삽입되는 곳에서는 이미 마지막으로 들어온 것이 버티고 있어 나가지 못한다. 그렇기 때문에 한쪽 끝(front)에서
+삽입되어 다른 쪽 끝(rear)에서 삭제된다.
+&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/queue.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+사진으로 보아도 스택과는 다르게 push되는 곳과 pop되는 곳의 위치가 다른 것을 확인할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;그럼 큐는 어디서 쓰일까?&lt;b&gt; 예를 들자면, 대기줄이 필요할때 먼저온 사람이 먼저 정보를 받는 형태 또는 데이터 유입속도가 데이터 소모속도 보다
+빠를때 쓰일 수 있다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;h3&gt;Java에서 Stack 사용법&lt;/h3&gt;
+&lt;p&gt;Stack 선언&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elelment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//element는 스택에 담기는 자료형이 어떤 자료형인지&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Stack 값 삽입&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Stack 값 삭제&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//제일 마지막에 들어간 수 출력과 삭제&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택에 저장되어 있는 전체 값 삭제&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Stack 처음 나올 값 확인&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//값만 출력 삭제x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Stack의 기타 메소드&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택의 크기 출력(ex.값이 2개들어 있다면 2를 출력)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택이 비어 있는지 체크&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택에 해당 값이 있는지 체크(boolean으로 리턴)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3&gt;Java에서 Queue 사용법&lt;/h3&gt;
+&lt;p&gt;Queue 선언&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elelment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//element는 큐에 담기는 자료형이 어떤 자료형인지&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;자바에서 큐는 LinkedList로 객체선언을 해주어야 사용이 가능함을 잊지말자.
+Queue 값 삽입&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;offer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//삽입에 성공하면 true를 반환하고, 큐에 여유 공간이 없어 삽입에 실패하면 IllegalStateException을 발생&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Queue 값 삭제&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//제일 마지막에 들어간 수 출력과 삭제(비어있다면 null)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//큐에 첫번째 값 제거&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//큐 초기화&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Queue 처음 나올 값 확인&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//값만 출력 삭제x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.</summary></entry><entry><title type="html">Java JPA란?</title><link href="https://sanseongko.github.io/java-jpa" rel="alternate" type="text/html" title="Java JPA란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-jpa</id><content type="html" xml:base="https://sanseongko.github.io/java-jpa"></content><author><name>Ko</name></author><category term="java" /><summary type="html"></summary></entry><entry><title type="html">Java ORM이란?</title><link href="https://sanseongko.github.io/java-orm" rel="alternate" type="text/html" title="Java ORM이란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-orm</id><content type="html" xml:base="https://sanseongko.github.io/java-orm">&lt;p&gt;MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.&lt;/p&gt;
 
 &lt;h3&gt;ORM이란?&lt;/h3&gt;
 &lt;p&gt;Object Relational Mapping, 말 그대로 객체-관계 매핑이라는 것이다.
@@ -282,68 +382,7 @@ RDBMS는 &lt;b&gt;기본키(primary key)&lt;/b&gt;를 이용하여 동일성을 
 
 &lt;p&gt;출처 
 https://geonlee.tistory.com/207 [빠리의 택시 운전사]
-&lt;a href=&quot;http://www.incodom.kr/ORM#h_702209f3f35878a32ee91352ddc6bbe7&quot;&gt;장점과 단점&lt;/a&gt;&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.</summary></entry><entry><title type="html">Java JPA란?</title><link href="https://sanseongko.github.io/java-jpa" rel="alternate" type="text/html" title="Java JPA란?" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-jpa</id><content type="html" xml:base="https://sanseongko.github.io/java-jpa"></content><author><name>Ko</name></author><category term="java" /><summary type="html"></summary></entry><entry><title type="html">Algorithm Stack and Queue에 관하여</title><link href="https://sanseongko.github.io/algorithm-stackqueue" rel="alternate" type="text/html" title="Algorithm Stack and Queue에 관하여" /><published>2021-05-27T00:00:00+09:00</published><updated>2021-05-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-stackqueue</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-stackqueue">&lt;p&gt;오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 
-스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.&lt;/p&gt;
-
-&lt;h3&gt;스택(Stack)이란?&lt;/h3&gt;
-&lt;p&gt;스택은 Last In First Out (LIFO), 즉 &lt;b&gt;후입선출&lt;/b&gt;구조를 가지고 있다.
-또한, 한쪽에서 삽입과 삭제가 이루어 지는 구조이기도 하다.
-&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/stack.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
-위의 사진은 흔히 볼 수 있는 스택의 형태를 가지고 있고, push는 자료의 삽입, pop은 자료의 배출이라고 보면 된다. 사진에서도 볼 수 있듯 한쪽에서 
-삽입되고, 한 쪽에서 삭제가 되는 것을 볼 수가 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;그럼 스택은 어디서 쓰일까?&lt;b&gt; 예를 들자면, 브라우저의 뒤로가기 버튼을 생각하면된다. 가장 마지막에 거쳐온 곳을 보여줘야하니 제일 마지막의 정보를
-제일 처음 보여준다와 의미가 통한다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
-
-&lt;h3&gt;큐(Queue)란?&lt;/h3&gt;
-&lt;p&gt;큐는 스택과 다르게 First In First Out(FIFO) 즉, &lt;b&gt;선입선출&lt;/b&gt;구조를 가지고 있다. 스택은 한쪽에서 삽입과 삭제가 일어난다고 했는데, 그렇다면 큐는?
-큐는 제일 먼저들어간 것이 제일 처음 나오게 되므로, 삽입되는 곳에서는 이미 마지막으로 들어온 것이 버티고 있어 나가지 못한다. 그렇기 때문에 한쪽 끝(front)에서
-삽입되어 다른 쪽 끝(rear)에서 삭제된다.
-&lt;img src=&quot;./assets/built/images/algorithm/stackqueue/queue.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
-사진으로 보아도 스택과는 다르게 push되는 곳과 pop되는 곳의 위치가 다른 것을 확인할 수 있다.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;그럼 큐는 어디서 쓰일까?&lt;b&gt; 예를 들자면, 대기줄이 필요할때 먼저온 사람이 먼저 정보를 받는 형태 또는 데이터 유입속도가 데이터 소모속도 보다
-빠를때 쓰일 수 있다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
-
-&lt;h3&gt;Java에서 Stack 사용법&lt;/h3&gt;
-&lt;p&gt;Stack 선언&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elelment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//element는 스택에 담기는 자료형이 어떤 자료형인지&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Stack 값 삽입&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Stack 값 삭제&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//제일 마지막에 들어간 수 출력과 삭제&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택에 저장되어 있는 전체 값 삭제&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Stack 처음 나올 값 확인&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//값만 출력 삭제x&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Stack의 기타 메소드&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택의 크기 출력(ex.값이 2개들어 있다면 2를 출력)&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택이 비어 있는지 체크&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//스택에 해당 값이 있는지 체크(boolean으로 리턴)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3&gt;Java에서 Queue 사용법&lt;/h3&gt;
-&lt;p&gt;Queue 선언&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;LinkedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;elelment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//element는 큐에 담기는 자료형이 어떤 자료형인지&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;자바에서 큐는 LinkedList로 객체선언을 해주어야 사용이 가능함을 잊지말자.
-Queue 값 삽입&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;offer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//삽입에 성공하면 true를 반환하고, 큐에 여유 공간이 없어 삽입에 실패하면 IllegalStateException을 발생&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Queue 값 삭제&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//제일 마지막에 들어간 수 출력과 삭제(비어있다면 null)&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//큐에 첫번째 값 제거&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//큐 초기화&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Queue 처음 나올 값 확인&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//값만 출력 삭제x&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 스택과 큐라는 알고리즘을 알아보도록 하겠다. 스택과 큐를 같이 묶어서 포스팅하는 이유는 비슷한 느낌이자만 차이가 분명하게 존재하기 때문이다.</summary></entry><entry><title type="html">Java .equals(), hashcode(), ==의 차이점</title><link href="https://sanseongko.github.io/java-evshash" rel="alternate" type="text/html" title="Java .equals(), hashcode(), ==의 차이점" /><published>2021-05-26T00:00:00+09:00</published><updated>2021-05-26T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-evshash</id><content type="html" xml:base="https://sanseongko.github.io/java-evshash">&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
+&lt;a href=&quot;http://www.incodom.kr/ORM#h_702209f3f35878a32ee91352ddc6bbe7&quot;&gt;장점과 단점&lt;/a&gt;&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">MyBatis를 사용하다가 ORM이라는 것을 듣게 되었다. 너무 궁금하니 한번 알아보자.</summary></entry><entry><title type="html">Java .equals(), hashcode(), ==의 차이점</title><link href="https://sanseongko.github.io/java-evshash" rel="alternate" type="text/html" title="Java .equals(), hashcode(), ==의 차이점" /><published>2021-05-26T00:00:00+09:00</published><updated>2021-05-26T00:00:00+09:00</updated><id>https://sanseongko.github.io/java-evshash</id><content type="html" xml:base="https://sanseongko.github.io/java-evshash">&lt;p&gt;오늘은 많이 쓰지만 그래서 이게 뭐가 다르지 했던 ==연산자와 equals()메소드와 hashcode()메소드의 차이에 대하여 알아볼까?
 &lt;img src=&quot;./assets/built/images/holololol.jpg&quot; alt=&quot;ex_screenshot&quot; /&gt;호롤ㄹ로로ㄹㄹㄹ&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;1. 자바에서의 ==연산자&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;
@@ -427,65 +466,4 @@ https://sas-study.tistory.com/280 [코딩하는 흑구]&lt;/p&gt;</content><auth
 
 &lt;p&gt;점차 나아지는 부분도 눈으로 보일테니 더욱 좋아보인다.&lt;/p&gt;
 
-&lt;p&gt;자, 이제 공부만을 위한 포스팅을 시작해야지 끌끌.&lt;/p&gt;</content><author><name>Ko</name></author><summary type="html"></summary></entry><entry><title type="html">Algorithm Hash에 관하여</title><link href="https://sanseongko.github.io/algorithm-hash" rel="alternate" type="text/html" title="Algorithm Hash에 관하여" /><published>2021-05-25T00:00:00+09:00</published><updated>2021-05-25T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-hash</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-hash">&lt;p&gt;오늘은 Hash에 대하여 정리를 해보려고 한다.&lt;/p&gt;
-
-&lt;p&gt;주 언어가 Java이다보니 HashMap은 많이 써보았지만, 정확하게 정리를 해본적은 없는 듯하여 정리를 해보려한다.&lt;/p&gt;
-
-&lt;p&gt;내가 알고 있던 Hash에선 키와 값이 있으며, 키를 인덱스로 가지고 있기 때문에 시간복잡도가 O(1)이라는 것.&lt;/p&gt;
-
-&lt;h3&gt;1 해시&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;해시는 임의의 크기를 가진 데이터를 고정된 데이터 크기로 변화시키는 것을 말하며,&lt;/li&gt;
-  &lt;li&gt;해시함수를 사용하여 값을 계산하여 나온 고정된 길이의 값을 해시값이라고 부른다.&lt;/li&gt;
-  &lt;li&gt;여러 분야에 사용되며, 복잡하지 않은 알고리즘으로 이루어져 CPU,메모리 등 시스템 자원을 덜 소모한다고 한다.&lt;/li&gt;
-  &lt;li&gt;여러분야 사용되고 여러가지(MDn, SHA-n 등) 해시 알고리즘이 있지만(자세하게 다룰일이 있으면 추가해야지)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/hash/hash_hash.png&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;h3&gt;2 해시 충돌&lt;/h3&gt;
-&lt;p&gt;해시 충돌은 해시함수를 거친 키값이 같은 값들. 즉, 다른 데이터의 키 값(해시값)들이 동일할 경우 해시 충돌이 발생한다.
-이 충돌은 해시 테이블의 성능을 떨어뜨린다. 
-해시 충돌을 방지하려면 해시 함수를 잘 정의하면 된다. 하지만 해시함수의 입력값은 무한하지만, 
-출력값의 가짓수는 유한(출력값, 즉 키가 유한하지 않다면 해시기법을 사용하는 의미가 없다.)하므로 
-해시 충돌은 반드시 발생한다.(비둘기집 원리)&lt;/p&gt;
-
-&lt;p&gt;이러한 해시충돌을 방지할 방법은 크게 2가지가 있다.
-&lt;b&gt;체이닝(Chaining)&lt;/b&gt;
-버킷내에 LinkedList를 할당하여, Bucket에 데이터를 저장하다가 해시 충돌이 발생하면 연결리스트로 데이터를 연결하는 방식이다.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;개방 주소법(Open Addressing)&lt;/b&gt;
-해시 충돌이 발생하면 다른 Bucket에 데이터를 삽입하는 방식이다.
-체이닝은 주소값은 동일한 상태로 LinkedList를 이용하여 늘려가기 때문에, 주소값이 변경되지는 않는다는 부분과 차이가 있다.
-&lt;img src=&quot;./assets/built/images/algorithm/hash/hash_chaining1.PNG&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;3가지 개방 주소법&lt;/b&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;b&gt;선형 탐색&lt;Linear Probing=&quot;&quot;&gt;&amp;lt;/b&amp;gt;: 해시 충돌 시 다음 버킷 혹은 몇개를 건너뛰어 데이터를 삽입&lt;/Linear&gt;&lt;/b&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;b&gt;제곱 탐색&lt;Quadratic Probing=&quot;&quot;&gt;&amp;lt;/b&amp;gt;: 해시 충돌 시 제곱만큼 건너뛴 버켓에 데이터를 삽입&lt;/Quadratic&gt;&lt;/b&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;b&gt;이중 해시&lt;Double Hashing=&quot;&quot;&gt;&amp;lt;/b&amp;gt;: 해시 충돌 시 다른 해시 함수를 한 번 더 적용한 결과를 이용&lt;/Double&gt;&lt;/b&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/hash/hash_openaddressing.PNG&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;h3&gt;해시를 이용한 자료구조&lt;/h3&gt;
-&lt;p&gt;해시를 이용한 자료구조엔 &lt;b&gt;HashMap, HashTable&lt;/b&gt;이 있다.
-둘의 차이는 &lt;b&gt;동기화 지원&lt;/b&gt;이 가능하냐 안하냐의 차이(synchronized)가 있다고 한다.&lt;/p&gt;
-
-&lt;h3&gt;해시 자료구조의 시간 복잡도&lt;/h3&gt;
-&lt;p&gt;해시함수로 만들어진 키값들은 고유한 인덱스를 가지게 되어 바로 접근할 수 있다.
-그러므로 평균 O(1)의 시간복잡도를 가지고 있지만, 데이터 충돌이 발생할 경우 Chaining에 연결된 리스트들까지
-검색해야 하므로 O(N)까지 시간복잡도가 증가할 수 있다.
-충돌을 방지하는 방법들은 데이터의 규칙성(클러스터링)을 방지하기 위한 방식이지만 공간을 많이 사용한다는 치명적인 단점이 있다.&lt;/p&gt;
-
-&lt;p&gt;만약 테이블이 꽉 차있는 경우라면 테이블을 확장해주어야 하는데, 이는 매우 심각한 성능의 저하를 불러오기 때문에 가급적이면 확장을 하지 않도록 테이블을 설계해주어야 한다.&lt;/p&gt;
-
-&lt;p&gt;(통계적으로 해시 테이블의 공간 사용률이 70% ~ 80%정도가 되면 해시의 충돌이 빈번하게 발생하여 성능이 저하되기 시작한다고 한다.)&lt;/p&gt;
-
-&lt;p&gt;또한 해시 테이블에서 자주 사용하게 되는 데이터를 Cache에 적용하면 효율을 높일 수 있다. 자주 hit하게 되는 데이터를 캐시에서 바로 찾음으로써 해시 테이블의 성능을 향상시킬 수 있다&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;./assets/built/images/algorithm/hash/hash_chaining_time.PNG&quot; alt=&quot;ex_screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;출처 
-https://mangkyu.tistory.com/102 [MangKyu’s Diary]
-https://preamtree.tistory.com/20 [Preamtree의 행복로그]&lt;/p&gt;</content><author><name>Ko</name></author><category term="algorithm" /><summary type="html">오늘은 Hash에 대하여 정리를 해보려고 한다.</summary></entry></feed>
+&lt;p&gt;자, 이제 공부만을 위한 포스팅을 시작해야지 끌끌.&lt;/p&gt;</content><author><name>Ko</name></author><summary type="html"></summary></entry></feed>

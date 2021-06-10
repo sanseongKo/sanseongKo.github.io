@@ -8,6 +8,22 @@
     
       
       <item>
+        <title>Java REST API 실습</title>
+        
+          <description>&lt;p&gt;REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 
+어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 10 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/java-restapi</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/java-restapi</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Algorithm 완전 탐색에 관하여</title>
         
           <description>&lt;p&gt;오늘은 알고리즘 중 하나인 완전 탐색 알고리즘에 대하여 알아보려고 한다.&lt;/p&gt;
