@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/java/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-06-11T22:49:48+09:00</updated>
+  <updated>2021-06-12T01:19:38+09:00</updated>
   <id>https://sanseongko.github.io/tag/java/feed.xml</id>
 
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">Java REST API 실습</title>
-      <link href="https://sanseongko.github.io/java-restapi" rel="alternate" type="text/html" title="Java REST API 실습" />
+      <link href="https://sanseongko.github.io/java-restapipractice" rel="alternate" type="text/html" title="Java REST API 실습" />
       <published>2021-06-10T00:00:00+09:00</published>
       <updated>2021-06-10T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/java-restapi</id>
-      <content type="html" xml:base="https://sanseongko.github.io/java-restapi">&lt;p&gt;REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 
+      <id>https://sanseongko.github.io/java-restapipractice</id>
+      <content type="html" xml:base="https://sanseongko.github.io/java-restapipractice">&lt;p&gt;REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 
 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -76,7 +76,11 @@ Optional&lt;Emp&gt; org.springframework.data.repository.CrudRepository.findById(
 따로 에러처리를 해주지 않고, 에러가 날 경우 에러처리를 위한 클래스로 보내지는 메소드이다.&lt;/Emp&gt;&lt;/p&gt;
 
 &lt;p&gt;추가적인 부분은 현재 The type org.springframework.util.MultiValueMap cannot be resolved. It is indirectly referenced from required .class files
-에러가 나서 이후에 올려보겠다.&lt;/p&gt;</content>
+에러가 나서 이후에 올려보겠다.
+&lt;b&gt;2021-06-11&lt;/b&gt;
+어제의 에러는 spring-core자르 파일이 문제가 있어 발생하여 외부에서 파일을 가져와 라이브러리를 추가하니 해결이 되었다.를 하자마자 새로운 오류 
+Consider defining a bean named ‘entityManagerFactory’ in your configuration. 발생, 해결하고 돌아와야지…
+이 부분은 톰캣 버전을 9로 맞춰주고 .m2폴더에 hibernate폴더를 지우고 다시 빌드하여 문제를 해결하였다.&lt;/p&gt;</content>
 
       
       

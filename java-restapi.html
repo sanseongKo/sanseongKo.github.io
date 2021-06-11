@@ -11,7 +11,7 @@
 
 
 
-    <title>Java REST API 실습</title>
+    <title>Java RESTful API 개념 정리</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -53,18 +53,18 @@
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="SanseongKo's Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Java REST API 실습" />
-    <meta property="og:description" content="REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. 어떤 행동을 할 것인지 url에 나타내지 마라 spring boot devtools @Data Data어노테션의" />
+    <meta property="og:title" content="Java RESTful API 개념 정리" />
+    <meta property="og:description" content="오늘은 RESTful API에 대하여 정리해보려고 한다. RESTful API를 알기전에 REST와 RESTful의 차이를 알아야 한다. REST란, 분산시스템 설계를 위한 아키텍처 스타일이다. 즉, 제약 조건의 집합이라고 볼 수 있다. 그렇다면, RESTful은 무엇일까? RESTful은 제약조건의 집합 즉, 아키텍처 스타일, 아키텍처 원칙을 모두 만족하는 것을 의미한다. RESTful API RESTful API는 REST 아키텍처 원칙을 모두" />
     <meta property="og:url" content="https://sanseongKo.github.io/java-restapi" />
     <meta property="og:image" content="https://sanseongKo.github.io/assets/built/images/java/java.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-06-10T00:00:00+09:00" />
-    <meta property="article:modified_time" content="2021-06-10T00:00:00+09:00" />
+    <meta property="article:published_time" content="2021-05-30T00:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-05-30T00:00:00+09:00" />
     <meta property="article:tag" content="Java" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Java REST API 실습" />
-    <meta name="twitter:description" content="REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. 어떤 행동을 할 것인지 url에 나타내지 마라 spring boot devtools @Data Data어노테션의" />
+    <meta name="twitter:title" content="Java RESTful API 개념 정리" />
+    <meta name="twitter:description" content="오늘은 RESTful API에 대하여 정리해보려고 한다. RESTful API를 알기전에 REST와 RESTful의 차이를 알아야 한다. REST란, 분산시스템 설계를 위한 아키텍처 스타일이다. 즉, 제약 조건의 집합이라고 볼 수 있다. 그렇다면, RESTful은 무엇일까? RESTful은 제약조건의 집합 즉, 아키텍처 스타일, 아키텍처 원칙을 모두 만족하는 것을 의미한다. RESTful API RESTful API는 REST 아키텍처 원칙을 모두" />
     <meta name="twitter:url" content="https://sanseongKo.github.io/" />
     <meta name="twitter:image" content="https://sanseongKo.github.io/assets/built/images/java/java.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -96,7 +96,7 @@
         "@type": "WebPage",
         "@id": "https://sanseongKo.github.io/java-restapi"
     },
-    "description": "REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. 어떤 행동을 할 것인지 url에 나타내지 마라 spring boot devtools @Data Data어노테션의"
+    "description": "오늘은 RESTful API에 대하여 정리해보려고 한다. RESTful API를 알기전에 REST와 RESTful의 차이를 알아야 한다. REST란, 분산시스템 설계를 위한 아키텍처 스타일이다. 즉, 제약 조건의 집합이라고 볼 수 있다. 그렇다면, RESTful은 무엇일까? RESTful은 제약조건의 집합 즉, 아키텍처 스타일, 아키텍처 원칙을 모두 만족하는 것을 의미한다. RESTful API RESTful API는 REST 아키텍처 원칙을 모두"
 }
     </script>
 
@@ -109,7 +109,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Java REST API 실습" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Java RESTful API 개념 정리" href="/feed.xml" />
 
 
 </head>
@@ -171,7 +171,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="10 June 2021">10 June 2021</time>
+                    <time class="post-full-meta-date" datetime="30 May 2021">30 May 2021</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -181,7 +181,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">Java REST API 실습</h1>
+                <h1 class="post-full-title">Java RESTful API 개념 정리</h1>
             </header>
 
             
@@ -191,46 +191,71 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 
-어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.</p>
+                    <p>오늘은 RESTful API에 대하여 정리해보려고 한다.
+RESTful API를 알기전에 REST와 RESTful의 차이를 알아야 한다.
+REST란, 분산시스템 설계를 위한 <b>아키텍처 스타일</b>이다. 즉, 제약 조건의 집합이라고 볼 수 있다. 
+그렇다면, RESTful은 무엇일까? RESTful은 제약조건의 집합 즉, 아키텍처 스타일, 아키텍처 원칙을 모두 만족하는 것을 의미한다.</p>
 
-<ol>
-  <li>어떤 행동을 할 것인지 url에 나타내지 마라
-spring boot devtools</li>
-</ol>
+<h3>RESTful API</h3>
+<p>RESTful API는 REST 아키텍처 원칙을 모두 만족하는 API라고 할 수 있다.
+또한, 인터넷과 웹을 통해 나의 컴퓨터를 제어할때 어떻게하면 시행착오를 줄이고 더 좋은 API를 만들수 있는가에 대한 고민이다.
+RESTful API는 특정기술 지칭하는 것이 아니라, HTTP를 이용하여 기계들이 통신할때 HTTP가 가진 잠재력을 최대한 끌어낼 수 있는 모범사례라고 할 
+수 있다. 
+HTTP메서드들을 본래 용도에 맞게 쓰자는 것도 중요한 목적</p>
 
-<b3>@Data</b3>
-<p>Data어노테션의 경우 getter setter tostring hashcode equals전부 만들어주는 어노테이션으로 lombok 라이브러리에서 사용이 가능하며, 
-@Getter, @Setter, @ToString, @EqualsAndHashCode 로 나누어 사용도 가능하며, get, set, toString, eqauls, hashcode 원하는 메서드를
-사용할 수도 있다.</p>
+<h3>RESTful API의 구성요소</h3>
+<p><b>Resource(자원)</b>
+데이터들을 Resource라고 하고, REST API는 URI(정보를 식별하는 이름일뿐) 로 표현된다.
+Collection : Element 의 집합(복수형)
+Element: 콜렉션에서 하나하나의 데이터(단수형)
+URI를 가공하는 방법</p>
 
-<p><b>@NoArgsConstructor</b>
-파라미터가 없는 생성자를 만들어주는 어노테이션이다.
-<b>@AllArgsConstructor</b> 
-모든 파라미터로, 모든 필드에 대한 생성자를 만들어주는 어노테이션이다.</p>
+<p><b>Method(행위)</b>
+또한, 보통의 웹페이지간의 데이터 전송은 Post로 이루어지는 경우가 많다. REST는 HTTP메소드를 최대한 활용하는 아키텍처 스타일이다.
+그렇기 때문에, REST는 HTTP메소드를 알맞은 곳에 사용하기를 원한다. 밑의 내용은 HTTP메소드의 원래의 기능을 알려준다.</p>
 
-<p><b>@Entity</b>
-@Entity는 DB의 테이블과 일대일로 매칭되는 객체의 단위이며, 기본 생성자가 필요하고, 필드에 final interface class를 사용할 수 없다. 또한 name
-을 주면 엔티티의 이름을 지정하고 @Entity가 붙은 클래스는 JPA에서 관리하게 된다.</p>
+<p><b>Create -&gt; post<br />
+Read -&gt; get<br />
+Update -&gt; put(전체), patch(부분)<br />
+Delete -&gt; delete<br /><b>
+<a href="https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md">Microsoft REST API Guidelines</a>에서는 HEAD와 OPTIONS메소드도 알려주고 있다.
+HEAD는 READ(GET) 응답을 위해 객체의 메타데이터를 리턴해주는 것이며, OPTION은 요청 정보를 얻는 것 즉, 도움말 정도로 볼 수 있을 것 같다. 
+여기서 put과 patch의 방식이 조금 혼동될 수 있지만, patch는 다른 데이터에 영향을 주지 않고 해당 데이터만 변한다면, put은 변경하려는 데이터를
+제외하고는 삭제가 되는 차이를 예로 들 수 있다.(patch는 부분을 수정, put은 전체 수정)</b></b></p>
 
-<p><b>@Table(name = “”)</b> 
-@Table없이 테이블을 생성하게 될 경우 Entity 클래스의 카멜표기법을 유지한 상태로 테이블이 생성되기 때문에 작성해주는 것이 관례이다.</p>
+<h3>REST 특징(제약 조건)</h3>
+<p><b>Server-Client(서버-클라이언트 구조)</b>
+    REST서버는 API를 제공, Client는 사용자 인증이나 세션,로그인 정보등을 직접 관리하는 구조로 서버와 클라이언트 사이의 역할이 확실히 구분됨
+    그로인하여, 개발할 내용이 명확해지고 서로간 의존성이 줄어들게 된다.
+<b>Stateless(무상태성)</b>
+작업을 위한 상태정보를 따로 저장하거나 관리하지 않는다. 따라서 들어오는 요청을 단순히 처리만 하면된다. 이로인하여 서비스의 자유도가 상승 서버의
+불필요한 정보를 관리하지 않기 때문에 구현이 단순해진다.
+<br />
+<b>Cacheable(캐시 처리 가능)</b>
+HTTP의 기존 웹표준을 그대로 이용하기 때문에, 웹에서 사용하는 기존 인프라를 그대로 활용이 가능하다. 따라서 HTTP의 캐싱기능을 적용할 수 있는 것이
+다. (캐싱구현은 HTTP표준에서 사용하는 Last-Modified태그나 E-Tag를 이용하면 캐싱 구현이 가능하다.)
+<br />
+<b>Layered System(계층형 구조)</b>
+REST 서버는 다중 계층으로 구성될 수 있으며 보안, 로드 밸런싱, 암호화 계층을 추가해 구조상의 유연성을 둘 수 있고 PROXY, 게이트웨이 같은 네트워
+크 기반의 중간매체를 사용할 수 있게한다.
+<br />
+<b>Uniform Interface(인터페이스 일관성)<b>
+Uniform Interface는 URI로 지정한 리소스에 대한 조작을 통일되고 한정적인 인터페이스로 수행하는 아키텍처 스타일을 말한다.
+<br />
+<b>Self-descriptiveness</b>
+REST API의 메세지만 보고도 이를 쉽게 이해할 수 있는 자체 표현 구조로 되어 있다.
+<br /></b></b></p>
 
-<p><b>@Id</b>
-@Id어노테이션을 인스턴스에 붙이게 될 경우, PK와 같은 의미가 된다. 또한 @GerneratedValue를 사용할 경우 해당 변수의 수가 자동으로 증가하게 된다.
-(sequence와 같은 의미.)</p>
+<추가적인 내용은="" 더욱="" 이후="" REST="" API를="" 만들다가="" 보충될게="" 있으면="" 더="" 보충="">
 
-<p><b>Spring Data JPA 쿼리 메소드안에 지원되는 키워드</b>
-findBy 이런 형태가 쿼리 메소드 구문 이러면 자동으로 sql구문을 만들어 준다. 지원되는 키워드는 <a href="https://happygrammer.tistory.com/158">happygrammer</a>님의
-블로그에 정리가 되어있어 링크해두겠다.</p>
 
-<p><b>OrElseThrow 메소드</b>
-해당 메소드의 경우 java.util.Optiona을 임포트하여 사용이 가능하고, 실습 중에서는
-Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Integer id)메서드를 사용할 때 사용이 가능했다. 
-따로 에러처리를 해주지 않고, 에러가 날 경우 에러처리를 위한 클래스로 보내지는 메소드이다.</Emp></p>
 
-<p>추가적인 부분은 현재 The type org.springframework.util.MultiValueMap cannot be resolved. It is indirectly referenced from required .class files
-에러가 나서 이후에 올려보겠다.</p>
+출처
+[정아마추어 코딩블로그](https://jeong-pro.tistory.com/180#:~:text=REST%EB%8A%94%20%EB%B6%84%EC%82%B0%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%84%A4%EA%B3%84,%EB%A7%8C%EC%A1%B1%ED%95%98%EB%8A%94%20%EA%B2%83%EC%9D%84%20%EC%9D%98%EB%AF%B8%ED%95%9C%EB%8B%A4.)
+https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html/rest-and-restful.html
+https://meetup.toast.com/posts/92
+[생활코딩님의 기계들의 대화법 - REST API](https://www.youtube.com/watch?v=PmY3dWcCxXI)
+</추가적인>
 
                 </div>
             </section>
@@ -282,7 +307,7 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
                         var disqus_config = function () {
                             var this_page_url = 'https://sanseongKo.github.io/java-restapi';
                             var this_page_identifier = '/java-restapi';
-                            var this_page_title = 'Java REST API 실습';
+                            var this_page_title = 'Java RESTful API 개념 정리';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -329,18 +354,18 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
                                 
                                   
                                     
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
+                                        
+                                        
+                                            <li><a href="/java-restapipractice">Java REST API 실습</a></li>
+                                        
                                     
-                                        
-                                        
-                                            <li><a href="/java-restapi">Java RESTful API 개념 정리</a></li>
-                                        
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
                                     
                                   
                                 
@@ -400,12 +425,12 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/algorithm-greedy">
+            <a class="post-card-image-link" href="/algorithm-sort">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/algorithm/algorithm.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/algorithm-greedy">
+            <a class="post-card-content-link" href="/algorithm-sort">
                 <header class="post-card-header">
                     
                         
@@ -415,11 +440,12 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
                         
                     
 
-                    <h2 class="post-card-title">Algorithm Greedy(탐욕법)에 관하여</h2>
+                    <h2 class="post-card-title">Algorithm 정렬에 관하여</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.
+                        <p>오늘은 정렬의 종류와 각 종류의 장단점에 대하여 알아보려한다. 
+여러가지 정렬이 있지만 기본적으로 그리고 내가 알고 싶은 정렬에 대하여 알아보려한다.
 
 </p>
                     
@@ -432,7 +458,7 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
                 <span class="reading-time">
                     
                     
-                      1 min read
+                      2 min read
                     
                 </span>
             </footer>
@@ -447,12 +473,12 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/algorithm-Exhaustive-Search">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/algorithm/algorithm.png)"></div>
+            <a class="post-card-image-link" href="/algorithm-heap">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/algorithm/datastructure.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/algorithm-Exhaustive-Search">
+            <a class="post-card-content-link" href="/algorithm-heap">
                 <header class="post-card-header">
                     
                         
@@ -462,11 +488,11 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
                         
                     
 
-                    <h2 class="post-card-title">Algorithm 완전 탐색에 관하여</h2>
+                    <h2 class="post-card-title">Algorithm Heap에 관하여</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>오늘은 알고리즘 중 하나인 완전 탐색 알고리즘에 대하여 알아보려고 한다.
+                        <p>오늘은 자료구조 힙에 관하여 알아보자.
 
 </p>
                     
@@ -501,13 +527,13 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Java REST API 실습</div>
+    <div class="floating-header-title">Java RESTful API 개념 정리</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Java+REST+API+%EC%8B%A4%EC%8A%B5&amp;url=https://sanseongKo.github.io/java-restapi"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Java+RESTful+API+%EA%B0%9C%EB%85%90+%EC%A0%95%EB%A6%AC&amp;url=https://sanseongKo.github.io/java-restapi"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
