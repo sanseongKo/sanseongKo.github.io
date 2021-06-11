@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>Algorithm Greedy(탐욕법)에 관하여</title>
+        
+          <description>&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 11 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/algorithm-greedy</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/algorithm-greedy</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java REST API 실습</title>
         
           <description>&lt;p&gt;REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 

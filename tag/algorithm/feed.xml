@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-06-10T23:00:14+09:00</updated>
+  <updated>2021-06-11T22:49:48+09:00</updated>
   <id>https://sanseongko.github.io/tag/algorithm/feed.xml</id>
 
   
@@ -30,6 +30,50 @@
   
   
 
+  
+    <entry>
+      <title type="html">Algorithm Greedy(탐욕법)에 관하여</title>
+      <link href="https://sanseongko.github.io/algorithm-greedy" rel="alternate" type="text/html" title="Algorithm Greedy(탐욕법)에 관하여" />
+      <published>2021-06-11T00:00:00+09:00</published>
+      <updated>2021-06-11T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/algorithm-greedy</id>
+      <content type="html" xml:base="https://sanseongko.github.io/algorithm-greedy">&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
+
+&lt;h3&gt;Greedy&lt;/h3&gt;
+&lt;p&gt;Greedy 탐욕법 알고리즘은 결과까지는 생각하지 않고 매 순간 최선이라고 생각되는 것을 선택해 결과까지 도달하는 알고리즘이다. 설명과 같이 매 순간 최
+선인 선택을 하고 그 이후의 선택은 이후에 판단하기 때문에 언제나 옳은 알고리즘은 아닐 수 있다. 그렇기 때문에, 현상황에서 선택하는 최선의 수를 선택
+한다면 결과도 최선이 되는 경우에 사용하여야 알맞다.
+보통은 활동 선택 문제, 거스름돈 문제, 최소 신장 트리, 다익스트라 알고리즘에 활용이 가능하며, 살펴보다면 결국 매순간 최적의 선택을하고 그 선택들이
+다음 선택과 전혀 무관하더라도 최적의 경우를 찾을 수 있는 문제에 사용이 가능한 것을 알 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;탐욕범을 위한 문제&lt;/b&gt;
+탐욕법의 정의이고, 나머지는 문제를 풀어보며 어떻게 접근하여야 할지 생각해 봐야하겠다. 추가적인 문제를 다룰 경우 추가 포스팅 예정임.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Algorithm 완전 탐색에 관하여</title>
