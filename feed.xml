@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-06-12T01:19:38+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Algorithm Greedy(탐욕법)에 관하여</title><link href="https://sanseongko.github.io/algorithm-greedy" rel="alternate" type="text/html" title="Algorithm Greedy(탐욕법)에 관하여" /><published>2021-06-11T00:00:00+09:00</published><updated>2021-06-11T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-greedy</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-greedy">&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-06-12T23:08:59+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">Algorithm Greedy(탐욕법)에 관하여</title><link href="https://sanseongko.github.io/algorithm-greedy" rel="alternate" type="text/html" title="Algorithm Greedy(탐욕법)에 관하여" /><published>2021-06-11T00:00:00+09:00</published><updated>2021-06-11T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-greedy</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-greedy">&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
 
 &lt;h3&gt;Greedy&lt;/h3&gt;
 &lt;p&gt;Greedy 탐욕법 알고리즘은 결과까지는 생각하지 않고 매 순간 최선이라고 생각되는 것을 선택해 결과까지 도달하는 알고리즘이다. 설명과 같이 매 순간 최
@@ -51,7 +51,17 @@ Optional&lt;Emp&gt; org.springframework.data.repository.CrudRepository.findById(
 &lt;b&gt;2021-06-11&lt;/b&gt;
 어제의 에러는 spring-core자르 파일이 문제가 있어 발생하여 외부에서 파일을 가져와 라이브러리를 추가하니 해결이 되었다.를 하자마자 새로운 오류 
 Consider defining a bean named ‘entityManagerFactory’ in your configuration. 발생, 해결하고 돌아와야지…
-이 부분은 톰캣 버전을 9로 맞춰주고 .m2폴더에 hibernate폴더를 지우고 다시 빌드하여 문제를 해결하였다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.</summary></entry><entry><title type="html">Algorithm 완전 탐색에 관하여</title><link href="https://sanseongko.github.io/algorithm-Exhaustive-Search" rel="alternate" type="text/html" title="Algorithm 완전 탐색에 관하여" /><published>2021-06-01T00:00:00+09:00</published><updated>2021-06-01T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-Exhaustive%20Search</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-Exhaustive-Search">&lt;p&gt;오늘은 알고리즘 중 하나인 완전 탐색 알고리즘에 대하여 알아보려고 한다.&lt;/p&gt;
+이 부분은 톰캣 버전을 9로 맞춰주고 .m2폴더에 hibernate폴더를 지우고 다시 빌드하여 문제를 해결하였다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;2021-06-12&lt;/b&gt;
+정의해 두었던 메소드를 사용하여 데이터를 삽입 실행시에 테이블을 생성하게 하여 실행하였을 때 데이터가 삽입되고, 테이블이 만들어지는 것을 확인,HeildiSql에
+데이터가 담기고 브라우저에 해당 데이터들이 제이슨형태로 보여지는 것까지 확인하였다. 예전 legacy로 한 프로젝트 안에서 모든걸 처리할 때, 컨트롤러의 리턴
+값을 JSP로 보내주었었는데, 이것을 레스트 API에선 리턴 값을 상태코드와 같이 보내주는 것을 보고, 머리속으로 그려지던게 조금 더 가까이 느껴졌다. 이제
+초석은 다졌으니 레스트 API의 제약 조건을 조금 더 알아보고 추가해보고 기존에 만들었던 프로젝트를 API화 시켜 REST방식으로 통신하는 것까지 진행해 보겠다.
+이 연습은 여기서 끝~&lt;/p&gt;
+
+&lt;p&gt;출처: &lt;a href=&quot;https://www.youtube.com/watch?v=Xb0OEOiZ3Rg&quot;&gt;오라클 자바 커뮤니티&lt;/a&gt;
+깃허브: &lt;a href=&quot;https://github.com/sanseongKo/restapipractice&quot;&gt;sanseongKo&lt;/a&gt;&lt;/p&gt;</content><author><name>Ko</name></author><category term="java" /><summary type="html">REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.</summary></entry><entry><title type="html">Algorithm 완전 탐색에 관하여</title><link href="https://sanseongko.github.io/algorithm-Exhaustive-Search" rel="alternate" type="text/html" title="Algorithm 완전 탐색에 관하여" /><published>2021-06-01T00:00:00+09:00</published><updated>2021-06-01T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-Exhaustive%20Search</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-Exhaustive-Search">&lt;p&gt;오늘은 알고리즘 중 하나인 완전 탐색 알고리즘에 대하여 알아보려고 한다.&lt;/p&gt;
 
 &lt;h3&gt;완전 탐색(Exhaustive Search)이란?&lt;/h3&gt;
 
