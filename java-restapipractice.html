@@ -54,7 +54,7 @@
     <meta property="og:site_name" content="SanseongKo's Blog" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Java REST API 실습" />
-    <meta property="og:description" content="REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. 어떤 행동을 할 것인지 url에 나타내지 마라 spring boot devtools @Data Data어노테션의" />
+    <meta property="og:description" content="REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. @Data Data어노테션의 경우 getter setter tostring hashcode equals전부 만들어주는 어노테이션으로 lombok 라이브러리에서" />
     <meta property="og:url" content="https://sanseongKo.github.io/java-restapipractice" />
     <meta property="og:image" content="https://sanseongKo.github.io/assets/built/images/java/java.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -64,7 +64,7 @@
     <meta property="article:tag" content="Java" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Java REST API 실습" />
-    <meta name="twitter:description" content="REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. 어떤 행동을 할 것인지 url에 나타내지 마라 spring boot devtools @Data Data어노테션의" />
+    <meta name="twitter:description" content="REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. @Data Data어노테션의 경우 getter setter tostring hashcode equals전부 만들어주는 어노테이션으로 lombok 라이브러리에서" />
     <meta name="twitter:url" content="https://sanseongKo.github.io/" />
     <meta name="twitter:image" content="https://sanseongKo.github.io/assets/built/images/java/java.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -96,7 +96,7 @@
         "@type": "WebPage",
         "@id": "https://sanseongKo.github.io/java-restapipractice"
     },
-    "description": "REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. 어떤 행동을 할 것인지 url에 나타내지 마라 spring boot devtools @Data Data어노테션의"
+    "description": "REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다. @Data Data어노테션의 경우 getter setter tostring hashcode equals전부 만들어주는 어노테이션으로 lombok 라이브러리에서"
 }
     </script>
 
@@ -195,29 +195,30 @@ into the {body} of the default.hbs template -->
                     <p>REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 
 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기 때문에, 수정날짜를 밑에 적도록 하겠다.</p>
 
-<ol>
-  <li>어떤 행동을 할 것인지 url에 나타내지 마라
-spring boot devtools</li>
-</ol>
-
 <b3>@Data</b3>
-<p>Data어노테션의 경우 getter setter tostring hashcode equals전부 만들어주는 어노테이션으로 lombok 라이브러리에서 사용이 가능하며, 
+<p><br />
+Data어노테션의 경우 getter setter tostring hashcode equals전부 만들어주는 어노테이션으로 lombok 라이브러리에서 사용이 가능하며, 
 @Getter, @Setter, @ToString, @EqualsAndHashCode 로 나누어 사용도 가능하며, get, set, toString, eqauls, hashcode 원하는 메서드를
 사용할 수도 있다.</p>
 
 <p><b>@NoArgsConstructor</b>
+<br />
 파라미터가 없는 생성자를 만들어주는 어노테이션이다.
-<b>@AllArgsConstructor</b> 
+<b>@AllArgsConstructor</b>
+<br />
 모든 파라미터로, 모든 필드에 대한 생성자를 만들어주는 어노테이션이다.</p>
 
 <p><b>@Entity</b>
+<br />
 @Entity는 DB의 테이블과 일대일로 매칭되는 객체의 단위이며, 기본 생성자가 필요하고, 필드에 final interface class를 사용할 수 없다. 또한 name
 을 주면 엔티티의 이름을 지정하고 @Entity가 붙은 클래스는 JPA에서 관리하게 된다.</p>
 
-<p><b>@Table(name = “”)</b> 
+<p><b>@Table(name = “”)</b>
+<br />
 @Table없이 테이블을 생성하게 될 경우 Entity 클래스의 카멜표기법을 유지한 상태로 테이블이 생성되기 때문에 작성해주는 것이 관례이다.</p>
 
 <p><b>@Id</b>
+<br />
 @Id어노테이션을 인스턴스에 붙이게 될 경우, PK와 같은 의미가 된다. 또한 @GerneratedValue를 사용할 경우 해당 변수의 수가 자동으로 증가하게 된다.
 (sequence와 같은 의미.)</p>
 
@@ -226,6 +227,7 @@ findBy 이런 형태가 쿼리 메소드 구문 이러면 자동으로 sql구문
 블로그에 정리가 되어있어 링크해두겠다.</p>
 
 <p><b>OrElseThrow 메소드</b>
+<br />
 해당 메소드의 경우 java.util.Optiona을 임포트하여 사용이 가능하고, 실습 중에서는
 Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Integer id)메서드를 사용할 때 사용이 가능했다. 
 따로 에러처리를 해주지 않고, 에러가 날 경우 에러처리를 위한 클래스로 보내지는 메소드이다.</Emp></p>
@@ -233,11 +235,13 @@ Optional<Emp> org.springframework.data.repository.CrudRepository.findById(Intege
 <p>추가적인 부분은 현재 The type org.springframework.util.MultiValueMap cannot be resolved. It is indirectly referenced from required .class files
 에러가 나서 이후에 올려보겠다.
 <b>2021-06-11</b>
+<br />
 어제의 에러는 spring-core자르 파일이 문제가 있어 발생하여 외부에서 파일을 가져와 라이브러리를 추가하니 해결이 되었다.를 하자마자 새로운 오류 
 Consider defining a bean named ‘entityManagerFactory’ in your configuration. 발생, 해결하고 돌아와야지…
 이 부분은 톰캣 버전을 9로 맞춰주고 .m2폴더에 hibernate폴더를 지우고 다시 빌드하여 문제를 해결하였다.</p>
 
 <p><b>2021-06-12</b>
+<br />
 정의해 두었던 메소드를 사용하여 데이터를 삽입 실행시에 테이블을 생성하게 하여 실행하였을 때 데이터가 삽입되고, 테이블이 만들어지는 것을 확인,HeildiSql에
 데이터가 담기고 브라우저에 해당 데이터들이 제이슨형태로 보여지는 것까지 확인하였다. 예전 legacy로 한 프로젝트 안에서 모든걸 처리할 때, 컨트롤러의 리턴
 값을 JSP로 보내주었었는데, 이것을 레스트 API에선 리턴 값을 상태코드와 같이 보내주는 것을 보고, 머리속으로 그려지던게 조금 더 가까이 느껴졌다. 이제
@@ -246,6 +250,7 @@ Consider defining a bean named ‘entityManagerFactory’ in your configuration.
 
 <p><b>2021-06-13</b>
 <b>Hateoas</b>
+<br />
 Rest Api의 제약 조건중 Hateoas의 제약 조건이 제일 맞추기 어려운 것을 보았다. Hypermedia As The Engine Of Application State의 약자이다.
 Hateoas는 링크를 통하여 어플리케이션의 상태가 전이되어야 하고, 링크에 자신의 정보가 담겨야 한다는 것이다. 이 말의 뜻은, 링크의 URI자원이 명시되어 있어야 
 하며, 클라이언트가 서버와 동적으로 상호작용이 가능하다는 말이다. 클라이언트가 서버에 POST요청을 보냈다고 가정했을 때, 이에 의존되는 GET, PUT, DELETE등의 
