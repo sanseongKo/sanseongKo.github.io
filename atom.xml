@@ -164,6 +164,27 @@ REST란, 분산시스템 설계를 위한 &lt;b&gt;아키텍처 스타일&lt;/b&
     
       
       <item>
+        <title>Algorithm 동적 계획법에 관하여</title>
+        
+          <description>&lt;h3&gt;동적 계획법&lt;/h3&gt;
+&lt;p&gt;동적 계획법이란, 보다 큰 문제를 작은 문제로 나누어 푸는 방식을 뜻한다. 이 부분은 분할과 정복과 유사한데, 분할과 정복은 중복이 절대 일어날 수 없다
+는 것이고, 동적 계획법에서는 문제가 중복된다는 점이다. 이 부분에서 동적 계획법은 중복으로 일어난 작은 문제에 대하여 그 문제에 사용되었던 방식을, 값을
+캐시(cache)라 불리는 메모리에 미리 넣어두고 중복되는 문제를 마주칠 시에 미리 저장되어 있던 값을 꺼내어 사용하는 것이다.(Memoization 메모이제이션)
+&lt;img src=&quot;./assets/built/images/algorithm/dynamic/dynamic.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+위의 사진에서 보이는 대로 f(3)의 f(2)의 검은색 부분이 겹치기 때문에, 이 값들은 캐시에 저장해두고 쓸 수 있다. 미리 값을 정해두고 계산을 하는 것이기
+때문에 시간이 단축된다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 25 May 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/algorithm-dynamicprogramming</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/algorithm-dynamicprogramming</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Algorithm Hash에 관하여</title>
         
           <description>&lt;p&gt;오늘은 Hash에 대하여 정리를 해보려고 한다.&lt;/p&gt;
