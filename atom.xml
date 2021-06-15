@@ -8,6 +8,25 @@
     
       
       <item>
+        <title>카카오 2021 블라인드 코딩테스트 1번</title>
+        
+          <description>&lt;h3&gt;문제&lt;/h3&gt;
+&lt;p&gt;카카오에 입사한 신입 개발자 네오는 “카카오계정개발팀”에 배치되어, 카카오 서비스에 가입하는 유저들의 아이디를 생성하는 업무를 담당하게 되었습니다.
+“네오”에게 주어진 첫 업무는 새로 가입하는 유저들이 카카오 아이디 규칙에 맞지 않는 아이디를 입력했을 때, 입력된 아이디와 유사하면서 규칙에 맞는 
+아이디를 추천해 주는 프로그램을 개발하는 것입니다.
+&lt;a href=&quot;https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/&quot;&gt;문제 자세히 보기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 15 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/codingtest-2021_kakao01</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/codingtest-2021_kakao01</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Algorithm Greedy(탐욕법)에 관하여</title>
         
           <description>&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
