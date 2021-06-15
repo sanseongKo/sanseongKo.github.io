@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-06-15T23:10:07+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">카카오 2021 블라인드 코딩테스트 1번</title><link href="https://sanseongko.github.io/codingtest-2021_kakao01" rel="alternate" type="text/html" title="카카오 2021 블라인드 코딩테스트 1번" /><published>2021-06-15T00:00:00+09:00</published><updated>2021-06-15T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2021_kakao01</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2021_kakao01">&lt;h3&gt;문제&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-06-15T23:11:58+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">카카오 2021 블라인드 코딩테스트 1번</title><link href="https://sanseongko.github.io/codingtest-2021_kakao01" rel="alternate" type="text/html" title="카카오 2021 블라인드 코딩테스트 1번" /><published>2021-06-15T00:00:00+09:00</published><updated>2021-06-15T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2021_kakao01</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2021_kakao01">&lt;h3&gt;문제&lt;/h3&gt;
 &lt;p&gt;카카오에 입사한 신입 개발자 네오는 “카카오계정개발팀”에 배치되어, 카카오 서비스에 가입하는 유저들의 아이디를 생성하는 업무를 담당하게 되었습니다.
 “네오”에게 주어진 첫 업무는 새로 가입하는 유저들이 카카오 아이디 규칙에 맞지 않는 아이디를 입력했을 때, 입력된 아이디와 유사하면서 규칙에 맞는 
 아이디를 추천해 주는 프로그램을 개발하는 것입니다.
+&lt;br /&gt;
 &lt;a href=&quot;https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/&quot;&gt;문제 자세히 보기&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3&gt;풀이&lt;/h3&gt;
@@ -24,6 +25,7 @@
 &lt;p&gt;솔직히 몰랐다… 반복으로 char 배열에 넣어줘야 하는 줄 알았다…&lt;/p&gt;
 
 &lt;p&gt;다 풀고나서, 다른 분의 풀이를 보았다… 잘한다… 
+&lt;br /&gt;
 정규 표현식&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">문제 카카오에 입사한 신입 개발자 네오는 “카카오계정개발팀”에 배치되어, 카카오 서비스에 가입하는 유저들의 아이디를 생성하는 업무를 담당하게 되었습니다. “네오”에게 주어진 첫 업무는 새로 가입하는 유저들이 카카오 아이디 규칙에 맞지 않는 아이디를 입력했을 때, 입력된 아이디와 유사하면서 규칙에 맞는 아이디를 추천해 주는 프로그램을 개발하는 것입니다. 문제 자세히 보기</summary></entry><entry><title type="html">Algorithm Greedy(탐욕법)에 관하여</title><link href="https://sanseongko.github.io/algorithm-greedy" rel="alternate" type="text/html" title="Algorithm Greedy(탐욕법)에 관하여" /><published>2021-06-11T00:00:00+09:00</published><updated>2021-06-11T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-greedy</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-greedy">&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
 
 &lt;h3&gt;Greedy&lt;/h3&gt;
