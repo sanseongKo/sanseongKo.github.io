@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/codingtest/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-06-15T22:55:23+09:00</updated>
+  <updated>2021-06-15T23:03:09+09:00</updated>
   <id>https://sanseongko.github.io/tag/codingtest/feed.xml</id>
 
   
@@ -48,8 +48,8 @@
 &lt;br /&gt;
 &lt;script src=&quot;https://gist.github.com/sanseongKo/dab3325f2e1466eb26eca73783ed6b46.js&quot;&gt;&lt;/script&gt;
 &lt;br /&gt;
-순서대로 적용시키면 되기 때문에, 어렵진 않았지만 코드가 좀 더러운 느낌…?(멀었다… 멀었어…)&lt;/p&gt;
-
+순서대로 적용시키면 되기 때문에, 어렵진 않았지만 코드가 좀 더러운 느낌…?(멀었다… 멀었어…)
+&lt;a href=&quot;&quot;&gt;깃허브&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;새로 알게된 메소드&lt;/h3&gt;
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;new_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -60,7 +60,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;솔직히 몰랐다… 반복으로 char 배열에 넣어줘야 하는 줄 알았다…&lt;/p&gt;
 
-&lt;p&gt;다 풀고나서, 다른 분의 풀이를 보았다… 잘한다…&lt;/p&gt;</content>
+&lt;p&gt;다 풀고나서, 다른 분의 풀이를 보았다… 잘한다… 
+정규 표현식&lt;/p&gt;</content>
 
       
       
