@@ -20,6 +20,22 @@
     </url>
     
     <url>
+        <loc>https://sanseongKo.github.io/springsecurity.html</loc>
+        
+        <lastmod>2021-06-13T00:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://sanseongKo.github.io/interview.html</loc>
         
         <lastmod>2021-06-13T00:00:00+09:00</lastmod>
@@ -215,54 +231,6 @@
         <loc>https://sanseongKo.github.io/algorithm-hash.html</loc>
         
         <lastmod>2021-05-25T00:00:00+09:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>https://sanseongKo.github.io/newPosting.html</loc>
-        
-        <lastmod>2021-05-25T00:00:00+09:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>https://sanseongKo.github.io/python-control-statement.html</loc>
-        
-        <lastmod>2021-05-17T00:00:00+09:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>https://sanseongKo.github.io/python-basic.html</loc>
-        
-        <lastmod>2021-05-17T00:00:00+09:00</lastmod>
         
 
         
