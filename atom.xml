@@ -28,6 +28,22 @@
     
       
       <item>
+        <title>기술 면접 예상 질문</title>
+        
+          <description>&lt;p&gt;기술 면접에 관하여, 내가 지원하려고 하는 자바, 스프링, 관련 지식 또는 CS관련 지식들을 적고 대답을 적어보는 포스팅을 하려고 한다.
+면접에 가서 모른다는 답변을 너무 많이했다… 아는 건데 막상 설명을 하려니 못하겠어서 찾아보고 정리하고 정확하게 말을 할 수 있을 정도가 되었으면 한다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 13 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/interview</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/interview</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Algorithm Greedy(탐욕법)에 관하여</title>
         
           <description>&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
