@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-06-18T21:47:44+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">카카오 2021 블라인드 코딩테스트 1번</title><link href="https://sanseongko.github.io/codingtest-2021_kakao01" rel="alternate" type="text/html" title="카카오 2021 블라인드 코딩테스트 1번" /><published>2021-06-15T00:00:00+09:00</published><updated>2021-06-15T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2021_kakao01</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2021_kakao01">&lt;h3&gt;문제&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-06-18T21:54:29+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">카카오 2021 블라인드 코딩테스트 1번</title><link href="https://sanseongko.github.io/codingtest-2021_kakao01" rel="alternate" type="text/html" title="카카오 2021 블라인드 코딩테스트 1번" /><published>2021-06-15T00:00:00+09:00</published><updated>2021-06-15T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2021_kakao01</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2021_kakao01">&lt;h3&gt;문제&lt;/h3&gt;
 &lt;p&gt;카카오에 입사한 신입 개발자 네오는 “카카오계정개발팀”에 배치되어, 카카오 서비스에 가입하는 유저들의 아이디를 생성하는 업무를 담당하게 되었습니다.
 “네오”에게 주어진 첫 업무는 새로 가입하는 유저들이 카카오 아이디 규칙에 맞지 않는 아이디를 입력했을 때, 입력된 아이디와 유사하면서 규칙에 맞는 
 아이디를 추천해 주는 프로그램을 개발하는 것입니다.
@@ -52,7 +52,9 @@
 유튜브에서 가져왔고 설명이 잘되어 있는 것 같으니, 궁금할 땐 클릭해서 들어가 보자.&lt;/p&gt;
 
 &lt;h3&gt;Spring Security 연습 1(2021-06-17)&lt;/h3&gt;
-&lt;p&gt;처음 시작에서 Spring Security 의존주입을 하고 나서, yml파일을 생성하고 내용을 정리해준다. 브라우저에 접속하여 url을 적으면, 자동으로 스프링
+
+&lt;p&gt;&lt;br /&gt;
+처음 시작에서 Spring Security 의존주입을 하고 나서, yml파일을 생성하고 내용을 정리해준다. 브라우저에 접속하여 url을 적으면, 자동으로 스프링
 시큐리티가 login페이지로 넘겨준다. 아이디는 기본 user이며, 비밀번호는 처음 서버를 실행하고 나서 콘솔에 사진처럼 나타나게된다. spring security 
 의존주입시 처음 들어가는 모든 요청 페이지는 막혀서 로그인을 해줘야하고 로그인이 되어야 접근이 가능하다는 점 유의하자. 또한 로그아웃도 지원하기 때문에, 
 다시 서버를 실행하였다면, 로그아웃 한번 해주고 실행하자.(비밀번호도 재실행 될 때마다 변경됨)
@@ -73,11 +75,19 @@
 웹 보안을 활성화하고, WebSecurityConfigurer을 상속받아 클래스를 설정할 때 자주 쓰인다. @Configuration 클래스에 @EnableWebSecurity을 추가하여
 스프링 시큐리티를 설정할 클래스라고 정의한다.
 &lt;br /&gt;
+&lt;br /&gt;
 &lt;b&gt;WebSecurityConfigurer&lt;/b&gt;는 WebSecurityConfigurer 인스턴스를 편리하게 만들기 위하여 사용한다. 상속을 받게 되면, configure 메소드를 오버
 라이딩 할 수 있고, 파라미터는 HttpSecurity 객체를 받게 된다.
 &lt;br /&gt;
-&lt;b&gt;authorizeRequests()&lt;/b&gt;메서드는 시큐리티 처리에 HttpServletRequest를 이용한다는 것을 의미하고, &lt;b&gt;antMatchers()&lt;/b&gt;는 특정 경로를 지정해줄 수 있는 메소드이다.
-anonymous(): 인증되지 않은 사용자가 접근할 수 있습니다.
+&lt;br /&gt;
+&lt;b&gt;authorizeRequests()&lt;/b&gt;메서드는 시큐리티 처리에 HttpServletRequest를 이용한다는 것을 의미하고,
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;antMatchers()&lt;/b&gt;는 특정 경로를 지정해줄 수 있는 메소드이다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h4&gt;특정 경로 지정 후 사용 할 수 있는 인증 메서드&lt;/h4&gt;
+&lt;p&gt;anonymous(): 인증되지 않은 사용자가 접근할 수 있습니다.
 authenticated(): 인증된 사용자만 접근할 수 있습니다.
 fullyAuthenticated(): 완전히 인증된 사용자만 접근할 수 있습니다(?)
 hasRole() or hasAnyRole(): 특정 권한을 가지는 사용자만 접근할 수 있습니다.
@@ -87,14 +97,23 @@ access(): SpEL 표현식에 의한 결과에 따라 접근할 수 있습니다.
 not(): 접근 제한 기능을 해제합니다.
 permitAll() or denyAll(): 접근을 전부 허용하거나 제한합니다.
 rememberMe(): 리멤버 기능을 통해 로그인한 사용자만 접근할 수 있습니다.
-출처: &lt;a href=&quot;https://postitforhooney.tistory.com/entry/SpringSecurity-초보자가-이해하는-Spring-Security-퍼옴&quot;&gt;PostIT&lt;/a&gt;
 &lt;br /&gt;
-또한 이후에,
-.formLogin()
-.loginPage(“/loginForm”)
-.loginProcessingUrl(“/login”)// /login 주소가 호출이 되면 시큐리티가 낚아채서 대신 로그인을 진행해줌.
-.defaultSuccessUrl(“/”);//특정페이지에서 loginForm으로 가게되면 특정페이지로 다시 보내줌
-이렇게 작성을 하게된다면, loginPage는 로그인 페이지가 어디인지, loginProcessingUrl은 login주소가 호출될 떄 시큐리티가 낚아채서 대신 로그인을 진행해주는 메소드이며,
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;출처: &lt;a href=&quot;https://postitforhooney.tistory.com/entry/SpringSecurity-초보자가-이해하는-Spring-Security-퍼옴&quot;&gt;PostIT&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;또한 이후에,&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;formLogin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loginPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/loginForm&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loginProcessingUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/login&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;defaultSuccessUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 작성을 하게된다면, loginPage는 로그인 페이지가 어디인지, loginProcessingUrl은 login주소가 호출될 떄 시큐리티가 낚아채서 대신 로그인을 진행해주는 메소드이며,
 .defaultSuccessUrl은 로그인 이후에 보여질 기본 페이지이며, 특정페이지로 접속하려 할 때 인증이 필요하여 로그인 페이지로 넘어갈 경우 그 로그인페이지에서 전에 config에서 설정해 놓은 기본 경로로
 가지 않고 특정페이지가 보여지게 된다.
 &lt;br /&gt;&lt;/p&gt;</content><author><name>Ko</name></author><category term="spring" /><summary type="html">기술 면접중 스프링 시큐리티에 관하여 질문을 받았고, 대답을 못했다. 돌아가는 모습은 내가 아는 모습은 비슷하지만, 지원을 해주는 것에서 많이 차이가 나는 것 같다. 편한기능이 많고, 알아두면 좋을 것 같다. 물론 어떻게 돌아가는지도 넣을 것이고, 자료는 유튜브 데어 프로그래밍님의 유튜브에서 가져왔고 설명이 잘되어 있는 것 같으니, 궁금할 땐 클릭해서 들어가 보자.</summary></entry><entry><title type="html">Algorithm Greedy(탐욕법)에 관하여</title><link href="https://sanseongko.github.io/algorithm-greedy" rel="alternate" type="text/html" title="Algorithm Greedy(탐욕법)에 관하여" /><published>2021-06-11T00:00:00+09:00</published><updated>2021-06-11T00:00:00+09:00</updated><id>https://sanseongko.github.io/algorithm-greedy</id><content type="html" xml:base="https://sanseongko.github.io/algorithm-greedy">&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
