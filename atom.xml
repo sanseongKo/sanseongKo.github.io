@@ -8,6 +8,24 @@
     
       
       <item>
+        <title>inflearn강의 Sort and Searching복습</title>
+        
+          <description>&lt;p&gt;정렬 알고리즘 강의 들은 것에 관하여 정리를 해보려 한다.(요기요 코딩테스트도 오늘 보았다)
+첫번째 문제에서는 조건에 맞는 배열의 데이터를 빼내어 다른 배열에 담고, 인덱스를 기억하여 정렬을 하는 것이 핵심이었다.
+인덱스를 증가 시켜놓은 상태로, 또는 인덱스를 최대에서 줄이면서, 인덱스를 기억시켜놓고 인덱스에 맞게 정렬을 하는 방식이다.
+언제나 문제의 조건을 정리하여 그대로 코딩화하는 것이 중요한 것 같다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 15 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/codingtest-sortcodingclass</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/codingtest-sortcodingclass</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>inflearn강의 복습</title>
         
           <description>&lt;p&gt;뭔가 계속 불안해서 결국 인프런의 강의를 질렀다. 강의에서 나오는 내용들 위주로 공부를 진행하려고 한다.&lt;/p&gt;
@@ -47,7 +65,7 @@
         
           <description>&lt;p&gt;기술 면접중 스프링 시큐리티에 관하여 질문을 받았고, 대답을 못했다. 돌아가는 모습은 내가 아는 모습은 비슷하지만, 지원을 해주는 것에서 많이 차이가
 나는 것 같다. 편한기능이 많고, 알아두면 좋을 것 같다. 물론 어떻게 돌아가는지도 넣을 것이고, 자료는 유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=riwrVN1JVbU&quot;&gt;데어 프로그래밍&lt;/a&gt;님의
-유튜브에서 가져왔고 설명이 잘되어 있는 것 같으니, 궁금할 땐 클릭해서 들어가 보자.&lt;/p&gt;
+유튜브에서 가져왔고 설명이 잘되어 있는 것 같으니, 궁금할 땐 클릭해서 들어가 보자.(유튜브로 강의를 정말 잘해 놓으셨다.)&lt;/p&gt;
 
 </description>
         
