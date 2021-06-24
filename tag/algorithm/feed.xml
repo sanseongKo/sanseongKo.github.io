@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-06-23T22:08:53+09:00</updated>
+  <updated>2021-06-24T17:39:57+09:00</updated>
   <id>https://sanseongko.github.io/tag/algorithm/feed.xml</id>
 
   
@@ -486,7 +486,31 @@ Queue 값 삽입&lt;/p&gt;
 
 &lt;p&gt;출처 
 https://mangkyu.tistory.com/102 [MangKyu’s Diary]
-https://preamtree.tistory.com/20 [Preamtree의 행복로그]&lt;/p&gt;</content>
+https://preamtree.tistory.com/20 [Preamtree의 행복로그]&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+.startsWith();
+.toLowerCase();
+.toUpperCase();
+.toCharArray();
+StringBuilder sb = new StringBuilder();
+sb.append(ch[i]);
+.sort();&lt;/p&gt;
+
+&lt;p&gt;PriorityQueue&lt;Integer&gt; priorityQueue = new PriorityQueue&amp;lt;&amp;gt;();&lt;/Integer&gt;&lt;/p&gt;
+
+&lt;p&gt;//int형 priorityQueue 선언 (우선순위가 높은 숫자 순)
+PriorityQueue&lt;Integer&gt; priorityQueue = new PriorityQueue&amp;lt;&amp;gt;(Collections.reverseOrder());&lt;/Integer&gt;&lt;/p&gt;
+
+&lt;p&gt;Queue&lt;Integer&gt; queue = new LinkedList&amp;lt;&amp;gt;();&lt;/Integer&gt;&lt;/p&gt;
+
+&lt;p&gt;Stack&lt;Integer&gt; stack = new Stack&amp;lt;&amp;gt;();&lt;/Integer&gt;&lt;/p&gt;
+
+&lt;p&gt;Map&amp;lt;String, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();&lt;/p&gt;
+
+&lt;p&gt;Set&lt;String&gt; hashSet = new HashSet&lt;String&gt;();&lt;/String&gt;&lt;/String&gt;&lt;/p&gt;
+
+&lt;p&gt;import java.util.*&lt;/p&gt;</content>
 
       
       
