@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/codingtest/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-06-25T15:29:49+09:00</updated>
+  <updated>2021-06-27T21:59:26+09:00</updated>
   <id>https://sanseongko.github.io/tag/codingtest/feed.xml</id>
 
   
@@ -30,6 +30,88 @@
   
   
 
+  
+    <entry>
+      <title type="html">프로그래머스 코딩테스트 연습 주식가격(스택/큐) 문제</title>
+      <link href="https://sanseongko.github.io/codingtest-stockprice" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 주식가격(스택/큐) 문제" />
+      <published>2021-06-27T00:00:00+09:00</published>
+      <updated>2021-06-27T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-stockprice</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-stockprice">&lt;p&gt;다리를 지나가는 트럭 이후에 프로그래머스 스택/큐&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">다리를 지나가는 트럭 이후에 프로그래머스 스택/큐</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">프로그래머스 코딩테스트 연습 다리를 지나는 트럭(스택/큐) 문제</title>
+      <link href="https://sanseongko.github.io/codingtest-truck" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 다리를 지나는 트럭(스택/큐) 문제" />
+      <published>2021-06-27T00:00:00+09:00</published>
+      <updated>2021-06-27T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-truck</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-truck">&lt;p&gt;오늘은 프로그래머스 코딩테스트 연습의 다리를 지나는 트럭 문제를 풀어보았다. 
+처음에 나는 길이와 트럭의 길이가 문제에 주어져 있지 않아서 트럭의 무게 = 트럭의 길이인줄 알았다. 
+그래서 헤메다가 다시 문제를 읽어보니 트럭길이가 1이지 않을까 하는 생각이 들어서 대입하여 풀어보았고, 이게 맞긴했다.
+처음 내가 풀었던 코드이다.(실패한 코드)
+&lt;script src=&quot;https://gist.github.com/sanseongKo/85a7aeee22a684544a75e14eefd45774.js&quot;&gt;&lt;/script&gt;
+실패한 이유는 다리에 올라가 있는 트럭의 무게가 다리가 견딜수 있는 하중보다 작으면 된다라는 점은 동일했다. 하지만, 문제가 되는 부분은 만약 2대의 트럭이 
+다리에 올라가 있다고 하고, 다리가 견딜수 있는 하중보다 2대가 같거나 적었을 경우인데, 이중에 한대가 빠져나갔다고하고 다음 들어오는 트럭과 남아있는 한대의
+트럭이 합이 하중보다 작을 경우 한대는 끝에 다다르고 한대는 시작점에 있는데 이부분에서 걸리는 시간이 차이가 나는 것이다.&lt;br /&gt;
+이 부분을 어떻게 맞춰줘야 할까하여, 결국 구글에 해당 답을 찾아보게 되었고, 문제는 간단했다. 큐에 트럭을 담는 것과 무게를 비교해주는 것은 동일했다.
+하지만 큐에 트럭만 담아주는 것이 아닌, 다른 수를 넣어(보통 0을 넣으셨다) que.size()를 다리 길이와 맞춰주고 쉽게 한칸씩 앞으로 간다면, 초를 증가시켜
+주면 되는 것이었다.&lt;br /&gt;
+밑에는 아이디어를 받고 다시 작성한 정답 코드이다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/8246337b3918b309a79de837a4b12482.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;큐를 길이로도 쓸 수 있다!(담고 빼는거만 생각하지말자)&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">오늘은 프로그래머스 코딩테스트 연습의 다리를 지나는 트럭 문제를 풀어보았다. 처음에 나는 길이와 트럭의 길이가 문제에 주어져 있지 않아서 트럭의 무게 = 트럭의 길이인줄 알았다. 그래서 헤메다가 다시 문제를 읽어보니 트럭길이가 1이지 않을까 하는 생각이 들어서 대입하여 풀어보았고, 이게 맞긴했다. 처음 내가 풀었던 코드이다.(실패한 코드) 실패한 이유는 다리에 올라가 있는 트럭의 무게가 다리가 견딜수 있는 하중보다 작으면 된다라는 점은 동일했다. 하지만, 문제가 되는 부분은 만약 2대의 트럭이 다리에 올라가 있다고 하고, 다리가 견딜수 있는 하중보다 2대가 같거나 적었을 경우인데, 이중에 한대가 빠져나갔다고하고 다음 들어오는 트럭과 남아있는 한대의 트럭이 합이 하중보다 작을 경우 한대는 끝에 다다르고 한대는 시작점에 있는데 이부분에서 걸리는 시간이 차이가 나는 것이다. 이 부분을 어떻게 맞춰줘야 할까하여, 결국 구글에 해당 답을 찾아보게 되었고, 문제는 간단했다. 큐에 트럭을 담는 것과 무게를 비교해주는 것은 동일했다. 하지만 큐에 트럭만 담아주는 것이 아닌, 다른 수를 넣어(보통 0을 넣으셨다) que.size()를 다리 길이와 맞춰주고 쉽게 한칸씩 앞으로 간다면, 초를 증가시켜 주면 되는 것이었다. 밑에는 아이디어를 받고 다시 작성한 정답 코드이다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">프로그래머스 코딩테스트 연습 기능개발(스택/큐) 문제</title>
