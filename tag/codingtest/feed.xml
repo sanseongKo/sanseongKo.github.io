@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/codingtest/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-06-27T22:03:27+09:00</updated>
+  <updated>2021-06-28T01:20:25+09:00</updated>
   <id>https://sanseongko.github.io/tag/codingtest/feed.xml</id>
 
   
@@ -30,6 +30,52 @@
   
   
 
+  
+    <entry>
+      <title type="html">프로그래머스 코딩테스트 연습 더 맵게(힙) 문제</title>
+      <link href="https://sanseongko.github.io/codingtest-morespicy" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 더 맵게(힙) 문제" />
+      <published>2021-06-28T00:00:00+09:00</published>
+      <updated>2021-06-28T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-morespicy</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-morespicy">&lt;p&gt;오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/a5ee8cbed4e69a35de5125ce528638ba.js&quot;&gt;&lt;/script&gt;
+처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다.
+&lt;br /&gt;
+결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다.
+&lt;br /&gt;
+바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에,
+효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/6ba9d9f0bdc3aef25c6ab7971222684c.js&quot;&gt;&lt;/script&gt;
+어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서,
+저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을
+리턴해주는 것으로 만들었다.
+아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다. 처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다. 결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다. 바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에, 효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다. 어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서, 저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을 리턴해주는 것으로 만들었다. 아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">프로그래머스 코딩테스트 연습 주식가격(스택/큐) 문제</title>
