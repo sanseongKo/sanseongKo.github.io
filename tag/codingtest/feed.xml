@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/codingtest/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-06-27T21:59:26+09:00</updated>
+  <updated>2021-06-27T22:03:27+09:00</updated>
   <id>https://sanseongko.github.io/tag/codingtest/feed.xml</id>
 
   
@@ -37,7 +37,11 @@
       <published>2021-06-27T00:00:00+09:00</published>
       <updated>2021-06-27T00:00:00+09:00</updated>
       <id>https://sanseongko.github.io/codingtest-stockprice</id>
-      <content type="html" xml:base="https://sanseongko.github.io/codingtest-stockprice">&lt;p&gt;다리를 지나가는 트럭 이후에 프로그래머스 스택/큐&lt;/p&gt;</content>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-stockprice">&lt;p&gt;다리를 지나가는 트럭 이후에 프로그래머스 스택/큐의 마지막 문제 주식가격의 문제를 풀었다. 한번에 통과되었고, 스택/큐 문제였지만, 안쓰는게 더 나아보여서
+그냥 배열로 풀었다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/53d9712294d940d6cd76e9e470cbae2b.js&quot;&gt;&lt;/script&gt;
+성공한 코드이고, 효율성도 만족하였다.
+그나마 쉬운 문제였다고 생각이 들고 마지막 0을 맞추는 것과, 중간에 time이 0으로 초기화되었는데 수정하였다.&lt;/p&gt;</content>
 
       
       
@@ -58,7 +62,7 @@
       
 
       
-        <summary type="html">다리를 지나가는 트럭 이후에 프로그래머스 스택/큐</summary>
+        <summary type="html">다리를 지나가는 트럭 이후에 프로그래머스 스택/큐의 마지막 문제 주식가격의 문제를 풀었다. 한번에 통과되었고, 스택/큐 문제였지만, 안쓰는게 더 나아보여서 그냥 배열로 풀었다. 성공한 코드이고, 효율성도 만족하였다. 그나마 쉬운 문제였다고 생각이 들고 마지막 0을 맞추는 것과, 중간에 time이 0으로 초기화되었는데 수정하였다.</summary>
       
 
       

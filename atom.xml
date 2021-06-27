@@ -37,7 +37,11 @@
       <item>
         <title>프로그래머스 코딩테스트 연습 주식가격(스택/큐) 문제</title>
         
-          <description>&lt;p&gt;다리를 지나가는 트럭 이후에 프로그래머스 스택/큐&lt;/p&gt;
+          <description>&lt;p&gt;다리를 지나가는 트럭 이후에 프로그래머스 스택/큐의 마지막 문제 주식가격의 문제를 풀었다. 한번에 통과되었고, 스택/큐 문제였지만, 안쓰는게 더 나아보여서
+그냥 배열로 풀었다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/53d9712294d940d6cd76e9e470cbae2b.js&quot;&gt;&lt;/script&gt;
+성공한 코드이고, 효율성도 만족하였다.
+그나마 쉬운 문제였다고 생각이 들고 마지막 0을 맞추는 것과, 중간에 time이 0으로 초기화되었는데 수정하였다.&lt;/p&gt;
 </description>
         
         <pubDate>Sun, 27 Jun 2021 00:00:00 +0900</pubDate>
