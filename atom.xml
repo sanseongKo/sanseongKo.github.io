@@ -34,6 +34,43 @@
     
       
       <item>
+        <title>프로그래머스 코딩테스트 연습 K번째 수(정렬)</title>
+        
+          <description>
+</description>
+        
+        <pubDate>Sun, 27 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/codingtest-numberK</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/codingtest-numberK</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>프로그래머스 코딩테스트 연습 가장 큰 수 (정렬)</title>
+        
+          <description>&lt;p&gt;오늘은 프로그래머스의 가장 큰 수 문제를 풀어 보았다. 처음 생각했을 때 문자열로 바꾸어 모든 경우의 수를 구하여 배열에 담는 생각을 하였는데, 그럴 경우
+코드가 너무 복잡하였고, 문제 의도와 완전히 다른 것 같아 포기하였다. 이후, 제일 큰수가 만들어 질 때 큰 수 대로 나열하여 만드는 로직을 생각하였지만, 
+정렬과는 거리가 멀었다.(예: [6, 70, 7,47]이 들어왔다면, 처음 제일 큰 건 7이고 이후 70이 나오는게 제일 크다, 그리고 6이 나오고 47이 나오는 각 자리의
+앞자리가 큰 거부터 나열하고 수가 같은 것이 있다면, 1자리수가 있는지 확인 있다면 두자리 수가 1자리 수보다 크다면 ex. 5와 50~55는 5가먼저, 56~59는
+두자리수가 우선순위)
+&lt;br /&gt;
+아무튼 복잡하다… 빠르게 포기하고 답을 보았는데, comparator클래스의 compare를 오버라이딩하여 문제를 푸는 것이 빠른 것을 확인, 다만 compare오버라이딩이
+익숙치 않아 이해하는데 시간이 좀 걸렸다. 
+&lt;script src=&quot;https://gist.github.com/sanseongKo/e3e5f0a09da5026e39619f0d9465c35c.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 27 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/codingtest-mostlargenumber</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/codingtest-mostlargenumber</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>프로그래머스 코딩테스트 연습 다리를 지나는 트럭(스택/큐) 문제</title>
         
           <description>&lt;p&gt;오늘은 프로그래머스 코딩테스트 연습의 다리를 지나는 트럭 문제를 풀어보았다. 
