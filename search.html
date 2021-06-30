@@ -195,7 +195,7 @@ into the {body} of the default.hbs template -->
         "title": "프로그래머스 코딩테스트 연습 K번째 수(정렬)",
             "author": "Ko",
             "category": "",
-            "content": "",
+            "content": "이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다.해당 코드이고, 들어간 수를 그냥 우선순위 큐에 넣어 정렬시켰다. 그리고 r-1에서 걸리면 해당 que의 맨 처음 노드를 tmp배열에 넣어주었고, 리턴된 값을 answer에 담아 주었다.또한, tmp의 길이는 무조건 commands 이차원 배열의 길이이기 때문에, 처음부터 설정하여 풀어주었다.밑에는 다른 사람의 풀의의 맨 처음있는 코드이다.import java.util.Arrays;class Solution {    public int[] solution(int[] array, int[][] commands) {    int[] answer = new int[commands.length];    for(int i=0; i&lt;commands.length; i++){    int[] temp = Arrays.copyOfRange(array, commands[i][0]-1, commands[i][1]);    Arrays.sort(temp);    answer[i] = temp[commands[i][2]-1];}return answer;}}알게된 것copyOfRangeArrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복사하고자하는 배열을 넣고 어디서부터 복사를 할 것인지 시작지점을 정하고 끝지점을 구하면되는 것 같다.느낌 상으로, String의 substring()과 느낌이 많이 비슷하다. 저렇게 풀면, 코드가 줄고 for문을 하나만 사용하여 할 수 있어서 더 효율적인 것 같다.",
         "url": "/codingtest-numberK"
     }
     ,
