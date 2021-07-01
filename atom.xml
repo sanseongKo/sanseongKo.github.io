@@ -34,6 +34,22 @@
     
       
       <item>
+        <title>프로그래머스 코딩테스트 연습 H Index(정렬)</title>
+        
+          <description>&lt;p&gt;오늘은 정렬문제의 마지막 H Index 문제에 대하여 풀어보았다. 솔직히 처음 문제가 이해가 되었다 안 되었다를 반복하며 혼란을 주었고, 풀이와 설명을 들었을 때에도
+긴가민가하게 되었고, 코드를 짜면서 이해가 되었다.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 27 Jun 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/codingtest-hindex</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/codingtest-hindex</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>프로그래머스 코딩테스트 연습 K번째 수(정렬)</title>
         
           <description>&lt;p&gt;이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다.
