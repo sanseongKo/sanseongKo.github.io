@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/codingtest/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-03T19:59:04+09:00</updated>
+  <updated>2021-07-04T20:22:07+09:00</updated>
   <id>https://sanseongko.github.io/tag/codingtest/feed.xml</id>
 
   
@@ -32,26 +32,20 @@
 
   
     <entry>
-      <title type="html">프로그래머스 코딩테스트 연습 더 맵게(힙) 문제</title>
-      <link href="https://sanseongko.github.io/codingtest-morespicy" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 더 맵게(힙) 문제" />
-      <published>2021-06-28T00:00:00+09:00</published>
-      <updated>2021-06-28T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/codingtest-morespicy</id>
-      <content type="html" xml:base="https://sanseongko.github.io/codingtest-morespicy">&lt;p&gt;오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다.
+      <title type="html">프로그래머스 코딩테스트 소수 카페트(완전탐색)</title>
+      <link href="https://sanseongko.github.io/codingtest-carpet" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 소수 카페트(완전탐색)" />
+      <published>2021-07-04T00:00:00+09:00</published>
+      <updated>2021-07-04T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-carpet</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-carpet">&lt;p&gt;오늘은 프로그래머스 코딩테스트연습에 마지막 완전탐색 문제 카페트에서 대하여 풀어보았다. 갈색과 노란색의 합으로 나올 수 있는 사각형의 가로와 세로를
+모두 구하고, 구한 것을 바탕으로 (가로-2)*(세로-2)가 노란색이 되는 것을 이용하였다.
 &lt;br /&gt;
-&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42626&quot;&gt;문제 풀어보기&lt;/a&gt;
-&lt;script src=&quot;https://gist.github.com/sanseongKo/a5ee8cbed4e69a35de5125ce528638ba.js&quot;&gt;&lt;/script&gt;
-처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다.
-&lt;br /&gt;
-결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다.
-&lt;br /&gt;
-바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에,
-효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다.
-&lt;script src=&quot;https://gist.github.com/sanseongKo/6ba9d9f0bdc3aef25c6ab7971222684c.js&quot;&gt;&lt;/script&gt;
-어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서,
-저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을
-리턴해주는 것으로 만들었다.
-아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.&lt;/p&gt;</content>
+밑은 코드이고, &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42842&quot;&gt;풀어보기&lt;/a&gt;
+&lt;script src=&quot;https://gist.github.com/sanseongKo/dc17d5db4ece03aa6ce62203c7802912.js&quot;&gt;&lt;/script&gt;
+사실 다른 코드는 쉽지만 노란색을 구하지 못한다면, 가로와 세로는 구할 수 있겠지만, 갈색의 개수와 노란색의 개수가 다를 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+요즘 코딩테스트 문제를 풀면서 생각하는 것이지만, 알고리즘이 문제가 아니다… 규칙찾아내는 것이 더힘들다…&lt;/p&gt;</content>
 
       
       
@@ -72,7 +66,7 @@
       
 
       
-        <summary type="html">오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다. 문제 풀어보기 처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다. 결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다. 바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에, 효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다. 어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서, 저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을 리턴해주는 것으로 만들었다. 아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.</summary>
+        <summary type="html">오늘은 프로그래머스 코딩테스트연습에 마지막 완전탐색 문제 카페트에서 대하여 풀어보았다. 갈색과 노란색의 합으로 나올 수 있는 사각형의 가로와 세로를 모두 구하고, 구한 것을 바탕으로 (가로-2)*(세로-2)가 노란색이 되는 것을 이용하였다. 밑은 코드이고, 풀어보기 사실 다른 코드는 쉽지만 노란색을 구하지 못한다면, 가로와 세로는 구할 수 있겠지만, 갈색의 개수와 노란색의 개수가 다를 수 있다.</summary>
       
 
       
@@ -82,8 +76,8 @@
     <entry>
       <title type="html">프로그래머스 코딩테스트 소수 찾기(완전탐색)</title>
       <link href="https://sanseongko.github.io/codingtest-findPrimenuber" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 소수 찾기(완전탐색)" />
-      <published>2021-06-27T00:00:00+09:00</published>
-      <updated>2021-06-27T00:00:00+09:00</updated>
+      <published>2021-07-03T00:00:00+09:00</published>
+      <updated>2021-07-03T00:00:00+09:00</updated>
       <id>https://sanseongko.github.io/codingtest-findPrimenuber</id>
       <content type="html" xml:base="https://sanseongko.github.io/codingtest-findPrimenuber">&lt;p&gt;오늘은 프로그래머스 완전탐색에 있는 소수찾는 문제를 풀어보았다. 실제로는 풀지 못하였고, 소수를 찾기 위하여 제곱근을 사용하는 방법까지는 알고 있었지만,
 재귀함수를 통하여 나올 수 있는 모든 수를 탐색하는 것이 아직 너무 익숙치 않았다.(재귀함수 ㅂㄷㅂㄷ…)
@@ -136,50 +130,10 @@ boolean값으로 방문한 값을 확인하는 것을 많이 쓰기 때문에, �
     </entry>
   
     <entry>
-      <title type="html">프로그래머스 코딩테스트 연습 모의고사(완전탐색)</title>
-      <link href="https://sanseongko.github.io/codingtest-moctest" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 모의고사(완전탐색)" />
-      <published>2021-06-27T00:00:00+09:00</published>
-      <updated>2021-06-27T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/codingtest-moctest</id>
-      <content type="html" xml:base="https://sanseongko.github.io/codingtest-moctest">&lt;p&gt;이어서, 완전탐색의 첫번째 문제인 모의고사를 풀게되었다. 밑에는 정답코드이고 1단계이다보니, 문제가 쉬운 편이였다.&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840&quot;&gt;문제풀어보기&lt;/a&gt;
-밑에는 정답 코드이다.
-&lt;script src=&quot;https://gist.github.com/sanseongKo/7876d20455724eccc29f8ededbc9d309.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;이 문제에서 제일 중요한 것은 사실 각 수포자들의 값을 answers의 배열길이만큼 반복시키는 것이고 이 부분을 나머지를 구하는 것으로 해결하였고, 다음은
-Math.max()안에 다른 max메소드를 사용하여 3개의 값을 동시에 비교하는 것이다. 이렇게하여 모든 값들을 확인하여 최대값을 구하고 같은 값을 걸러내는 코드를
-작성하면 되었다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Ko</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="codingtest" />
-      
-
-      
-        <summary type="html">이어서, 완전탐색의 첫번째 문제인 모의고사를 풀게되었다. 밑에는 정답코드이고 1단계이다보니, 문제가 쉬운 편이였다.문제풀어보기 밑에는 정답 코드이다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">프로그래머스 코딩테스트 연습 H Index(정렬)</title>
       <link href="https://sanseongko.github.io/codingtest-hindex" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 H Index(정렬)" />
-      <published>2021-06-27T00:00:00+09:00</published>
-      <updated>2021-06-27T00:00:00+09:00</updated>
+      <published>2021-07-02T00:00:00+09:00</published>
+      <updated>2021-07-02T00:00:00+09:00</updated>
       <id>https://sanseongko.github.io/codingtest-hindex</id>
       <content type="html" xml:base="https://sanseongko.github.io/codingtest-hindex">&lt;p&gt;오늘은 정렬문제의 마지막 H Index 문제에 대하여 풀어보았다. 솔직히 처음 문제가 이해가 되었다 안 되었다를 반복하며 혼란을 주었고, 풀이와 설명을 들었을 때에도
 긴가민가하게 되었고, 코드를 짜면서 이해가 되었다.&lt;/p&gt;
@@ -218,40 +172,18 @@ h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.
     </entry>
   
     <entry>
-      <title type="html">프로그래머스 코딩테스트 연습 K번째 수(정렬)</title>
-      <link href="https://sanseongko.github.io/codingtest-numberK" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 K번째 수(정렬)" />
-      <published>2021-06-27T00:00:00+09:00</published>
-      <updated>2021-06-27T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/codingtest-numberK</id>
-      <content type="html" xml:base="https://sanseongko.github.io/codingtest-numberK">&lt;p&gt;이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다.
-&lt;br /&gt;
-&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42748&quot;&gt;문제 풀어보기&lt;/a&gt;
-&lt;script src=&quot;https://gist.github.com/sanseongKo/b39d1045ea0adb9a1784fd3805f6f928.js&quot;&gt;&lt;/script&gt;
-해당 코드이고, 들어간 수를 그냥 우선순위 큐에 넣어 정렬시켰다. 그리고 r-1에서 걸리면 해당 que의 맨 처음 노드를 tmp배열에 넣어주었고, 리턴된 값을 answer에 담아 주었다.
-또한, tmp의 길이는 무조건 commands 이차원 배열의 길이이기 때문에, 처음부터 설정하여 풀어주었다.
-&lt;br /&gt;
-밑에는 다른 사람의 풀의의 맨 처음있는 코드이다.&lt;/p&gt;
+      <title type="html">프로그래머스 코딩테스트 연습 모의고사(완전탐색)</title>
+      <link href="https://sanseongko.github.io/codingtest-moctest" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 모의고사(완전탐색)" />
+      <published>2021-07-02T00:00:00+09:00</published>
+      <updated>2021-07-02T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-moctest</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-moctest">&lt;p&gt;이어서, 완전탐색의 첫번째 문제인 모의고사를 풀게되었다. 밑에는 정답코드이고 1단계이다보니, 문제가 쉬운 편이였다.&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42840&quot;&gt;문제풀어보기&lt;/a&gt;
+밑에는 정답 코드이다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/7876d20455724eccc29f8ededbc9d309.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;copyOfRange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;알게된 것
-&lt;br /&gt;
-&lt;b&gt;copyOfRange&lt;/b&gt;
-Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복사하고자하는 배열을 넣고 어디서부터 복사를 할 것인지 시작지점을 정하고 끝지점을 구하면되는 것 같다.
-느낌 상으로, String의 substring()과 느낌이 많이 비슷하다. 저렇게 풀면, 코드가 줄고 for문을 하나만 사용하여 할 수 있어서 더 효율적인 것 같다.&lt;/p&gt;</content>
+&lt;p&gt;이 문제에서 제일 중요한 것은 사실 각 수포자들의 값을 answers의 배열길이만큼 반복시키는 것이고 이 부분을 나머지를 구하는 것으로 해결하였고, 다음은
+Math.max()안에 다른 max메소드를 사용하여 3개의 값을 동시에 비교하는 것이다. 이렇게하여 모든 값들을 확인하여 최대값을 구하고 같은 값을 걸러내는 코드를
+작성하면 되었다.&lt;/p&gt;</content>
 
       
       
@@ -272,7 +204,7 @@ Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복�
       
 
       
-        <summary type="html">이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다. 문제 풀어보기 해당 코드이고, 들어간 수를 그냥 우선순위 큐에 넣어 정렬시켰다. 그리고 r-1에서 걸리면 해당 que의 맨 처음 노드를 tmp배열에 넣어주었고, 리턴된 값을 answer에 담아 주었다. 또한, tmp의 길이는 무조건 commands 이차원 배열의 길이이기 때문에, 처음부터 설정하여 풀어주었다. 밑에는 다른 사람의 풀의의 맨 처음있는 코드이다.</summary>
+        <summary type="html">이어서, 완전탐색의 첫번째 문제인 모의고사를 풀게되었다. 밑에는 정답코드이고 1단계이다보니, 문제가 쉬운 편이였다.문제풀어보기 밑에는 정답 코드이다.</summary>
       
 
       
@@ -282,8 +214,8 @@ Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복�
     <entry>
       <title type="html">프로그래머스 코딩테스트 연습 가장 큰 수 (정렬)</title>
       <link href="https://sanseongko.github.io/codingtest-mostlargenumber" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 가장 큰 수 (정렬)" />
-      <published>2021-06-27T00:00:00+09:00</published>
-      <updated>2021-06-27T00:00:00+09:00</updated>
+      <published>2021-07-01T00:00:00+09:00</published>
+      <updated>2021-07-01T00:00:00+09:00</updated>
       <id>https://sanseongko.github.io/codingtest-mostlargenumber</id>
       <content type="html" xml:base="https://sanseongko.github.io/codingtest-mostlargenumber">&lt;p&gt;오늘은 프로그래머스의 가장 큰 수 문제를 풀어 보았다. 처음 생각했을 때 문자열로 바꾸어 모든 경우의 수를 구하여 배열에 담는 생각을 하였는데, 그럴 경우
 코드가 너무 복잡하였고, 문제 의도와 완전히 다른 것 같아 포기하였다. 이후, 제일 큰수가 만들어 질 때 큰 수 대로 나열하여 만드는 로직을 생각하였지만, 
@@ -336,6 +268,68 @@ Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복�
 
       
         <summary type="html">오늘은 프로그래머스의 가장 큰 수 문제를 풀어 보았다. 처음 생각했을 때 문자열로 바꾸어 모든 경우의 수를 구하여 배열에 담는 생각을 하였는데, 그럴 경우 코드가 너무 복잡하였고, 문제 의도와 완전히 다른 것 같아 포기하였다. 이후, 제일 큰수가 만들어 질 때 큰 수 대로 나열하여 만드는 로직을 생각하였지만, 정렬과는 거리가 멀었다.(예: [6, 70, 7,47]이 들어왔다면, 처음 제일 큰 건 7이고 이후 70이 나오는게 제일 크다, 그리고 6이 나오고 47이 나오는 각 자리의 앞자리가 큰 거부터 나열하고 수가 같은 것이 있다면, 1자리수가 있는지 확인 있다면 두자리 수가 1자리 수보다 크다면 ex. 5와 50~55는 5가먼저, 56~59는 두자리수가 우선순위) 아무튼 복잡하다… 빠르게 포기하고 답을 보았는데, comparator클래스의 compare를 오버라이딩하여 문제를 푸는 것이 빠른 것을 확인, 다만 compare오버라이딩이 익숙치 않아 이해하는데 시간이 좀 걸렸다. 문제 풀어보기</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">프로그래머스 코딩테스트 연습 K번째 수(정렬)</title>
+      <link href="https://sanseongko.github.io/codingtest-numberK" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 K번째 수(정렬)" />
+      <published>2021-07-01T00:00:00+09:00</published>
+      <updated>2021-07-01T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-numberK</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-numberK">&lt;p&gt;이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다.
+&lt;br /&gt;
+&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42748&quot;&gt;문제 풀어보기&lt;/a&gt;
+&lt;script src=&quot;https://gist.github.com/sanseongKo/b39d1045ea0adb9a1784fd3805f6f928.js&quot;&gt;&lt;/script&gt;
+해당 코드이고, 들어간 수를 그냥 우선순위 큐에 넣어 정렬시켰다. 그리고 r-1에서 걸리면 해당 que의 맨 처음 노드를 tmp배열에 넣어주었고, 리턴된 값을 answer에 담아 주었다.
+또한, tmp의 길이는 무조건 commands 이차원 배열의 길이이기 때문에, 처음부터 설정하여 풀어주었다.
+&lt;br /&gt;
+밑에는 다른 사람의 풀의의 맨 처음있는 코드이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;copyOfRange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;알게된 것
+&lt;br /&gt;
+&lt;b&gt;copyOfRange&lt;/b&gt;
+Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복사하고자하는 배열을 넣고 어디서부터 복사를 할 것인지 시작지점을 정하고 끝지점을 구하면되는 것 같다.
+느낌 상으로, String의 substring()과 느낌이 많이 비슷하다. 저렇게 풀면, 코드가 줄고 for문을 하나만 사용하여 할 수 있어서 더 효율적인 것 같다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다. 문제 풀어보기 해당 코드이고, 들어간 수를 그냥 우선순위 큐에 넣어 정렬시켰다. 그리고 r-1에서 걸리면 해당 que의 맨 처음 노드를 tmp배열에 넣어주었고, 리턴된 값을 answer에 담아 주었다. 또한, tmp의 길이는 무조건 commands 이차원 배열의 길이이기 때문에, 처음부터 설정하여 풀어주었다. 밑에는 다른 사람의 풀의의 맨 처음있는 코드이다.</summary>
       
 
       
@@ -433,10 +427,58 @@ Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복�
     </entry>
   
     <entry>
+      <title type="html">프로그래머스 코딩테스트 연습 더 맵게(힙) 문제</title>
+      <link href="https://sanseongko.github.io/codingtest-morespicy" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 더 맵게(힙) 문제" />
+      <published>2021-06-27T00:00:00+09:00</published>
+      <updated>2021-06-27T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-morespicy</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-morespicy">&lt;p&gt;오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다.
+&lt;br /&gt;
+&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42626&quot;&gt;문제 풀어보기&lt;/a&gt;
+&lt;script src=&quot;https://gist.github.com/sanseongKo/a5ee8cbed4e69a35de5125ce528638ba.js&quot;&gt;&lt;/script&gt;
+처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다.
+&lt;br /&gt;
+결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다.
+&lt;br /&gt;
+바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에,
+효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/6ba9d9f0bdc3aef25c6ab7971222684c.js&quot;&gt;&lt;/script&gt;
+어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서,
+저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을
+리턴해주는 것으로 만들었다.
+아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다. 문제 풀어보기 처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다. 결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다. 바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에, 효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다. 어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서, 저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을 리턴해주는 것으로 만들었다. 아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">프로그래머스 코딩테스트 연습 기능개발(스택/큐) 문제</title>
       <link href="https://sanseongko.github.io/codingtest-functiondevelop" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 기능개발(스택/큐) 문제" />
-      <published>2021-06-15T00:00:00+09:00</published>
-      <updated>2021-06-15T00:00:00+09:00</updated>
+      <published>2021-06-25T00:00:00+09:00</published>
+      <updated>2021-06-25T00:00:00+09:00</updated>
       <id>https://sanseongko.github.io/codingtest-functiondevelop</id>
       <content type="html" xml:base="https://sanseongko.github.io/codingtest-functiondevelop">&lt;p&gt;코딩테스트 연습으로 해시의 위장 문제를 풀어보았다.
 우선 내가 작성한 코드이고, 성공했지만, 시간내에 풀지는 못했다…
@@ -503,46 +545,6 @@ Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복�
 
       
         <summary type="html">코딩테스트 연습으로 해시의 위장 문제를 풀어보았다. 우선 내가 작성한 코드이고, 성공했지만, 시간내에 풀지는 못했다… 문제 풀어보기</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">inflearn강의 Sort and Searching복습</title>
-      <link href="https://sanseongko.github.io/codingtest-sortcodingclass" rel="alternate" type="text/html" title="inflearn강의 Sort and Searching복습" />
-      <published>2021-06-15T00:00:00+09:00</published>
-      <updated>2021-06-15T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/codingtest-sortcodingclass</id>
-      <content type="html" xml:base="https://sanseongko.github.io/codingtest-sortcodingclass">&lt;p&gt;정렬 알고리즘 강의 들은 것에 관하여 정리를 해보려 한다.(요기요 코딩테스트도 오늘 보았다)
-첫번째 문제에서는 조건에 맞는 배열의 데이터를 빼내어 다른 배열에 담고, 인덱스를 기억하여 정렬을 하는 것이 핵심이었다.
-인덱스를 증가 시켜놓은 상태로, 또는 인덱스를 최대에서 줄이면서, 인덱스를 기억시켜놓고 인덱스에 맞게 정렬을 하는 방식이다.
-언제나 문제의 조건을 정리하여 그대로 코딩화하는 것이 중요한 것 같다.&lt;/p&gt;
-
-&lt;p&gt;두번째 문제는 힙을 이용하여 정렬을 하는 방법이고, 큰 수부터 정렬하여 그 중 몇 번째 숫자를 리턴하는 것이다.
-Priority Queue&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Ko</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="codingtest" />
-      
-
-      
-        <summary type="html">정렬 알고리즘 강의 들은 것에 관하여 정리를 해보려 한다.(요기요 코딩테스트도 오늘 보았다) 첫번째 문제에서는 조건에 맞는 배열의 데이터를 빼내어 다른 배열에 담고, 인덱스를 기억하여 정렬을 하는 것이 핵심이었다. 인덱스를 증가 시켜놓은 상태로, 또는 인덱스를 최대에서 줄이면서, 인덱스를 기억시켜놓고 인덱스에 맞게 정렬을 하는 방식이다. 언제나 문제의 조건을 정리하여 그대로 코딩화하는 것이 중요한 것 같다.</summary>
       
 
       

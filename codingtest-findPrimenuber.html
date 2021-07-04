@@ -11,7 +11,7 @@
 
 
 
-    <title>프로그래머스 코딩테스트 연습 H Index(정렬)</title>
+    <title>프로그래머스 코딩테스트 소수 찾기(완전탐색)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -47,24 +47,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="온리 공부를 위한 블로그" />
     <link rel="shortcut icon" href="https://sanseongKo.github.io/assets/built/images/favicon.jpg" type="image/png" />
-    <link rel="canonical" href="https://sanseongKo.github.io/codingtest-hindex" />
+    <link rel="canonical" href="https://sanseongKo.github.io/codingtest-findPrimenuber" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="SanseongKo's Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="프로그래머스 코딩테스트 연습 H Index(정렬)" />
-    <meta property="og:description" content="오늘은 정렬문제의 마지막 H Index 문제에 대하여 풀어보았다. 솔직히 처음 문제가 이해가 되었다 안 되었다를 반복하며 혼란을 주었고, 풀이와 설명을 들었을 때에도 긴가민가하게 되었고, 코드를 짜면서 이해가 되었다. 정답 코드이며, 문제는 h를 처음 배열의 길이만큼 주고(h는 배열의 길이를 넘어갈 수 없다.) 배열을 정렬한다. 그럼 for문안에서 h를 계속 감소시켜 문제를 풀었다." />
-    <meta property="og:url" content="https://sanseongKo.github.io/codingtest-hindex" />
+    <meta property="og:title" content="프로그래머스 코딩테스트 소수 찾기(완전탐색)" />
+    <meta property="og:description" content="오늘은 프로그래머스 완전탐색에 있는 소수찾는 문제를 풀어보았다. 실제로는 풀지 못하였고, 소수를 찾기 위하여 제곱근을 사용하는 방법까지는 알고 있었지만, 재귀함수를 통하여 나올 수 있는 모든 수를 탐색하는 것이 아직 너무 익숙치 않았다.(재귀함수 ㅂㄷㅂㄷ…) 풀어보기 코드는 숨어보는 IT님의 코드를 참고하여 만들었고, 중요한 부분은 소수를 찾는 부분보다 들어온 문자열을 가지고 나올 수 있는" />
+    <meta property="og:url" content="https://sanseongKo.github.io/codingtest-findPrimenuber" />
     <meta property="og:image" content="https://sanseongKo.github.io/assets/built/images/codingtest/programmers.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-07-02T00:00:00+09:00" />
-    <meta property="article:modified_time" content="2021-07-02T00:00:00+09:00" />
+    <meta property="article:published_time" content="2021-07-03T00:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-07-03T00:00:00+09:00" />
     <meta property="article:tag" content="Codingtest" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="프로그래머스 코딩테스트 연습 H Index(정렬)" />
-    <meta name="twitter:description" content="오늘은 정렬문제의 마지막 H Index 문제에 대하여 풀어보았다. 솔직히 처음 문제가 이해가 되었다 안 되었다를 반복하며 혼란을 주었고, 풀이와 설명을 들었을 때에도 긴가민가하게 되었고, 코드를 짜면서 이해가 되었다. 정답 코드이며, 문제는 h를 처음 배열의 길이만큼 주고(h는 배열의 길이를 넘어갈 수 없다.) 배열을 정렬한다. 그럼 for문안에서 h를 계속 감소시켜 문제를 풀었다." />
+    <meta name="twitter:title" content="프로그래머스 코딩테스트 소수 찾기(완전탐색)" />
+    <meta name="twitter:description" content="오늘은 프로그래머스 완전탐색에 있는 소수찾는 문제를 풀어보았다. 실제로는 풀지 못하였고, 소수를 찾기 위하여 제곱근을 사용하는 방법까지는 알고 있었지만, 재귀함수를 통하여 나올 수 있는 모든 수를 탐색하는 것이 아직 너무 익숙치 않았다.(재귀함수 ㅂㄷㅂㄷ…) 풀어보기 코드는 숨어보는 IT님의 코드를 참고하여 만들었고, 중요한 부분은 소수를 찾는 부분보다 들어온 문자열을 가지고 나올 수 있는" />
     <meta name="twitter:url" content="https://sanseongKo.github.io/" />
     <meta name="twitter:image" content="https://sanseongKo.github.io/assets/built/images/codingtest/programmers.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -85,7 +85,7 @@
         "name": "SanseongKo's Blog",
         "logo": "https://sanseongKo.github.io/"
     },
-    "url": "https://sanseongKo.github.io/codingtest-hindex",
+    "url": "https://sanseongKo.github.io/codingtest-findPrimenuber",
     "image": {
         "@type": "ImageObject",
         "url": "https://sanseongKo.github.io/assets/built/images/codingtest/programmers.jpg",
@@ -94,9 +94,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://sanseongKo.github.io/codingtest-hindex"
+        "@id": "https://sanseongKo.github.io/codingtest-findPrimenuber"
     },
-    "description": "오늘은 정렬문제의 마지막 H Index 문제에 대하여 풀어보았다. 솔직히 처음 문제가 이해가 되었다 안 되었다를 반복하며 혼란을 주었고, 풀이와 설명을 들었을 때에도 긴가민가하게 되었고, 코드를 짜면서 이해가 되었다. 정답 코드이며, 문제는 h를 처음 배열의 길이만큼 주고(h는 배열의 길이를 넘어갈 수 없다.) 배열을 정렬한다. 그럼 for문안에서 h를 계속 감소시켜 문제를 풀었다."
+    "description": "오늘은 프로그래머스 완전탐색에 있는 소수찾는 문제를 풀어보았다. 실제로는 풀지 못하였고, 소수를 찾기 위하여 제곱근을 사용하는 방법까지는 알고 있었지만, 재귀함수를 통하여 나올 수 있는 모든 수를 탐색하는 것이 아직 너무 익숙치 않았다.(재귀함수 ㅂㄷㅂㄷ…) 풀어보기 코드는 숨어보는 IT님의 코드를 참고하여 만들었고, 중요한 부분은 소수를 찾는 부분보다 들어온 문자열을 가지고 나올 수 있는"
 }
     </script>
 
@@ -109,7 +109,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="프로그래머스 코딩테스트 연습 H Index(정렬)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="프로그래머스 코딩테스트 소수 찾기(완전탐색)" href="/feed.xml" />
 
 
 </head>
@@ -173,7 +173,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 2 July 2021"> 2 July 2021</time>
+                    <time class="post-full-meta-date" datetime=" 3 July 2021"> 3 July 2021</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -183,7 +183,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">프로그래머스 코딩테스트 연습 H Index(정렬)</h1>
+                <h1 class="post-full-title">프로그래머스 코딩테스트 소수 찾기(완전탐색)</h1>
             </header>
 
             
@@ -193,15 +193,29 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>오늘은 정렬문제의 마지막 H Index 문제에 대하여 풀어보았다. 솔직히 처음 문제가 이해가 되었다 안 되었다를 반복하며 혼란을 주었고, 풀이와 설명을 들었을 때에도
-긴가민가하게 되었고, 코드를 짜면서 이해가 되었다.</p>
+                    <p>오늘은 프로그래머스 완전탐색에 있는 소수찾는 문제를 풀어보았다. 실제로는 풀지 못하였고, 소수를 찾기 위하여 제곱근을 사용하는 방법까지는 알고 있었지만,
+재귀함수를 통하여 나올 수 있는 모든 수를 탐색하는 것이 아직 너무 익숙치 않았다.(재귀함수 ㅂㄷㅂㄷ…)
+<br />
+<a href="https://programmers.co.kr/learn/courses/30/lessons/42839">풀어보기</a></p>
 
-<script src="https://gist.github.com/sanseongKo/8046b9e195eb14e2a70316354fd58043.js"></script>
+<script src="https://gist.github.com/sanseongKo/4c3c7996a5d97e473087a67fd529f2bf.js"></script>
 
-<p>정답 코드이며, 문제는 h를 처음 배열의 길이만큼 주고(h는 배열의 길이를 넘어갈 수 없다.) 배열을 정렬한다. 그럼 for문안에서 h를 계속 감소시켜 문제를 풀었다.<br />
-같이 공부하는 친구에게 설명을 듣고, h가 감소할 때 결국 그 값 보다 큰 값들이 h보다 같거나 많은 경우에 정답이 될 수 있었고, h가 밑에서 부터 올라온다면,
-처음 수가 작을 경우 그 값을 리턴할 경우가 있기 때문에(이경우엔 h보다 작거나 같은 것을 구하면 될 것) 감소시켰다. 결국 감소되며 if문을 검사 받을 때 크거나 같다면
-h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.</p>
+<p>코드는 <a href="https://hidelookit.tistory.com/67">숨어보는 IT</a>님의 코드를 참고하여 만들었고, 중요한 부분은 소수를 찾는 부분보다 들어온 문자열을 가지고
+나올 수 있는 모든 수를 찾는 것이 더 중요한 것 같다. 해당 코드에서는 boolean값으로 처음 cycle메소드를 호출하였을 때 해당하는 수를 true로 바꿔주고 
+true라면 다시 쓰이지 않도록 하였다. 또한 마지막에 다시 false로 바꿔주며 start가 증가할 때 처음부터 확인하기 위하여 설정이 되어 있다. end는 호출하는 곳의
+i값을 써서 1자리수 2자리수 3자리수로 나올 수 있는 값들을 알아내기 위한 것이다. 
+<br />
+재귀함수를 이용하여 알고리즘 문제를 푸는 것이 아직 익숙치 않고, 이렇게하면 되지 않을까하는 생각은 들지만 머리로 순간적으로 그려지지 않다보니 많은 어려움을
+겪는 것 같다. 많은 시간 투자와 노력이 필요하지 않을까 싶다. 완전탐색 또는 BFS DFS에 재귀함수를 조금 적극적으로 써볼 필요성이 느껴진다. 그리고 조합을 풀 때
+boolean값으로 방문한 값을 확인하는 것을 많이 쓰기 때문에, 알아두고 두고두고 사용하여야할 것 같다.</p>
+
+<p><br />
+<br />
+<b>알게 된 것</b></p>
+<ol>
+  <li>Math.sqrt() : 숫자의 제곱근을 구해주는 메소드이다.</li>
+  <li>flag를 이용한 완전탐색: false와 true로 각 자리의 숫자가 쓰인적이 있는지 확인하는 기법이 많이 사용되는 것 같다. 익숙해지자.</li>
+</ol>
 
                 </div>
             </section>
@@ -251,9 +265,9 @@ h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'https://sanseongKo.github.io/codingtest-hindex';
-                            var this_page_identifier = '/codingtest-hindex';
-                            var this_page_title = '프로그래머스 코딩테스트 연습 H Index(정렬)';
+                            var this_page_url = 'https://sanseongKo.github.io/codingtest-findPrimenuber';
+                            var this_page_identifier = '/codingtest-findPrimenuber';
+                            var this_page_title = '프로그래머스 코딩테스트 소수 찾기(완전탐색)';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -307,11 +321,6 @@ h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/codingtest-findPrimenuber">프로그래머스 코딩테스트 소수 찾기(완전탐색)</a></li>
-                                        
-                                    
                                   
                                 
                                   
@@ -324,6 +333,11 @@ h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                            <li><a href="/codingtest-hindex">프로그래머스 코딩테스트 연습 H Index(정렬)</a></li>
+                                        
                                     
                                   
                                 
@@ -444,6 +458,51 @@ h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.
 
     <article class="post-card post-template">
         
+            <a class="post-card-image-link" href="/codingtest-carpet">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/codingtest/programmers.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/codingtest-carpet">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Codingtest</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">프로그래머스 코딩테스트 소수 카페트(완전탐색)</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>오늘은 프로그래머스 코딩테스트연습에 마지막 완전탐색 문제 카페트에서 대하여 풀어보았다. 갈색과 노란색의 합으로 나올 수 있는 사각형의 가로와 세로를 모두 구하고, 구한 것을 바탕으로 (가로-2)*(세로-2)가 노란색이 되는 것을 이용하였다. 밑은 코드이고, 풀어보기 사실 다른</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
             <a class="post-card-image-link" href="/codingtest-moctest">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/codingtest/programmers.jpg)"></div>
             </a>
@@ -487,51 +546,6 @@ h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.
 
             
 
-            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
-            
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/codingtest-numberK">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/codingtest/programmers.jpg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/codingtest-numberK">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Codingtest</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">프로그래머스 코딩테스트 연습 K번째 수(정렬)</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다. 문제 풀어보기 해당 코드이고, 들어간 수를 그냥 우선순위 큐에 넣어 정렬시켰다. 그리고 r-1에서 걸리면 해당 que의 맨 처음</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
-
         </div>
     </div>
 </aside>
@@ -545,18 +559,18 @@ h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">프로그래머스 코딩테스트 연습 H Index(정렬)</div>
+    <div class="floating-header-title">프로그래머스 코딩테스트 소수 찾기(완전탐색)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4+%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8+%EC%97%B0%EC%8A%B5+H+Index%28%EC%A0%95%EB%A0%AC%29&amp;url=https://sanseongKo.github.io/codingtest-hindex"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4+%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8+%EC%86%8C%EC%88%98+%EC%B0%BE%EA%B8%B0%28%EC%99%84%EC%A0%84%ED%83%90%EC%83%89%29&amp;url=https://sanseongKo.github.io/codingtest-findPrimenuber"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://sanseongKo.github.io/codingtest-hindex"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://sanseongKo.github.io/codingtest-findPrimenuber"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

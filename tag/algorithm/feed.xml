@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-03T19:59:04+09:00</updated>
+  <updated>2021-07-04T20:22:07+09:00</updated>
   <id>https://sanseongko.github.io/tag/algorithm/feed.xml</id>
 
   
@@ -32,22 +32,41 @@
 
   
     <entry>
-      <title type="html">Algorithm Greedy(탐욕법)에 관하여</title>
-      <link href="https://sanseongko.github.io/algorithm-greedy" rel="alternate" type="text/html" title="Algorithm Greedy(탐욕법)에 관하여" />
-      <published>2021-06-11T00:00:00+09:00</published>
-      <updated>2021-06-11T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/algorithm-greedy</id>
-      <content type="html" xml:base="https://sanseongko.github.io/algorithm-greedy">&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
+      <title type="html">Algorithm 동적 계획법에 관하여</title>
+      <link href="https://sanseongko.github.io/algorithm-dynamicprogramming" rel="alternate" type="text/html" title="Algorithm 동적 계획법에 관하여" />
+      <published>2021-06-14T00:00:00+09:00</published>
+      <updated>2021-06-14T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/algorithm-dynamicprogramming</id>
+      <content type="html" xml:base="https://sanseongko.github.io/algorithm-dynamicprogramming">&lt;h3&gt;동적 계획법&lt;/h3&gt;
+&lt;p&gt;동적 계획법이란, 보다 큰 문제를 작은 문제로 나누어 푸는 방식을 뜻한다. 이 부분은 분할과 정복과 유사한데, 분할과 정복은 중복이 절대 일어날 수 없다
+는 것이고, 동적 계획법에서는 문제가 중복된다는 점이다. 이 부분에서 동적 계획법은 중복으로 일어난 작은 문제에 대하여 그 문제에 사용되었던 방식을, 값을
+캐시(cache)라 불리는 메모리에 미리 넣어두고 중복되는 문제를 마주칠 시에 미리 저장되어 있던 값을 꺼내어 사용하는 것이다.(Memoization 메모이제이션)
+&lt;img src=&quot;./assets/built/images/algorithm/dynamic/dynamic.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
+위의 사진에서 보이는 대로 f(3)의 f(2)의 검은색 부분이 겹치기 때문에, 이 값들은 캐시에 저장해두고 쓸 수 있다. 미리 값을 정해두고 계산을 하는 것이기
+때문에 시간이 단축된다.&lt;/p&gt;
 
-&lt;h3&gt;Greedy&lt;/h3&gt;
-&lt;p&gt;Greedy 탐욕법 알고리즘은 결과까지는 생각하지 않고 매 순간 최선이라고 생각되는 것을 선택해 결과까지 도달하는 알고리즘이다. 설명과 같이 매 순간 최
-선인 선택을 하고 그 이후의 선택은 이후에 판단하기 때문에 언제나 옳은 알고리즘은 아닐 수 있다. 그렇기 때문에, 현상황에서 선택하는 최선의 수를 선택
-한다면 결과도 최선이 되는 경우에 사용하여야 알맞다.
-보통은 활동 선택 문제, 거스름돈 문제, 최소 신장 트리, 다익스트라 알고리즘에 활용이 가능하며, 살펴보다면 결국 매순간 최적의 선택을하고 그 선택들이
-다음 선택과 전혀 무관하더라도 최적의 경우를 찾을 수 있는 문제에 사용이 가능한 것을 알 수 있다.&lt;/p&gt;
+&lt;h3&gt;동적 계획법 조건&lt;/h3&gt;
+&lt;p&gt;동적 계획법은 2가지 조건을 만족하여야 동적 계획법으로 문제를 풀 수 있다. 첫 번째는, 겹치는 부분이 있어야하고(overlapping subproblem), 최적의
+부분 구조가 있어야 한다.
+&lt;b&gt;1. Overlapping Subproblem&lt;b&gt;&lt;br /&gt;
+보통은 피보나치 수열을 예로들어, 이 부분을 설명할 수 있다. 피보나치 수열의 경우, Fn = F(n-1)+F(n-2)의 즉, 앞의 두수를 더하면 다음 수가 되는 것이다.
+이럴 경우, 재귀함수로 표현할 시 return 값이 f(n-1)+f(n-2)로 본인의 메소드를 다시 불러오게 된다.(n=인자값) 앞의 두수는 이미 앞에서 계산할 때 
+계산이 된 수이므로, 다시 계산할 필요없이 cache에 담아두고 빠르게 찾아쓰자는 것이다. 이렇게 겹치는 부분이 우선 존재해야 한다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;탐욕범을 위한 문제&lt;/b&gt;
-탐욕법의 정의이고, 나머지는 문제를 풀어보며 어떻게 접근하여야 할지 생각해 봐야하겠다. 추가적인 문제를 다룰 경우 추가 포스팅 예정임.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;2. Optimal Substructure&lt;/b&gt;&lt;br /&gt;
+최적 부분 구조는 어떤 문제의 최적의 해결책이 그 부분 문제의 최적의 해결책으로 부터 설계될 수 있다는 것을 가르킨다. 피보나치를 예로 들자면 100번째 항은
+항상 99과 98의 합과 같다. 또한, 각각 99와 98은 98과97의 합 97과 96의 합과 같다. 이렇듯, 부분의 문제의 해결책이 보다 큰 문제의 해결책이 되는 경우가
+이에 해당한다.&lt;/p&gt;
+
+&lt;h3&gt;동적 계획법 구현 방식&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;1. Top-down&lt;/b&gt;&lt;br /&gt;
+말그대로 위에서 부터 아래로, 큰 문제(Fn)를 작은 문제(F(n-1)+F(n-2)로 나누어 작은 문제부터 풀고 큰 문제를 푸는 것을 가르킨다. 피보나치 수열을 계산할 떄 재귀함수로 
+푸는 것이 이에 해당한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;2. Bottom-up&lt;/b&gt;&lt;br /&gt;
+탑 다운과 반대로 문제 크기가 작은 것부터 큰것으로 푼다. 작은 것부터 차례대로 풀었기 때문에 큰 문제를 당연히 풀 수 있으며, 반복하면 가장 큰 문제를
+풀 수 있게 된다. 보통 피보나치 수열에선 for문을 사용하여 i가 2부터 n까지(0과 1은 정해져 있음) 작은 문제부터 풀어 나가게 된다.&lt;/p&gt;</content>
 
       
       
@@ -68,7 +87,7 @@
       
 
       
-        <summary type="html">오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.</summary>
+        <summary type="html">동적 계획법 동적 계획법이란, 보다 큰 문제를 작은 문제로 나누어 푸는 방식을 뜻한다. 이 부분은 분할과 정복과 유사한데, 분할과 정복은 중복이 절대 일어날 수 없다 는 것이고, 동적 계획법에서는 문제가 중복된다는 점이다. 이 부분에서 동적 계획법은 중복으로 일어난 작은 문제에 대하여 그 문제에 사용되었던 방식을, 값을 캐시(cache)라 불리는 메모리에 미리 넣어두고 중복되는 문제를 마주칠 시에 미리 저장되어 있던 값을 꺼내어 사용하는 것이다.(Memoization 메모이제이션) 위의 사진에서 보이는 대로 f(3)의 f(2)의 검은색 부분이 겹치기 때문에, 이 값들은 캐시에 저장해두고 쓸 수 있다. 미리 값을 정해두고 계산을 하는 것이기 때문에 시간이 단축된다.</summary>
       
 
       
@@ -148,6 +167,50 @@ n이 커질 수록 처리시간이 길어지므로, n이 크기가 작아야한�
 
       
         <summary type="html">오늘은 알고리즘 중 하나인 완전 탐색 알고리즘에 대하여 알아보려고 한다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Algorithm Greedy(탐욕법)에 관하여</title>
+      <link href="https://sanseongko.github.io/algorithm-greedy" rel="alternate" type="text/html" title="Algorithm Greedy(탐욕법)에 관하여" />
+      <published>2021-06-01T00:00:00+09:00</published>
+      <updated>2021-06-01T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/algorithm-greedy</id>
+      <content type="html" xml:base="https://sanseongko.github.io/algorithm-greedy">&lt;p&gt;오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.&lt;/p&gt;
+
+&lt;h3&gt;Greedy&lt;/h3&gt;
+&lt;p&gt;Greedy 탐욕법 알고리즘은 결과까지는 생각하지 않고 매 순간 최선이라고 생각되는 것을 선택해 결과까지 도달하는 알고리즘이다. 설명과 같이 매 순간 최
+선인 선택을 하고 그 이후의 선택은 이후에 판단하기 때문에 언제나 옳은 알고리즘은 아닐 수 있다. 그렇기 때문에, 현상황에서 선택하는 최선의 수를 선택
+한다면 결과도 최선이 되는 경우에 사용하여야 알맞다.
+보통은 활동 선택 문제, 거스름돈 문제, 최소 신장 트리, 다익스트라 알고리즘에 활용이 가능하며, 살펴보다면 결국 매순간 최적의 선택을하고 그 선택들이
+다음 선택과 전혀 무관하더라도 최적의 경우를 찾을 수 있는 문제에 사용이 가능한 것을 알 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;탐욕범을 위한 문제&lt;/b&gt;
+탐욕법의 정의이고, 나머지는 문제를 풀어보며 어떻게 접근하여야 할지 생각해 봐야하겠다. 추가적인 문제를 다룰 경우 추가 포스팅 예정임.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="algorithm" />
+      
+
+      
+        <summary type="html">오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.</summary>
       
 
       
@@ -532,69 +595,6 @@ PriorityQueue&lt;Integer&gt; priorityQueue = new PriorityQueue&amp;lt;&amp;gt;(C
 
       
         <summary type="html">오늘은 Hash에 대하여 정리를 해보려고 한다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Algorithm 동적 계획법에 관하여</title>
-      <link href="https://sanseongko.github.io/algorithm-dynamicprogramming" rel="alternate" type="text/html" title="Algorithm 동적 계획법에 관하여" />
-      <published>2021-05-25T00:00:00+09:00</published>
-      <updated>2021-05-25T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/algorithm-dynamicprogramming</id>
-      <content type="html" xml:base="https://sanseongko.github.io/algorithm-dynamicprogramming">&lt;h3&gt;동적 계획법&lt;/h3&gt;
-&lt;p&gt;동적 계획법이란, 보다 큰 문제를 작은 문제로 나누어 푸는 방식을 뜻한다. 이 부분은 분할과 정복과 유사한데, 분할과 정복은 중복이 절대 일어날 수 없다
-는 것이고, 동적 계획법에서는 문제가 중복된다는 점이다. 이 부분에서 동적 계획법은 중복으로 일어난 작은 문제에 대하여 그 문제에 사용되었던 방식을, 값을
-캐시(cache)라 불리는 메모리에 미리 넣어두고 중복되는 문제를 마주칠 시에 미리 저장되어 있던 값을 꺼내어 사용하는 것이다.(Memoization 메모이제이션)
-&lt;img src=&quot;./assets/built/images/algorithm/dynamic/dynamic.png&quot; alt=&quot;ex_screenshot&quot; /&gt;
-위의 사진에서 보이는 대로 f(3)의 f(2)의 검은색 부분이 겹치기 때문에, 이 값들은 캐시에 저장해두고 쓸 수 있다. 미리 값을 정해두고 계산을 하는 것이기
-때문에 시간이 단축된다.&lt;/p&gt;
-
-&lt;h3&gt;동적 계획법 조건&lt;/h3&gt;
-&lt;p&gt;동적 계획법은 2가지 조건을 만족하여야 동적 계획법으로 문제를 풀 수 있다. 첫 번째는, 겹치는 부분이 있어야하고(overlapping subproblem), 최적의
-부분 구조가 있어야 한다.
-&lt;b&gt;1. Overlapping Subproblem&lt;b&gt;&lt;br /&gt;
-보통은 피보나치 수열을 예로들어, 이 부분을 설명할 수 있다. 피보나치 수열의 경우, Fn = F(n-1)+F(n-2)의 즉, 앞의 두수를 더하면 다음 수가 되는 것이다.
-이럴 경우, 재귀함수로 표현할 시 return 값이 f(n-1)+f(n-2)로 본인의 메소드를 다시 불러오게 된다.(n=인자값) 앞의 두수는 이미 앞에서 계산할 때 
-계산이 된 수이므로, 다시 계산할 필요없이 cache에 담아두고 빠르게 찾아쓰자는 것이다. 이렇게 겹치는 부분이 우선 존재해야 한다.&lt;/b&gt;&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;2. Optimal Substructure&lt;/b&gt;&lt;br /&gt;
-최적 부분 구조는 어떤 문제의 최적의 해결책이 그 부분 문제의 최적의 해결책으로 부터 설계될 수 있다는 것을 가르킨다. 피보나치를 예로 들자면 100번째 항은
-항상 99과 98의 합과 같다. 또한, 각각 99와 98은 98과97의 합 97과 96의 합과 같다. 이렇듯, 부분의 문제의 해결책이 보다 큰 문제의 해결책이 되는 경우가
-이에 해당한다.&lt;/p&gt;
-
-&lt;h3&gt;동적 계획법 구현 방식&lt;/h3&gt;
-
-&lt;p&gt;&lt;b&gt;1. Top-down&lt;/b&gt;&lt;br /&gt;
-말그대로 위에서 부터 아래로, 큰 문제(Fn)를 작은 문제(F(n-1)+F(n-2)로 나누어 작은 문제부터 풀고 큰 문제를 푸는 것을 가르킨다. 피보나치 수열을 계산할 떄 재귀함수로 
-푸는 것이 이에 해당한다.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;2. Bottom-up&lt;/b&gt;&lt;br /&gt;
-탑 다운과 반대로 문제 크기가 작은 것부터 큰것으로 푼다. 작은 것부터 차례대로 풀었기 때문에 큰 문제를 당연히 풀 수 있으며, 반복하면 가장 큰 문제를
-풀 수 있게 된다. 보통 피보나치 수열에선 for문을 사용하여 i가 2부터 n까지(0과 1은 정해져 있음) 작은 문제부터 풀어 나가게 된다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Ko</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="algorithm" />
-      
-
-      
-        <summary type="html">동적 계획법 동적 계획법이란, 보다 큰 문제를 작은 문제로 나누어 푸는 방식을 뜻한다. 이 부분은 분할과 정복과 유사한데, 분할과 정복은 중복이 절대 일어날 수 없다 는 것이고, 동적 계획법에서는 문제가 중복된다는 점이다. 이 부분에서 동적 계획법은 중복으로 일어난 작은 문제에 대하여 그 문제에 사용되었던 방식을, 값을 캐시(cache)라 불리는 메모리에 미리 넣어두고 중복되는 문제를 마주칠 시에 미리 저장되어 있던 값을 꺼내어 사용하는 것이다.(Memoization 메모이제이션) 위의 사진에서 보이는 대로 f(3)의 f(2)의 검은색 부분이 겹치기 때문에, 이 값들은 캐시에 저장해두고 쓸 수 있다. 미리 값을 정해두고 계산을 하는 것이기 때문에 시간이 단축된다.</summary>
       
 
       

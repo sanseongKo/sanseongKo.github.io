@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/spring/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-03T19:59:04+09:00</updated>
+  <updated>2021-07-04T20:22:07+09:00</updated>
   <id>https://sanseongko.github.io/tag/spring/feed.xml</id>
 
   
@@ -34,8 +34,8 @@
     <entry>
       <title type="html">Spring Security 연습</title>
       <link href="https://sanseongko.github.io/springsecurity" rel="alternate" type="text/html" title="Spring Security 연습" />
-      <published>2021-06-13T00:00:00+09:00</published>
-      <updated>2021-06-13T00:00:00+09:00</updated>
+      <published>2021-06-18T00:00:00+09:00</published>
+      <updated>2021-06-18T00:00:00+09:00</updated>
       <id>https://sanseongko.github.io/springsecurity</id>
       <content type="html" xml:base="https://sanseongko.github.io/springsecurity">&lt;p&gt;기술 면접중 스프링 시큐리티에 관하여 질문을 받았고, 대답을 못했다. 돌아가는 모습은 내가 아는 모습은 비슷하지만, 지원을 해주는 것에서 많이 차이가
 나는 것 같다. 편한기능이 많고, 알아두면 좋을 것 같다. 물론 어떻게 돌아가는지도 넣을 것이고, 자료는 유튜브 &lt;a href=&quot;https://www.youtube.com/watch?v=riwrVN1JVbU&quot;&gt;데어 프로그래밍&lt;/a&gt;님의
