@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/codingtest/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-04T20:22:07+09:00</updated>
+  <updated>2021-07-05T20:26:47+09:00</updated>
   <id>https://sanseongko.github.io/tag/codingtest/feed.xml</id>
 
   
@@ -30,6 +30,56 @@
   
   
 
+  
+    <entry>
+      <title type="html">프로그래머스 코딩테스트 체육복(탐욕법)</title>
+      <link href="https://sanseongko.github.io/codingtest-trainingcloth" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 체육복(탐욕법)" />
+      <published>2021-07-05T00:00:00+09:00</published>
+      <updated>2021-07-05T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-trainingcloth</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-trainingcloth">&lt;p&gt;오늘은 프로그래머스 코딩테스트 연습에 있는 탐욕법 문제를 풀어보았다. 1레벨 단계의 문제이다보니 어렵지 않았지만, 탐욕법을 적용하여 풀려고하니 조금 꼬이는 
+부분이 생기긴 했다.
+&lt;br /&gt;
+&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42862&quot;&gt;문제풀어보기&lt;/a&gt;
+&lt;br /&gt;
+밑은 정답 코드이다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/c8724699ecf4169fe7ff18bff775638e.js&quot;&gt;&lt;/script&gt;
+탐욕법 문제이니만큼 매순간 최적의 선택을 하여야 하고, 처음 내가 문제를 풀었을 땐, flag기법으로 각 배열의 위치로 boolean 배열을 만들어 사용하였지만, 
+그렇게 되면, 가능은 하겠지만, 여벌의 옷이 있지만 받지 못하는 경우를 처리하기에 힘들어서 정수배열로 만들어 처리하였다. 만약 1,3이 lost에 들어잇고, 2,4가 
+reserve에 들어잇고 n이 5명 이상일 때, 처음 코드에서는 3번이 4번의 옷을 가져가게되면 2번이 옆의 옷이 없다는 것으로 가정하여 옷을 받지 못하는 경우가 생긴다.
+이럴 경우를 위하여 위의 코드로 처리하였다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;오늘 배운 것&lt;/b&gt;
+탐욕법은 매 순간 최선의 선택을 하여야하고 다른 것은 절대 신경쓰면 안된다. 그렇기 때문에, 최선의 선택이 전체적으로 봤을 때 올바른 선택이 되어야 한다.
+문제를 풀 때 매순간이 최선의 선택인지 확인하고 혹시 빠진 것이 없는지를 주의하며 문제를 풀어나가야하겠다.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">오늘은 프로그래머스 코딩테스트 연습에 있는 탐욕법 문제를 풀어보았다. 1레벨 단계의 문제이다보니 어렵지 않았지만, 탐욕법을 적용하여 풀려고하니 조금 꼬이는 부분이 생기긴 했다. 문제풀어보기 밑은 정답 코드이다. 탐욕법 문제이니만큼 매순간 최적의 선택을 하여야 하고, 처음 내가 문제를 풀었을 땐, flag기법으로 각 배열의 위치로 boolean 배열을 만들어 사용하였지만, 그렇게 되면, 가능은 하겠지만, 여벌의 옷이 있지만 받지 못하는 경우를 처리하기에 힘들어서 정수배열로 만들어 처리하였다. 만약 1,3이 lost에 들어잇고, 2,4가 reserve에 들어잇고 n이 5명 이상일 때, 처음 코드에서는 3번이 4번의 옷을 가져가게되면 2번이 옆의 옷이 없다는 것으로 가정하여 옷을 받지 못하는 경우가 생긴다. 이럴 경우를 위하여 위의 코드로 처리하였다.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">프로그래머스 코딩테스트 소수 카페트(완전탐색)</title>
@@ -468,83 +518,6 @@ Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복�
 
       
         <summary type="html">오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다. 문제 풀어보기 처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다. 결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다. 바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에, 효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다. 어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서, 저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을 리턴해주는 것으로 만들었다. 아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">프로그래머스 코딩테스트 연습 기능개발(스택/큐) 문제</title>
-      <link href="https://sanseongko.github.io/codingtest-functiondevelop" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 기능개발(스택/큐) 문제" />
-      <published>2021-06-25T00:00:00+09:00</published>
-      <updated>2021-06-25T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/codingtest-functiondevelop</id>
-      <content type="html" xml:base="https://sanseongko.github.io/codingtest-functiondevelop">&lt;p&gt;코딩테스트 연습으로 해시의 위장 문제를 풀어보았다.
-우선 내가 작성한 코드이고, 성공했지만, 시간내에 풀지는 못했다…
-&lt;br /&gt;
-&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42586&quot;&gt;문제 풀어보기&lt;/a&gt;
-&lt;br /&gt;
-&lt;script src=&quot;https://gist.github.com/sanseongKo/d6a8351afa53f6b8e414f16997087aa8.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;데이는 걸리는 시간으로 처음 순서대로 큐를 이용하여 큐에 값을 넣고 그 값들을 나오는대로 비교해 나갔다. 마지막&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;que&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;que&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tmp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;que&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        		&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        		&lt;span class=&quot;nx&quot;&gt;que&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-        	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        		&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        		&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        		&lt;span class=&quot;nx&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;que&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-        	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;que&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        		&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;이 부분에서 뇌절이 와버려서, 시간이 걸렸고 tmp &amp;gt;= que.peek() 부분에서 &amp;gt;=가 아닌 &amp;gt;로 해버려서 또 시간을 버렸다.
-&lt;br /&gt;&lt;br /&gt;
-밑에는 다른 사람의 풀이의 처음에 있는 분의 풀이이다.&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ArrayList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;progresses&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;speeds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dayOfend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;progresses&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;progresses&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speeds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;dayOfend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dayOfend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;하, 람다식 진짜… ㅋㅋㅋ 오늘부터라도 공부한다 내가. 그리고 Arrays.stream 이 부분이 자주보이는데 여기도 확인을 해봐야 할 것 같다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Ko</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="codingtest" />
-      
-
-      
-        <summary type="html">코딩테스트 연습으로 해시의 위장 문제를 풀어보았다. 우선 내가 작성한 코드이고, 성공했지만, 시간내에 풀지는 못했다… 문제 풀어보기</summary>
       
 
       

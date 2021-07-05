@@ -11,7 +11,7 @@
 
 
 
-    <title>Algorithm Greedy(탐욕법)에 관하여</title>
+    <title>프로그래머스 코딩테스트 체육복(탐욕법)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -47,30 +47,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="온리 공부를 위한 블로그" />
     <link rel="shortcut icon" href="https://sanseongKo.github.io/assets/built/images/favicon.jpg" type="image/png" />
-    <link rel="canonical" href="https://sanseongKo.github.io/algorithm-greedy" />
+    <link rel="canonical" href="https://sanseongKo.github.io/codingtest-trainingcloth" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="SanseongKo's Blog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Algorithm Greedy(탐욕법)에 관하여" />
-    <meta property="og:description" content="오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다. Greedy Greedy 탐욕법 알고리즘은 결과까지는 생각하지 않고 매 순간 최선이라고 생각되는 것을 선택해 결과까지 도달하는 알고리즘이다. 설명과 같이 매 순간 최 선인 선택을 하고 그 이후의 선택은 이후에 판단하기 때문에 언제나 옳은 알고리즘은 아닐 수 있다. 그렇기 때문에, 현상황에서 선택하는 최선의 수를" />
-    <meta property="og:url" content="https://sanseongKo.github.io/algorithm-greedy" />
-    <meta property="og:image" content="https://sanseongKo.github.io/assets/built/images/algorithm/algorithm.png" />
+    <meta property="og:title" content="프로그래머스 코딩테스트 체육복(탐욕법)" />
+    <meta property="og:description" content="오늘은 프로그래머스 코딩테스트 연습에 있는 탐욕법 문제를 풀어보았다. 1레벨 단계의 문제이다보니 어렵지 않았지만, 탐욕법을 적용하여 풀려고하니 조금 꼬이는 부분이 생기긴 했다. 문제풀어보기 밑은 정답 코드이다. 탐욕법 문제이니만큼 매순간 최적의 선택을 하여야 하고, 처음 내가 문제를 풀었을 땐, flag기법으로 각 배열의 위치로 boolean 배열을 만들어 사용하였지만, 그렇게 되면, 가능은 하겠지만, 여벌의" />
+    <meta property="og:url" content="https://sanseongKo.github.io/codingtest-trainingcloth" />
+    <meta property="og:image" content="https://sanseongKo.github.io/assets/built/images/codingtest/programmers.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-06-01T00:00:00+09:00" />
-    <meta property="article:modified_time" content="2021-06-01T00:00:00+09:00" />
-    <meta property="article:tag" content="Algorithm" />
+    <meta property="article:published_time" content="2021-07-05T00:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-07-05T00:00:00+09:00" />
+    <meta property="article:tag" content="Codingtest" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Algorithm Greedy(탐욕법)에 관하여" />
-    <meta name="twitter:description" content="오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다. Greedy Greedy 탐욕법 알고리즘은 결과까지는 생각하지 않고 매 순간 최선이라고 생각되는 것을 선택해 결과까지 도달하는 알고리즘이다. 설명과 같이 매 순간 최 선인 선택을 하고 그 이후의 선택은 이후에 판단하기 때문에 언제나 옳은 알고리즘은 아닐 수 있다. 그렇기 때문에, 현상황에서 선택하는 최선의 수를" />
+    <meta name="twitter:title" content="프로그래머스 코딩테스트 체육복(탐욕법)" />
+    <meta name="twitter:description" content="오늘은 프로그래머스 코딩테스트 연습에 있는 탐욕법 문제를 풀어보았다. 1레벨 단계의 문제이다보니 어렵지 않았지만, 탐욕법을 적용하여 풀려고하니 조금 꼬이는 부분이 생기긴 했다. 문제풀어보기 밑은 정답 코드이다. 탐욕법 문제이니만큼 매순간 최적의 선택을 하여야 하고, 처음 내가 문제를 풀었을 땐, flag기법으로 각 배열의 위치로 boolean 배열을 만들어 사용하였지만, 그렇게 되면, 가능은 하겠지만, 여벌의" />
     <meta name="twitter:url" content="https://sanseongKo.github.io/" />
-    <meta name="twitter:image" content="https://sanseongKo.github.io/assets/built/images/algorithm/algorithm.png" />
+    <meta name="twitter:image" content="https://sanseongKo.github.io/assets/built/images/codingtest/programmers.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="SanseongKo's Blog" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Algorithm" />
+    <meta name="twitter:data2" content="Codingtest" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -85,18 +85,18 @@
         "name": "SanseongKo's Blog",
         "logo": "https://sanseongKo.github.io/"
     },
-    "url": "https://sanseongKo.github.io/algorithm-greedy",
+    "url": "https://sanseongKo.github.io/codingtest-trainingcloth",
     "image": {
         "@type": "ImageObject",
-        "url": "https://sanseongKo.github.io/assets/built/images/algorithm/algorithm.png",
+        "url": "https://sanseongKo.github.io/assets/built/images/codingtest/programmers.jpg",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://sanseongKo.github.io/algorithm-greedy"
+        "@id": "https://sanseongKo.github.io/codingtest-trainingcloth"
     },
-    "description": "오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다. Greedy Greedy 탐욕법 알고리즘은 결과까지는 생각하지 않고 매 순간 최선이라고 생각되는 것을 선택해 결과까지 도달하는 알고리즘이다. 설명과 같이 매 순간 최 선인 선택을 하고 그 이후의 선택은 이후에 판단하기 때문에 언제나 옳은 알고리즘은 아닐 수 있다. 그렇기 때문에, 현상황에서 선택하는 최선의 수를"
+    "description": "오늘은 프로그래머스 코딩테스트 연습에 있는 탐욕법 문제를 풀어보았다. 1레벨 단계의 문제이다보니 어렵지 않았지만, 탐욕법을 적용하여 풀려고하니 조금 꼬이는 부분이 생기긴 했다. 문제풀어보기 밑은 정답 코드이다. 탐욕법 문제이니만큼 매순간 최적의 선택을 하여야 하고, 처음 내가 문제를 풀었을 땐, flag기법으로 각 배열의 위치로 boolean 배열을 만들어 사용하였지만, 그렇게 되면, 가능은 하겠지만, 여벌의"
 }
     </script>
 
@@ -109,7 +109,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Algorithm Greedy(탐욕법)에 관하여" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="프로그래머스 코딩테스트 체육복(탐욕법)" href="/feed.xml" />
 
 
 </head>
@@ -169,41 +169,47 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-algorithm post tag-algorithm ">
+        <article class="post-full  tag-codingtest post tag-algorithm ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 1 June 2021"> 1 June 2021</time>
+                    <time class="post-full-meta-date" datetime=" 5 July 2021"> 5 July 2021</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/algorithm/'>ALGORITHM</a>
+                               <a href='/tag/codingtest/'>CODINGTEST</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Algorithm Greedy(탐욕법)에 관하여</h1>
+                <h1 class="post-full-title">프로그래머스 코딩테스트 체육복(탐욕법)</h1>
             </header>
 
             
-            <figure class="post-full-image" style="background-image: url(/assets/built/images/algorithm/algorithm.png)">
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/codingtest/programmers.jpg)">
             </figure>
             <!--커버필요없으면 주석 -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>오늘은 알고리즘 중 하나인 Greedy에 관하여 알아보도록 하겠다.</p>
+                    <p>오늘은 프로그래머스 코딩테스트 연습에 있는 탐욕법 문제를 풀어보았다. 1레벨 단계의 문제이다보니 어렵지 않았지만, 탐욕법을 적용하여 풀려고하니 조금 꼬이는 
+부분이 생기긴 했다.
+<br />
+<a href="https://programmers.co.kr/learn/courses/30/lessons/42862">문제풀어보기</a>
+<br />
+밑은 정답 코드이다.
+<script src="https://gist.github.com/sanseongKo/c8724699ecf4169fe7ff18bff775638e.js"></script>
+탐욕법 문제이니만큼 매순간 최적의 선택을 하여야 하고, 처음 내가 문제를 풀었을 땐, flag기법으로 각 배열의 위치로 boolean 배열을 만들어 사용하였지만, 
+그렇게 되면, 가능은 하겠지만, 여벌의 옷이 있지만 받지 못하는 경우를 처리하기에 힘들어서 정수배열로 만들어 처리하였다. 만약 1,3이 lost에 들어잇고, 2,4가 
+reserve에 들어잇고 n이 5명 이상일 때, 처음 코드에서는 3번이 4번의 옷을 가져가게되면 2번이 옆의 옷이 없다는 것으로 가정하여 옷을 받지 못하는 경우가 생긴다.
+이럴 경우를 위하여 위의 코드로 처리하였다.</p>
 
-<h3>Greedy</h3>
-<p>Greedy 탐욕법 알고리즘은 결과까지는 생각하지 않고 매 순간 최선이라고 생각되는 것을 선택해 결과까지 도달하는 알고리즘이다. 설명과 같이 매 순간 최
-선인 선택을 하고 그 이후의 선택은 이후에 판단하기 때문에 언제나 옳은 알고리즘은 아닐 수 있다. 그렇기 때문에, 현상황에서 선택하는 최선의 수를 선택
-한다면 결과도 최선이 되는 경우에 사용하여야 알맞다.
-보통은 활동 선택 문제, 거스름돈 문제, 최소 신장 트리, 다익스트라 알고리즘에 활용이 가능하며, 살펴보다면 결국 매순간 최적의 선택을하고 그 선택들이
-다음 선택과 전혀 무관하더라도 최적의 경우를 찾을 수 있는 문제에 사용이 가능한 것을 알 수 있다.</p>
-
-<p><b>탐욕범을 위한 문제</b>
-탐욕법의 정의이고, 나머지는 문제를 풀어보며 어떻게 접근하여야 할지 생각해 봐야하겠다. 추가적인 문제를 다룰 경우 추가 포스팅 예정임.</p>
+<p><br />
+<br />
+<b>오늘 배운 것</b>
+탐욕법은 매 순간 최선의 선택을 하여야하고 다른 것은 절대 신경쓰면 안된다. 그렇기 때문에, 최선의 선택이 전체적으로 봤을 때 올바른 선택이 되어야 한다.
+문제를 풀 때 매순간이 최선의 선택인지 확인하고 혹시 빠진 것이 없는지를 주의하며 문제를 풀어나가야하겠다.</p>
 
                 </div>
             </section>
@@ -253,9 +259,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'https://sanseongKo.github.io/algorithm-greedy';
-                            var this_page_identifier = '/algorithm-greedy';
-                            var this_page_title = 'Algorithm Greedy(탐욕법)에 관하여';
+                            var this_page_url = 'https://sanseongKo.github.io/codingtest-trainingcloth';
+                            var this_page_identifier = '/codingtest-trainingcloth';
+                            var this_page_title = '프로그래머스 코딩테스트 체육복(탐욕법)';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -289,7 +295,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; SanseongKo's Blog &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/algorithm/">Algorithm</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/codingtest/">Codingtest</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -299,51 +305,6 @@ into the {body} of the default.hbs template -->
                                 
                                 
                                   
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/algorithm-dynamicprogramming">Algorithm 동적 계획법에 관하여</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
                                     
                                   
                                 
@@ -351,7 +312,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algorithm-Exhaustive-Search">Algorithm 완전 탐색에 관하여</a></li>
+                                            <li><a href="/codingtest-carpet">프로그래머스 코딩테스트 소수 카페트(완전탐색)</a></li>
                                         
                                     
                                   
@@ -360,11 +321,18 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algorithm-sort">Algorithm 정렬에 관하여</a></li>
+                                            <li><a href="/codingtest-findPrimenuber">프로그래머스 코딩테스트 소수 찾기(완전탐색)</a></li>
                                         
                                     
                                   
                                 
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/codingtest-moctest">프로그래머스 코딩테스트 연습 모의고사(완전탐색)</a></li>
+                                        
+                                    
                                   
                                 
                                   
@@ -375,7 +343,59 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                    
+                                  
                                 
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                                   
@@ -392,14 +412,40 @@ into the {body} of the default.hbs template -->
                                         
                                         
                                     
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
                                   
                                 
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/algorithm/">
+                            <a href="/tag/codingtest/">
                                 
-                                    See all 6 posts  →
+                                    See all 14 posts  →
                                 
                             </a>
                         </footer>
@@ -409,48 +455,6 @@ into the {body} of the default.hbs template -->
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/java-restapipractice">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/java/java.jpg)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/java-restapipractice">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Java</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">Java REST API 실습</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>REST API를 너무 해보고 싶어 하나 하나 전부 뜯어 보려한다. 강의를 사서 볼까도 했지만, 오기가 생겨서 다 찾아보고 적어보려고 한다. 스프링 부트의 어노테이션에 관한 것도 같이 올릴 것이다. 또한 하루만에 완성하는 포스팅이 아니기</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      2 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -458,28 +462,26 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/algorithm-Exhaustive-Search">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/algorithm/algorithm.png)"></div>
+            <a class="post-card-image-link" href="/codingtest-carpet">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/codingtest/programmers.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/algorithm-Exhaustive-Search">
+            <a class="post-card-content-link" href="/codingtest-carpet">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Algorithm</span>
+                                <span class="post-card-tags">Codingtest</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Algorithm 완전 탐색에 관하여</h2>
+                    <h2 class="post-card-title">프로그래머스 코딩테스트 소수 카페트(완전탐색)</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>오늘은 알고리즘 중 하나인 완전 탐색 알고리즘에 대하여 알아보려고 한다.
-
-</p>
+                        <p>오늘은 프로그래머스 코딩테스트연습에 마지막 완전탐색 문제 카페트에서 대하여 풀어보았다. 갈색과 노란색의 합으로 나올 수 있는 사각형의 가로와 세로를 모두 구하고, 구한 것을 바탕으로 (가로-2)*(세로-2)가 노란색이 되는 것을 이용하였다. 밑은 코드이고, 풀어보기 사실 다른</p>
                     
                 </section>
             </a>
@@ -512,18 +514,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Algorithm Greedy(탐욕법)에 관하여</div>
+    <div class="floating-header-title">프로그래머스 코딩테스트 체육복(탐욕법)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Algorithm+Greedy%28%ED%83%90%EC%9A%95%EB%B2%95%29%EC%97%90+%EA%B4%80%ED%95%98%EC%97%AC&amp;url=https://sanseongKo.github.io/algorithm-greedy"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4+%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8+%EC%B2%B4%EC%9C%A1%EB%B3%B5%28%ED%83%90%EC%9A%95%EB%B2%95%29&amp;url=https://sanseongKo.github.io/codingtest-trainingcloth"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://sanseongKo.github.io/algorithm-greedy"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://sanseongKo.github.io/codingtest-trainingcloth"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
