@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-07-06T20:35:48+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">프로그래머스 코딩테스트 조이스틱(탐욕법)</title><link href="https://sanseongko.github.io/codingtest-joystick" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 조이스틱(탐욕법)" /><published>2021-07-06T00:00:00+09:00</published><updated>2021-07-06T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-joystick</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-joystick">&lt;p&gt;오늘은 프로그래머스 코딩테스트 연습에 있는 조이스틱 문제에 대하여 풀어보았다.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-07-07T20:49:22+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">카카오 2021 블라인드 코딩테스트 1번</title><link href="https://sanseongko.github.io/codingtest-2019_kakao01" rel="alternate" type="text/html" title="카카오 2021 블라인드 코딩테스트 1번" /><published>2021-07-07T00:00:00+09:00</published><updated>2021-07-07T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2019_kakao01</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2019_kakao01">&lt;p&gt;&lt;a href=&quot;https://www.welcomekakao.com/learn/courses/30/lessons/42888?language=java&quot;&gt;문제보기&lt;/a&gt;
+&lt;br /&gt;
+&lt;b&gt;작성한코드&lt;/b&gt;
+&lt;script src=&quot;https://gist.github.com/sanseongKo/23e8a1902c530b6de9feebc524a58180.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;처음 문제를 접했을 때, 프로젝트 때 로그인을 해봤던 기억이나서 세션이랑 자꾸 연결이 되었다. 세션을 써도되는것인가…하며 생각하다가 아니다싶어 다른 코드를
+짰다. 
+&lt;br /&gt;
+문제가 되는 부분은
+&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;한 사람이 Leave 하고 아이디를 변경하여 들어왔을 경우&lt;/li&gt;
+  &lt;li&gt;채팅창에 있으면서 Change를 했을 경우
+&lt;br /&gt;
+이 두가지가 제일 걸렸다. 처음부터 맵을 쓰자니 uid를 키로 했을 경우 동작을 담기가 힘들었고, 중복되는 키값일 경우 안에 내용이 변경되는 경우가 생겼다.(HashMap을 썻을 경우 둘다 처리 어려움,
+LinkedHashMap을 썻을 경우 동작을 담기가 힘듬) 그렇기 때문에, 각 문자열들을 담고 uid를 ArrayList에 같이 담아주었다.(약간 자바에서 세션객체를 제공하지 않을 때, 예전
+세션정보를 body에 담는 느낌?이랑 비슷한…) uid로 비교해주고 변화가 일어나는 부분은 Change와 Leave이후 Enter했을 때 두 경우만 처리해주면 되기 때문에
+어려울 것은 없었다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;b&gt;아쉬웠던 점&lt;/b&gt;
+&lt;br /&gt;
+처음 어떤 것을 써서 구현해야 할까 할 때 시간이 너무 소요된다. 정확하게 생각이 안나고 문제를 풀다가도 추가적으로 넣는 부분이 생기다보니, TDD를 연습해야하나…
+그건 또 아닌가.. 모르겠다. 익숙해 질 수 밖에…&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">문제보기 작성한코드</summary></entry><entry><title type="html">프로그래머스 코딩테스트 조이스틱(탐욕법)</title><link href="https://sanseongko.github.io/codingtest-joystick" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 조이스틱(탐욕법)" /><published>2021-07-06T00:00:00+09:00</published><updated>2021-07-06T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-joystick</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-joystick">&lt;p&gt;오늘은 프로그래머스 코딩테스트 연습에 있는 조이스틱 문제에 대하여 풀어보았다.
 &lt;br /&gt;
 &lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42860&quot;&gt;문제 풀어보기&lt;/a&gt;
 &lt;br /&gt;
@@ -182,20 +206,4 @@ Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복�
 어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서,
 저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을
 리턴해주는 것으로 만들었다.
-아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다. 문제 풀어보기 처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다. 결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다. 바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에, 효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다. 어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서, 저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을 리턴해주는 것으로 만들었다. 아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.</summary></entry><entry><title type="html">프로그래머스 코딩테스트 연습 다리를 지나는 트럭(스택/큐) 문제</title><link href="https://sanseongko.github.io/codingtest-truck" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 다리를 지나는 트럭(스택/큐) 문제" /><published>2021-06-27T00:00:00+09:00</published><updated>2021-06-27T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-truck</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-truck">&lt;p&gt;오늘은 프로그래머스 코딩테스트 연습의 다리를 지나는 트럭 문제를 풀어보았다. 
-처음에 나는 길이와 트럭의 길이가 문제에 주어져 있지 않아서 트럭의 무게 = 트럭의 길이인줄 알았다. 
-그래서 헤메다가 다시 문제를 읽어보니 트럭길이가 1이지 않을까 하는 생각이 들어서 대입하여 풀어보았고, 이게 맞긴했다.
-처음 내가 풀었던 코드이다.(실패한 코드)
-&lt;br /&gt;
-&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42583&quot;&gt;문제 풀어보기&lt;/a&gt;
-&lt;script src=&quot;https://gist.github.com/sanseongKo/85a7aeee22a684544a75e14eefd45774.js&quot;&gt;&lt;/script&gt;
-실패한 이유는 다리에 올라가 있는 트럭의 무게가 다리가 견딜수 있는 하중보다 작으면 된다라는 점은 동일했다. 하지만, 문제가 되는 부분은 만약 2대의 트럭이 
-다리에 올라가 있다고 하고, 다리가 견딜수 있는 하중보다 2대가 같거나 적었을 경우인데, 이중에 한대가 빠져나갔다고하고 다음 들어오는 트럭과 남아있는 한대의
-트럭이 합이 하중보다 작을 경우 한대는 끝에 다다르고 한대는 시작점에 있는데 이부분에서 걸리는 시간이 차이가 나는 것이다.&lt;br /&gt;
-이 부분을 어떻게 맞춰줘야 할까하여, 결국 구글에 해당 답을 찾아보게 되었고, 문제는 간단했다. 큐에 트럭을 담는 것과 무게를 비교해주는 것은 동일했다.
-하지만 큐에 트럭만 담아주는 것이 아닌, 다른 수를 넣어(보통 0을 넣으셨다) que.size()를 다리 길이와 맞춰주고 쉽게 한칸씩 앞으로 간다면, 초를 증가시켜
-주면 되는 것이었다.&lt;br /&gt;
-밑에는 아이디어를 받고 다시 작성한 정답 코드이다.
-&lt;script src=&quot;https://gist.github.com/sanseongKo/8246337b3918b309a79de837a4b12482.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;큐를 길이로도 쓸 수 있다!(담고 빼는거만 생각하지말자)&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">오늘은 프로그래머스 코딩테스트 연습의 다리를 지나는 트럭 문제를 풀어보았다. 처음에 나는 길이와 트럭의 길이가 문제에 주어져 있지 않아서 트럭의 무게 = 트럭의 길이인줄 알았다. 그래서 헤메다가 다시 문제를 읽어보니 트럭길이가 1이지 않을까 하는 생각이 들어서 대입하여 풀어보았고, 이게 맞긴했다. 처음 내가 풀었던 코드이다.(실패한 코드) 문제 풀어보기 실패한 이유는 다리에 올라가 있는 트럭의 무게가 다리가 견딜수 있는 하중보다 작으면 된다라는 점은 동일했다. 하지만, 문제가 되는 부분은 만약 2대의 트럭이 다리에 올라가 있다고 하고, 다리가 견딜수 있는 하중보다 2대가 같거나 적었을 경우인데, 이중에 한대가 빠져나갔다고하고 다음 들어오는 트럭과 남아있는 한대의 트럭이 합이 하중보다 작을 경우 한대는 끝에 다다르고 한대는 시작점에 있는데 이부분에서 걸리는 시간이 차이가 나는 것이다. 이 부분을 어떻게 맞춰줘야 할까하여, 결국 구글에 해당 답을 찾아보게 되었고, 문제는 간단했다. 큐에 트럭을 담는 것과 무게를 비교해주는 것은 동일했다. 하지만 큐에 트럭만 담아주는 것이 아닌, 다른 수를 넣어(보통 0을 넣으셨다) que.size()를 다리 길이와 맞춰주고 쉽게 한칸씩 앞으로 간다면, 초를 증가시켜 주면 되는 것이었다. 밑에는 아이디어를 받고 다시 작성한 정답 코드이다.</summary></entry></feed>
+아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">오늘은 힙 카테고리에 있는 더 맵게 문제를 풀어보았다. 우선 처음 한것은 틀렸다. 문제 풀어보기 처음 코드이고, 이 전에 만든 코드는 리스트를 콜렉션 객체로 sort해주는 것이였는데, 시간복잡도가 너무 높아서 효율성과 런타임에러가 계속 발생하였다. 결국 시간안에 풀지 못하고 구글링을 통하여 아이디어를 얻었다. 바보 같았던게 알고리즘 힙을 정리할 때 우선순위 큐로 구현된다는 것을 잊고 있었다.(진짜 이건 아닌데…) 우선순위 큐의 경우 시간복잡도가 O(1)이기 때문에, 효율성이 아주 좋을 것이라 생각도 들었고, 밑에는 아이디어를 얻어 다시 만든 코드이다. 어차피, 완전 이진트리이고, 트리에 들어갈 때 우선순위에 따라 정렬이 되기 때문에 .peek()의 값이 K를 넘었을 경우엔 모든 값이 K를 넘겼다고 볼 수 있어서, 저렇게 코드를 짯다. 그리고 마지막까지 계산이되었지만, K보다 작을 경우엔 무조건 하나의 노드밖에 존재하지 않기 때문에, 1개가 존재하면서, K보다 작으면 -1을 리턴해주는 것으로 만들었다. 아주 쉬운 문제였는데, 잊고 산게 너무 많다. 이럴 때 한번 더 복습했다 치고, 나중엔 잊지말고 풀 때 접목시켜야겠다.</summary></entry></feed>
