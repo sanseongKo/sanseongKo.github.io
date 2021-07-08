@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/codingtest/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-07T20:49:22+09:00</updated>
+  <updated>2021-07-08T20:26:37+09:00</updated>
   <id>https://sanseongko.github.io/tag/codingtest/feed.xml</id>
 
   
@@ -32,8 +32,59 @@
 
   
     <entry>
-      <title type="html">카카오 2021 블라인드 코딩테스트 1번</title>
-      <link href="https://sanseongko.github.io/codingtest-2019_kakao01" rel="alternate" type="text/html" title="카카오 2021 블라인드 코딩테스트 1번" />
+      <title type="html">카카오 2019 블라인드 코딩테스트 2번</title>
+      <link href="https://sanseongko.github.io/codingtest-2019_kakao02" rel="alternate" type="text/html" title="카카오 2019 블라인드 코딩테스트 2번" />
+      <published>2021-07-08T00:00:00+09:00</published>
+      <updated>2021-07-08T00:00:00+09:00</updated>
+      <id>https://sanseongko.github.io/codingtest-2019_kakao02</id>
+      <content type="html" xml:base="https://sanseongko.github.io/codingtest-2019_kakao02">&lt;p&gt;&lt;a href=&quot;https://www.welcomekakao.com/learn/courses/30/lessons/42889&quot;&gt;문제보기&lt;/a&gt;
+오늘은 카카오 2019년 공채 1차의 코딩테스트의 2번문제를 풀어보았다. 밑은 작성코드이다.
+&lt;script src=&quot;https://gist.github.com/sanseongKo/1f289f668e1a9da89ea37e391ccc1d01.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;우선 처음 실패한 사람의 수를 세어주어야하고, 실패한 사람이 카운트가되면 그만큼 남아있는 사람의 수를 줄여주는 것이 첫번째이다. 두번째는 실패율이기 때문에,
+다른 방법도 되지만, 나는 double을 사용하여 소수점을 구하게 하였다(integer로 설정하게 되면, 값이 전부 0 이나오게 됨). 그렇게하여 스테이지를 키값 
+실패율을 값으로 설정하여 hashmap을 사용하여 넣어주고, comparator의 오버라이딩을 통하여 값으로 정렬해주고 Entry에 들어있는 값에 키값을 가져와서 
+answer 배열에 하나씩 넣어주는 방법을 하였다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;새로 알게 된 것&lt;/b&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;살짝 부끄럽긴한데 처음 값이 0이 나왔을 때 당황하였다. 소수는 double을 쓰자…&lt;/li&gt;
+  &lt;li&gt;Entry를 사용하여 collection객체인 map도 키값에 따라 키에따른 값에 대해서도 정렬이 가능하다는 것을 알았다. 물론 compareTo메소드를 오버라이드 해야하지만,
+정렬에서는 기본이니.. 알아두자&lt;/li&gt;
+&lt;/ol&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Ko</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="codingtest" />
+      
+
+      
+        <summary type="html">문제보기 오늘은 카카오 2019년 공채 1차의 코딩테스트의 2번문제를 풀어보았다. 밑은 작성코드이다.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">카카오 2019 블라인드 코딩테스트 1번</title>
+      <link href="https://sanseongko.github.io/codingtest-2019_kakao01" rel="alternate" type="text/html" title="카카오 2019 블라인드 코딩테스트 1번" />
       <published>2021-07-07T00:00:00+09:00</published>
       <updated>2021-07-07T00:00:00+09:00</updated>
       <id>https://sanseongko.github.io/codingtest-2019_kakao01</id>
@@ -525,46 +576,6 @@ Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복�
 
       
         <summary type="html">오늘은 프로그래머스의 가장 큰 수 문제를 풀어 보았다. 처음 생각했을 때 문자열로 바꾸어 모든 경우의 수를 구하여 배열에 담는 생각을 하였는데, 그럴 경우 코드가 너무 복잡하였고, 문제 의도와 완전히 다른 것 같아 포기하였다. 이후, 제일 큰수가 만들어 질 때 큰 수 대로 나열하여 만드는 로직을 생각하였지만, 정렬과는 거리가 멀었다.(예: [6, 70, 7,47]이 들어왔다면, 처음 제일 큰 건 7이고 이후 70이 나오는게 제일 크다, 그리고 6이 나오고 47이 나오는 각 자리의 앞자리가 큰 거부터 나열하고 수가 같은 것이 있다면, 1자리수가 있는지 확인 있다면 두자리 수가 1자리 수보다 크다면 ex. 5와 50~55는 5가먼저, 56~59는 두자리수가 우선순위) 아무튼 복잡하다… 빠르게 포기하고 답을 보았는데, comparator클래스의 compare를 오버라이딩하여 문제를 푸는 것이 빠른 것을 확인, 다만 compare오버라이딩이 익숙치 않아 이해하는데 시간이 좀 걸렸다. 문제 풀어보기</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">프로그래머스 코딩테스트 연습 주식가격(스택/큐) 문제</title>
-      <link href="https://sanseongko.github.io/codingtest-stockprice" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 주식가격(스택/큐) 문제" />
-      <published>2021-06-27T00:00:00+09:00</published>
-      <updated>2021-06-27T00:00:00+09:00</updated>
-      <id>https://sanseongko.github.io/codingtest-stockprice</id>
-      <content type="html" xml:base="https://sanseongko.github.io/codingtest-stockprice">&lt;p&gt;다리를 지나가는 트럭 이후에 프로그래머스 스택/큐의 마지막 문제 주식가격의 문제를 풀었다. 한번에 통과되었고, 스택/큐 문제였지만, 안쓰는게 더 나아보여서
-그냥 배열로 풀었다.
-&lt;br /&gt;
-&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42584&quot;&gt;문제 풀어보기&lt;/a&gt;
-&lt;script src=&quot;https://gist.github.com/sanseongKo/53d9712294d940d6cd76e9e470cbae2b.js&quot;&gt;&lt;/script&gt;
-성공한 코드이고, 효율성도 만족하였다.
-그나마 쉬운 문제였다고 생각이 들고 마지막 0을 맞추는 것과, 중간에 time이 0으로 초기화되었는데 수정하였다.&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Ko</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="codingtest" />
-      
-
-      
-        <summary type="html">다리를 지나가는 트럭 이후에 프로그래머스 스택/큐의 마지막 문제 주식가격의 문제를 풀었다. 한번에 통과되었고, 스택/큐 문제였지만, 안쓰는게 더 나아보여서 그냥 배열로 풀었다. 문제 풀어보기 성공한 코드이고, 효율성도 만족하였다. 그나마 쉬운 문제였다고 생각이 들고 마지막 0을 맞추는 것과, 중간에 time이 0으로 초기화되었는데 수정하였다.</summary>
       
 
       
