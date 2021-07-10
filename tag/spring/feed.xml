@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/spring/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-08T20:26:37+09:00</updated>
+  <updated>2021-07-10T15:49:35+09:00</updated>
   <id>https://sanseongko.github.io/tag/spring/feed.xml</id>
 
   
@@ -188,7 +188,90 @@ B는 A가 만들줄 알고 데이터를 받을 것이고 내용을 확인 할 �
 보낸 것을 확인, 더불어 자신의 개인키로 내용을 확인할 수 있게 된다. 
 &lt;br /&gt;&lt;br /&gt;
 이렇게, CIA의 문제를 RSA로 해결하고 위의 사전지식을 가지고 JWT를 사용해보겠다. 
-전에 기사공부를 하다가 기밀성 무결성 가용성 RSA 등의 암호화 방식을 공부했지만, 예를 들어 설명하니 조금 새롭게 다가왔고 정립이 된 것 같다. 좋군&lt;/p&gt;</content>
+전에 기사공부를 하다가 기밀성 무결성 가용성 RSA 등의 암호화 방식을 공부했지만, 예를 들어 설명하니 조금 새롭게 다가왔고 정립이 된 것 같다. 좋군
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;스프링 시큐리티 정리&lt;/b&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;PrincipalDetails
+    &lt;ul&gt;
+      &lt;li&gt;생성자&lt;/li&gt;
+      &lt;li&gt;UserDetails, OAuth2User를 상속받음
+나머지 전부 오버라이딩
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;@override getAuthorities()를 오버라이딩하는데
+collection객체 생성 add를 GrantedAuthority객체를 생성하여 함수를 적용하는데,
+넣으면 자동으로 안에 오버라이딩이 됨
+계정이 가지고 있는 권한 목록을 가져옴
+&lt;br /&gt;&lt;br /&gt;
+public boolean isAccountNonExpired() {//계정이 만료되지 않았는지 리턴(true: 만료되지 않음)
+&lt;br /&gt;
+public boolean isAccountNonLocked() {//계정이 잠겨있지 않은지를 리턴(true를 리턴하면 계정이 잠겨있지 않음)
+&lt;br /&gt;
+public boolean isCredentialsNonExpired() {//계정의 패스워드가 만료되지 않았는지 리턴(true를 리턴하면 만료되지 않음)
+&lt;br /&gt;
+public boolean isEnabled() {//계정이 사용가능한 계정인지 리턴
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;PrincipalDetailsService
+userRepository 객체에서 findByUsername으로 이름을 가져와 User객체의 userEntity에 넣음 (PrincipalDetails)에 user를 넣어 불러옴(일반 로그인)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;SecurityConfig
+스프링 시큐리티에 관한 설정들이 모여있는 곳
+&lt;br /&gt;
+@Configuration: 해당 클래스에서 1개 이상의 Bean을 생성하고 있음을 명시
+&lt;br /&gt;
+@EnableWebSecurity: 웹 보안을 활성화하고, WebSecurityConfigurer을 상속받아 클래스를 설정할 때 자주 쓰인다. @Configuration 클래스에 @EnableWebSecurity을 추가하여
+스프링 시큐리티를 설정할 클래스라고 정의한다.
+&lt;br /&gt;
+@EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true): 시큐어 어노테이션 활성화, preAuthorize 어노테이션 활성화
+securedEnabled = true 로 설정하면 @Secured 어노테이션 사용 가능
+&lt;br /&gt;
+anonymous(): 인증되지 않은 사용자가 접근할 수 있습니다.
+&lt;br /&gt;
+authenticated(): 인증된 사용자만 접근할 수 있습니다.
+&lt;br /&gt;
+fullyAuthenticated(): 완전히 인증된 사용자만 접근할 수 있습니다(?)
+&lt;br /&gt;
+hasRole() or hasAnyRole(): 특정 권한을 가지는 사용자만 접근할 수 있습니다.
+&lt;br /&gt;
+hasAuthority() or hasAnyAuthority():특정 권한을 가지는 사용자만 접근할 수 있습니다.
+&lt;br /&gt;
+hasIpAddress(): 특정 아이피 주소를 가지는 사용자만 접근할 수 있습니다.
+&lt;br /&gt;
+access(): SpEL 표현식에 의한 결과에 따라 접근할 수 있습니다.
+&lt;br /&gt;
+not(): 접근 제한 기능을 해제합니다.
+&lt;br /&gt;
+permitAll() or denyAll(): 접근을 전부 허용하거나 제한합니다.
+&lt;br /&gt;
+rememberMe(): 리멤버 기능을 통해 로그인한 사용자만 접근할 수 있습니다.
+&lt;br /&gt;
+csrf().disable(): csrf(사용자의 의지와는 무관한 수정/삭제/등록 등의 행위를 요청하는 것을 의미한다.)를 하지 못하게 합니다.
+&lt;br /&gt;
+antMatchers(): 특정 경로를 지정해줄 수 있는 메소드이다.
+&lt;br /&gt;
+authorizeRequests(): 메서드는 시큐리티 처리에 HttpServletRequest를 이용한다는 것을 의미하고,
+&lt;br /&gt;
+WebSecurityConfigurer: WebSecurityConfigurer 인스턴스를 편리하게 만들기 위하여 사용한다. 상속을 받게 되면, configure 메소드를 오버
+라이딩 할 수 있고, 파라미터는 HttpSecurity 객체를 받게 된다.
+&lt;br /&gt;&lt;/li&gt;
+  &lt;li&gt;PrincipalOauth2UserService
+&lt;br /&gt;
+DefaultOAuth2UserService를 상속 받음
+&lt;br /&gt;
+loadUser를 오버라이드함
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;</content>
 
       
       
