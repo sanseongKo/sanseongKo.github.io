@@ -8,6 +8,38 @@
     
       
       <item>
+        <title>Abstract와 Interface의 특징과 차이</title>
+        
+          <description>
+</description>
+        
+        <pubDate>Wed, 21 Jul 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/interview2</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/interview2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>기술 면접 예상 질문(객체지향의 정의와 특징)</title>
+        
+          <description>&lt;h1&gt;객체지향의 정의&lt;/h1&gt;
+&lt;p&gt;&lt;b&gt;객체가 중심&lt;/b&gt;이 되며, 누가 어떤 일을 할 것인지가 핵심이다.(절차지향: 기능 중심으로 무엇을 어떤 ‘절차’로 할 것인지가 포인트) 필요한 객체들을 파악하고,
+객체들의 역할을 정의하고 객체들간의 상호작용으로 프로그램을 구현하는 것을 의미한다. (객체는 실제하는 모든 것을 객체라고 할 수 있고, 그렇게 때문에 객체간의 상호작용들을
+실제 각 사물들의 상호작용을 이해하는 것을 생각하면 쉬울 것 같다.)&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 21 Jul 2021 00:00:00 +0900</pubDate>
+        <link>
+        https://sanseongKo.github.io/interview</link>
+        <guid isPermaLink="true">https://sanseongKo.github.io/interview</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>카카오 2019 블라인드 코딩테스트 2번</title>
         
           <description>&lt;p&gt;&lt;a href=&quot;https://www.welcomekakao.com/learn/courses/30/lessons/42889&quot;&gt;문제보기&lt;/a&gt;

@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-07-10T15:49:35+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">카카오 2019 블라인드 코딩테스트 2번</title><link href="https://sanseongko.github.io/codingtest-2019_kakao02" rel="alternate" type="text/html" title="카카오 2019 블라인드 코딩테스트 2번" /><published>2021-07-08T00:00:00+09:00</published><updated>2021-07-08T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2019_kakao02</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2019_kakao02">&lt;p&gt;&lt;a href=&quot;https://www.welcomekakao.com/learn/courses/30/lessons/42889&quot;&gt;문제보기&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-07-21T19:52:36+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">기술 면접 예상 질문(객체지향의 정의와 특징)</title><link href="https://sanseongko.github.io/interview" rel="alternate" type="text/html" title="기술 면접 예상 질문(객체지향의 정의와 특징)" /><published>2021-07-21T00:00:00+09:00</published><updated>2021-07-21T00:00:00+09:00</updated><id>https://sanseongko.github.io/interview</id><content type="html" xml:base="https://sanseongko.github.io/interview">&lt;h1&gt;객체지향의 정의&lt;/h1&gt;
+&lt;p&gt;&lt;b&gt;객체가 중심&lt;/b&gt;이 되며, 누가 어떤 일을 할 것인지가 핵심이다.(절차지향: 기능 중심으로 무엇을 어떤 ‘절차’로 할 것인지가 포인트) 필요한 객체들을 파악하고,
+객체들의 역할을 정의하고 객체들간의 상호작용으로 프로그램을 구현하는 것을 의미한다. (객체는 실제하는 모든 것을 객체라고 할 수 있고, 그렇게 때문에 객체간의 상호작용들을
+실제 각 사물들의 상호작용을 이해하는 것을 생각하면 쉬울 것 같다.)&lt;/p&gt;
+
+&lt;h1&gt;객체지향의 특징&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;b&gt;추상화&lt;/b&gt;&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;객체들의 공통적인 기능이나 속성(특징)을 도출하는 것을 의미하고 자바에서는 클래스를 정의하는 것이 추상화라 할 수 있다.&lt;/li&gt;
+      &lt;li&gt;반복되는 부분을 계속 정의하는 것이 아닌 공통적인 속성을 뽑아내어 추상시켜 필요할 때마다 객체로 만들어 사용하는 것을 의미한다고 생각한다.
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;캡슐화&lt;/b&gt;&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;실제로 구현되는 부분은 외부에 드러나지 않도록 정보를 은닉하는 것을 의미한다.&lt;/li&gt;
+      &lt;li&gt;객체가 독립적으로 역할을 수행할 수 있도록 데이터와 기능을 하나로 묶는 것을 의미한다.&lt;/li&gt;
+      &lt;li&gt;코드가 묶여 있기 때문에 오류가 없어 편리하다.(외부의 객체가 특정 객체의 데이터에 직접 접근하거나 변경할 수 없기 때문)&lt;/li&gt;
+      &lt;li&gt;데이터를 보지 않고 외부와 상호작용할 떄 메소드를 사용하여 통신한다.(보통 Library로 만들어 업그레이드하여 사용이 가능하다.)
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;상속성&lt;/b&gt;&lt;br /&gt;
+    &lt;ul&gt;
+      &lt;li&gt;하나의 클래스가 가진 특징을 다른 클래스가 그대로 물려받는 것을 의미한다.&lt;/li&gt;
+      &lt;li&gt;이미 작성된 클래스를 받아 새로운 클래스로 생성하는 것을 의미한다.&lt;/li&gt;
+      &lt;li&gt;기존코드를 재사용할 수 있다.
+&lt;br /&gt;
+4.&lt;b&gt;다형성&lt;/b&gt;&lt;br /&gt;&lt;/li&gt;
+      &lt;li&gt;약간 다른 방법으로 동작하는 함수를 동일한 이름으로 호출 -&amp;gt; 연결된 객체에 의존&lt;/li&gt;
+      &lt;li&gt;오버라이딩: 부모클래스의 메소드와 이름과 매개변수는 같지만 &lt;b&gt;내부 소스코드&lt;/b&gt;가 재정의 된 것을 의미한다.&lt;/li&gt;
+      &lt;li&gt;오버로딩: 같은 이름의 함수를 여러개 정의하고, 매개변수를 다르게 설정하여 같은 이름의 메소드를 경우에 따라 호출하는 것을 의미한다.
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1&gt;객체 지향의 장점&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;생산성이 향상된다 -&amp;gt; 재사용을 지향하기 때문(다형성, 객체, 캡슐화)으로, 소프트웨어를 자성할 때의 부담을 줄인다.(코드의 재사용, 추상화 시켜놓은 것들이기 때문)&lt;/li&gt;
+  &lt;li&gt;현실 세계의 것들을 객체로 만들었기 때문에 우리가 생각하는 것 현실에서 일어나는 것들을 프로그래밍화하기 쉽다.&lt;/li&gt;
+  &lt;li&gt;유지보수(프로그램 수정, 추가 등)이 뛰어나다. -&amp;gt; 캡슐화로 내부의 내용이 바뀌더라도 사용법이 달라지지 않고, 데이터가 변경되도 다른 객체에 영향을 주지 않기 때문에
+독립성이 유지된다. 연결되어 프로그램에 변경에도 외부에서 변경이 안되기 때문에, 오류의 파급이 적다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1&gt;객체 지향의 단점&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;실행 속도가 느리다!
+&lt;br /&gt;
+최근 면접에서 당연히 알고 있는 것이라 생각했던 것이 막상 머리속에 추상적으로는 떠오르는데 단어선택이 안되고 포기해버리게 되는 자신을 발견하고 면접관님한테 너무 죄송했고,
+너무 답답하였다.(내가 당사자였다면 진짜 무례하다고 생각했을 것 같다.)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Ko</name></author><category term="interview" /><summary type="html">객체지향의 정의 객체가 중심이 되며, 누가 어떤 일을 할 것인지가 핵심이다.(절차지향: 기능 중심으로 무엇을 어떤 ‘절차’로 할 것인지가 포인트) 필요한 객체들을 파악하고, 객체들의 역할을 정의하고 객체들간의 상호작용으로 프로그램을 구현하는 것을 의미한다. (객체는 실제하는 모든 것을 객체라고 할 수 있고, 그렇게 때문에 객체간의 상호작용들을 실제 각 사물들의 상호작용을 이해하는 것을 생각하면 쉬울 것 같다.)</summary></entry><entry><title type="html">Abstract와 Interface의 특징과 차이</title><link href="https://sanseongko.github.io/interview2" rel="alternate" type="text/html" title="Abstract와 Interface의 특징과 차이" /><published>2021-07-21T00:00:00+09:00</published><updated>2021-07-21T00:00:00+09:00</updated><id>https://sanseongko.github.io/interview2</id><content type="html" xml:base="https://sanseongko.github.io/interview2"></content><author><name>Ko</name></author><category term="interview" /><summary type="html"></summary></entry><entry><title type="html">카카오 2019 블라인드 코딩테스트 2번</title><link href="https://sanseongko.github.io/codingtest-2019_kakao02" rel="alternate" type="text/html" title="카카오 2019 블라인드 코딩테스트 2번" /><published>2021-07-08T00:00:00+09:00</published><updated>2021-07-08T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2019_kakao02</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2019_kakao02">&lt;p&gt;&lt;a href=&quot;https://www.welcomekakao.com/learn/courses/30/lessons/42889&quot;&gt;문제보기&lt;/a&gt;
 오늘은 카카오 2019년 공채 1차의 코딩테스트의 2번문제를 풀어보았다. 밑은 작성코드이다.
 &lt;script src=&quot;https://gist.github.com/sanseongKo/1f289f668e1a9da89ea37e391ccc1d01.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
@@ -152,61 +204,4 @@ Math.max()안에 다른 max메소드를 사용하여 3개의 값을 동시에 �
 &lt;p&gt;정답 코드이며, 문제는 h를 처음 배열의 길이만큼 주고(h는 배열의 길이를 넘어갈 수 없다.) 배열을 정렬한다. 그럼 for문안에서 h를 계속 감소시켜 문제를 풀었다.&lt;br /&gt;
 같이 공부하는 친구에게 설명을 듣고, h가 감소할 때 결국 그 값 보다 큰 값들이 h보다 같거나 많은 경우에 정답이 될 수 있었고, h가 밑에서 부터 올라온다면,
 처음 수가 작을 경우 그 값을 리턴할 경우가 있기 때문에(이경우엔 h보다 작거나 같은 것을 구하면 될 것) 감소시켰다. 결국 감소되며 if문을 검사 받을 때 크거나 같다면
-h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">오늘은 정렬문제의 마지막 H Index 문제에 대하여 풀어보았다. 솔직히 처음 문제가 이해가 되었다 안 되었다를 반복하며 혼란을 주었고, 풀이와 설명을 들었을 때에도 긴가민가하게 되었고, 코드를 짜면서 이해가 되었다.</summary></entry><entry><title type="html">프로그래머스 코딩테스트 연습 가장 큰 수 (정렬)</title><link href="https://sanseongko.github.io/codingtest-mostlargenumber" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 가장 큰 수 (정렬)" /><published>2021-07-01T00:00:00+09:00</published><updated>2021-07-01T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-mostlargenumber</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-mostlargenumber">&lt;p&gt;오늘은 프로그래머스의 가장 큰 수 문제를 풀어 보았다. 처음 생각했을 때 문자열로 바꾸어 모든 경우의 수를 구하여 배열에 담는 생각을 하였는데, 그럴 경우
-코드가 너무 복잡하였고, 문제 의도와 완전히 다른 것 같아 포기하였다. 이후, 제일 큰수가 만들어 질 때 큰 수 대로 나열하여 만드는 로직을 생각하였지만, 
-정렬과는 거리가 멀었다.(예: [6, 70, 7,47]이 들어왔다면, 처음 제일 큰 건 7이고 이후 70이 나오는게 제일 크다, 그리고 6이 나오고 47이 나오는 각 자리의
-앞자리가 큰 거부터 나열하고 수가 같은 것이 있다면, 1자리수가 있는지 확인 있다면 두자리 수가 1자리 수보다 크다면 ex. 5와 50~55는 5가먼저, 56~59는
-두자리수가 우선순위)
-&lt;br /&gt;
-아무튼 복잡하다… 빠르게 포기하고 답을 보았는데, comparator클래스의 compare를 오버라이딩하여 문제를 푸는 것이 빠른 것을 확인, 다만 compare오버라이딩이
-익숙치 않아 이해하는데 시간이 좀 걸렸다. 
-&lt;br /&gt;
-&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42746&quot;&gt;문제 풀어보기&lt;/a&gt;
-&lt;script src=&quot;https://gist.github.com/sanseongKo/e3e5f0a09da5026e39619f0d9465c35c.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;완성된 코드이고, 코드는 유튜브&lt;a href=&quot;https://www.youtube.com/watch?v=SQD-WN0FxM4&amp;amp;t=350s&quot;&gt;CodingTest_User&lt;/a&gt;님의 유튜브를 참고하여 작성하였다. 
-유튜브안에서 compare 오버라이딩도 알려주셔서 알 수 있었고, o1과 o2의 더함(문자열이기 때문에 문자열로 붙게되어 두수를 합친 경우의 수가되는 것으로 이해 됨)
-을 비교하여 자리를 바꿔주는 것이다.(리턴 1이면 자리 변경 0이면 같은수 -1이면 그대로)&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-해당 문제로 알게된 것
-&lt;br /&gt;
-&lt;b&gt;valueOf&lt;/b&gt;
-&lt;br /&gt;
-여기서 쓰인 valueOf는 인트형을 스트링형으로 변환하여 저장한다는 의미를 가지고 있었다.
-&lt;br /&gt;
-&lt;b&gt;Compare 클래스의 compare오버라이딩&lt;/b&gt;
-&lt;br /&gt;
-정렬할 때 compare을 오버라이딩하여 나의 입맛에 맞게 변화시켜줄 수 있었고, 람다식으로 표현한다면,&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;o2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;이런식으로 표현 가능하다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">오늘은 프로그래머스의 가장 큰 수 문제를 풀어 보았다. 처음 생각했을 때 문자열로 바꾸어 모든 경우의 수를 구하여 배열에 담는 생각을 하였는데, 그럴 경우 코드가 너무 복잡하였고, 문제 의도와 완전히 다른 것 같아 포기하였다. 이후, 제일 큰수가 만들어 질 때 큰 수 대로 나열하여 만드는 로직을 생각하였지만, 정렬과는 거리가 멀었다.(예: [6, 70, 7,47]이 들어왔다면, 처음 제일 큰 건 7이고 이후 70이 나오는게 제일 크다, 그리고 6이 나오고 47이 나오는 각 자리의 앞자리가 큰 거부터 나열하고 수가 같은 것이 있다면, 1자리수가 있는지 확인 있다면 두자리 수가 1자리 수보다 크다면 ex. 5와 50~55는 5가먼저, 56~59는 두자리수가 우선순위) 아무튼 복잡하다… 빠르게 포기하고 답을 보았는데, comparator클래스의 compare를 오버라이딩하여 문제를 푸는 것이 빠른 것을 확인, 다만 compare오버라이딩이 익숙치 않아 이해하는데 시간이 좀 걸렸다. 문제 풀어보기</summary></entry><entry><title type="html">프로그래머스 코딩테스트 연습 K번째 수(정렬)</title><link href="https://sanseongko.github.io/codingtest-numberK" rel="alternate" type="text/html" title="프로그래머스 코딩테스트 연습 K번째 수(정렬)" /><published>2021-07-01T00:00:00+09:00</published><updated>2021-07-01T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-numberK</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-numberK">&lt;p&gt;이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다.
-&lt;br /&gt;
-&lt;a href=&quot;https://programmers.co.kr/learn/courses/30/lessons/42748&quot;&gt;문제 풀어보기&lt;/a&gt;
-&lt;script src=&quot;https://gist.github.com/sanseongKo/b39d1045ea0adb9a1784fd3805f6f928.js&quot;&gt;&lt;/script&gt;
-해당 코드이고, 들어간 수를 그냥 우선순위 큐에 넣어 정렬시켰다. 그리고 r-1에서 걸리면 해당 que의 맨 처음 노드를 tmp배열에 넣어주었고, 리턴된 값을 answer에 담아 주었다.
-또한, tmp의 길이는 무조건 commands 이차원 배열의 길이이기 때문에, 처음부터 설정하여 풀어주었다.
-&lt;br /&gt;
-밑에는 다른 사람의 풀의의 맨 처음있는 코드이다.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Solution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;copyOfRange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;answer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;알게된 것
-&lt;br /&gt;
-&lt;b&gt;copyOfRange&lt;/b&gt;
-Arrays클래스의 해당 메소드는 (배열, 시작지점, 엔드지점) 복사하고자하는 배열을 넣고 어디서부터 복사를 할 것인지 시작지점을 정하고 끝지점을 구하면되는 것 같다.
-느낌 상으로, String의 substring()과 느낌이 많이 비슷하다. 저렇게 풀면, 코드가 줄고 for문을 하나만 사용하여 할 수 있어서 더 효율적인 것 같다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">이어서, 프로그래머스 코딩테스트 연습의 K번째 수 문제를 풀어보았다. 1단계 문제이니만큼 어렵지 않게 풀어낼 수 있었다. 문제 풀어보기 해당 코드이고, 들어간 수를 그냥 우선순위 큐에 넣어 정렬시켰다. 그리고 r-1에서 걸리면 해당 que의 맨 처음 노드를 tmp배열에 넣어주었고, 리턴된 값을 answer에 담아 주었다. 또한, tmp의 길이는 무조건 commands 이차원 배열의 길이이기 때문에, 처음부터 설정하여 풀어주었다. 밑에는 다른 사람의 풀의의 맨 처음있는 코드이다.</summary></entry></feed>
+h-1번째 이후는 모드 그 값보다 크기 때문에 답이 될 수 있다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="codingtest" /><summary type="html">오늘은 정렬문제의 마지막 H Index 문제에 대하여 풀어보았다. 솔직히 처음 문제가 이해가 되었다 안 되었다를 반복하며 혼란을 주었고, 풀이와 설명을 들었을 때에도 긴가민가하게 되었고, 코드를 짜면서 이해가 되었다.</summary></entry></feed>
