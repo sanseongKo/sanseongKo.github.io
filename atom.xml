@@ -8,9 +8,12 @@
     
       
       <item>
-        <title>Abstract와 Interface의 특징과 차이</title>
+        <title>Abstract Class vs Interface</title>
         
-          <description>
+          <description>&lt;h1&gt;추상클래스&lt;/h1&gt;
+&lt;p&gt;&lt;b&gt;정의&lt;/b&gt;: 클래스 구현 내부에 추상메서드가 하나이상 포함되거나, Abstract로 정의된 경우&lt;br /&gt;
+공통의 자료형이라고 할 수 있는 추상클래스가 가지고 있는 공통 서비스 함수이다. 다만, 공통 서비스이지만 구현이 공통이 아닌 &lt;b&gt;서비스라고 하는 목록&lt;/b&gt;이 공통인 것을 의미&lt;/p&gt;
+
 </description>
         
         <pubDate>Wed, 21 Jul 2021 00:00:00 +0900</pubDate>

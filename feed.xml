@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-07-21T19:52:36+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">기술 면접 예상 질문(객체지향의 정의와 특징)</title><link href="https://sanseongko.github.io/interview" rel="alternate" type="text/html" title="기술 면접 예상 질문(객체지향의 정의와 특징)" /><published>2021-07-21T00:00:00+09:00</published><updated>2021-07-21T00:00:00+09:00</updated><id>https://sanseongko.github.io/interview</id><content type="html" xml:base="https://sanseongko.github.io/interview">&lt;h1&gt;객체지향의 정의&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://sanseongko.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sanseongko.github.io/" rel="alternate" type="text/html" /><updated>2021-07-21T20:16:16+09:00</updated><id>https://sanseongko.github.io/feed.xml</id><title type="html">SanseongKo’s Blog</title><subtitle>온리 공부를 위한 블로그</subtitle><entry><title type="html">기술 면접 예상 질문(객체지향의 정의와 특징)</title><link href="https://sanseongko.github.io/interview" rel="alternate" type="text/html" title="기술 면접 예상 질문(객체지향의 정의와 특징)" /><published>2021-07-21T00:00:00+09:00</published><updated>2021-07-21T00:00:00+09:00</updated><id>https://sanseongko.github.io/interview</id><content type="html" xml:base="https://sanseongko.github.io/interview">&lt;h1&gt;객체지향의 정의&lt;/h1&gt;
 &lt;p&gt;&lt;b&gt;객체가 중심&lt;/b&gt;이 되며, 누가 어떤 일을 할 것인지가 핵심이다.(절차지향: 기능 중심으로 무엇을 어떤 ‘절차’로 할 것인지가 포인트) 필요한 객체들을 파악하고,
 객체들의 역할을 정의하고 객체들간의 상호작용으로 프로그램을 구현하는 것을 의미한다. (객체는 실제하는 모든 것을 객체라고 할 수 있고, 그렇게 때문에 객체간의 상호작용들을
 실제 각 사물들의 상호작용을 이해하는 것을 생각하면 쉬울 것 같다.)&lt;/p&gt;
@@ -50,7 +50,65 @@
 &lt;br /&gt;
 최근 면접에서 당연히 알고 있는 것이라 생각했던 것이 막상 머리속에 추상적으로는 떠오르는데 단어선택이 안되고 포기해버리게 되는 자신을 발견하고 면접관님한테 너무 죄송했고,
 너무 답답하였다.(내가 당사자였다면 진짜 무례하다고 생각했을 것 같다.)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Ko</name></author><category term="interview" /><summary type="html">객체지향의 정의 객체가 중심이 되며, 누가 어떤 일을 할 것인지가 핵심이다.(절차지향: 기능 중심으로 무엇을 어떤 ‘절차’로 할 것인지가 포인트) 필요한 객체들을 파악하고, 객체들의 역할을 정의하고 객체들간의 상호작용으로 프로그램을 구현하는 것을 의미한다. (객체는 실제하는 모든 것을 객체라고 할 수 있고, 그렇게 때문에 객체간의 상호작용들을 실제 각 사물들의 상호작용을 이해하는 것을 생각하면 쉬울 것 같다.)</summary></entry><entry><title type="html">Abstract와 Interface의 특징과 차이</title><link href="https://sanseongko.github.io/interview2" rel="alternate" type="text/html" title="Abstract와 Interface의 특징과 차이" /><published>2021-07-21T00:00:00+09:00</published><updated>2021-07-21T00:00:00+09:00</updated><id>https://sanseongko.github.io/interview2</id><content type="html" xml:base="https://sanseongko.github.io/interview2"></content><author><name>Ko</name></author><category term="interview" /><summary type="html"></summary></entry><entry><title type="html">카카오 2019 블라인드 코딩테스트 2번</title><link href="https://sanseongko.github.io/codingtest-2019_kakao02" rel="alternate" type="text/html" title="카카오 2019 블라인드 코딩테스트 2번" /><published>2021-07-08T00:00:00+09:00</published><updated>2021-07-08T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2019_kakao02</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2019_kakao02">&lt;p&gt;&lt;a href=&quot;https://www.welcomekakao.com/learn/courses/30/lessons/42889&quot;&gt;문제보기&lt;/a&gt;
+&lt;/ul&gt;</content><author><name>Ko</name></author><category term="interview" /><summary type="html">객체지향의 정의 객체가 중심이 되며, 누가 어떤 일을 할 것인지가 핵심이다.(절차지향: 기능 중심으로 무엇을 어떤 ‘절차’로 할 것인지가 포인트) 필요한 객체들을 파악하고, 객체들의 역할을 정의하고 객체들간의 상호작용으로 프로그램을 구현하는 것을 의미한다. (객체는 실제하는 모든 것을 객체라고 할 수 있고, 그렇게 때문에 객체간의 상호작용들을 실제 각 사물들의 상호작용을 이해하는 것을 생각하면 쉬울 것 같다.)</summary></entry><entry><title type="html">Abstract Class vs Interface</title><link href="https://sanseongko.github.io/interview2" rel="alternate" type="text/html" title="Abstract Class vs Interface" /><published>2021-07-21T00:00:00+09:00</published><updated>2021-07-21T00:00:00+09:00</updated><id>https://sanseongko.github.io/interview2</id><content type="html" xml:base="https://sanseongko.github.io/interview2">&lt;h1&gt;추상클래스&lt;/h1&gt;
+&lt;p&gt;&lt;b&gt;정의&lt;/b&gt;: 클래스 구현 내부에 추상메서드가 하나이상 포함되거나, Abstract로 정의된 경우&lt;br /&gt;
+공통의 자료형이라고 할 수 있는 추상클래스가 가지고 있는 공통 서비스 함수이다. 다만, 공통 서비스이지만 구현이 공통이 아닌 &lt;b&gt;서비스라고 하는 목록&lt;/b&gt;이 공통인 것을 의미&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;new 연산자를 사용해 객체를 생성할 수 없다.&lt;/li&gt;
+  &lt;li&gt;추상클래스(부모)와 자식 클래스(자식)의 상속관계에 놓여있다.&lt;/li&gt;
+  &lt;li&gt;새로운 일반 클래스를위한 부모 클래스의 용도로만 사용이 된다.&lt;/li&gt;
+  &lt;li&gt;일반 클래스들의 필드와 메소드를 통일하여 일반 클래스의 작성시 시간 절약이 가능하다.&lt;/li&gt;
+  &lt;li&gt;단일 상속만 가능하다. 일반 변수를 가질 수 없다.&lt;/li&gt;
+  &lt;li&gt;동일한 클래스를 묶는 개념으로 상속받아 &lt;b&gt;기능을 향상시키는 것&lt;/b&gt;이 목적이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;인터페이스&lt;/h1&gt;
+&lt;p&gt;&lt;b&gt;정의&lt;/b&gt;: 모든 메서드가 추상 메서드인 경우이다.&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;인터페이스는 static final 필드만 가질 수 있다. (다만 선언할 때 public *static *final이 생략된 것으로 생각함)&lt;/li&gt;
+  &lt;li&gt;static final 필드만 가질 수 있는 이유는 구현 객체가 같은 동작을 보장하기 위한 목적, 인터페이스의 변수는 스스로 초기화 될 권한이 없고, 아무 *인스턴스도 존재하지 않는 시점이기 때문이다.&lt;/li&gt;
+  &lt;li&gt;new 연산자를 사용해 객체를 생성할 수 없다.&lt;/li&gt;
+  &lt;li&gt;다중 상속이 가능하다.&lt;/li&gt;
+  &lt;li&gt;구현 객체가 같은 동작을 한다는 것을 보장하는 것이 목적이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;공통점&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;추상클래스와 인터페이스 모두 선언은 있지만, 구현은 없다는 것&lt;/li&gt;
+  &lt;li&gt;인스턴스화를 할 수 없다&lt;/li&gt;
+  &lt;li&gt;추상클래스를 extends한 자식들과 인터페이스를 implements하여 구현한 자식들만 객체 생성이 가능하다.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;차이점&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;추상클래스&lt;/td&gt;
+          &lt;td&gt;인터페이스&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;단일 상속&lt;/td&gt;
+          &lt;td&gt;다중 상속&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;상속을 받아서 기능을 확장시키는 것이 목적 | 구현하는 모든 모든 클래스에 대해 특정한 메서드가 반드시 존재하도록 강제하는 역할(구현객체가 같은 동작하여야 한다)&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;*&lt;/h1&gt;
+&lt;p&gt;static: 정적변수라고 하며 static이 붙으면 메모리에 딱 한번 할당되어진다.
+final: 변수의 값이 더이상 변하길 원치 않는다면 붙인다.
+instance: 클래스를 바탕으로 구현된 구체적인 실체(객체는 구현할 대상)이다.&lt;/p&gt;</content><author><name>Ko</name></author><category term="interview" /><summary type="html">추상클래스 정의: 클래스 구현 내부에 추상메서드가 하나이상 포함되거나, Abstract로 정의된 경우 공통의 자료형이라고 할 수 있는 추상클래스가 가지고 있는 공통 서비스 함수이다. 다만, 공통 서비스이지만 구현이 공통이 아닌 서비스라고 하는 목록이 공통인 것을 의미</summary></entry><entry><title type="html">카카오 2019 블라인드 코딩테스트 2번</title><link href="https://sanseongko.github.io/codingtest-2019_kakao02" rel="alternate" type="text/html" title="카카오 2019 블라인드 코딩테스트 2번" /><published>2021-07-08T00:00:00+09:00</published><updated>2021-07-08T00:00:00+09:00</updated><id>https://sanseongko.github.io/codingtest-2019_kakao02</id><content type="html" xml:base="https://sanseongko.github.io/codingtest-2019_kakao02">&lt;p&gt;&lt;a href=&quot;https://www.welcomekakao.com/learn/courses/30/lessons/42889&quot;&gt;문제보기&lt;/a&gt;
 오늘은 카카오 2019년 공채 1차의 코딩테스트의 2번문제를 풀어보았다. 밑은 작성코드이다.
 &lt;script src=&quot;https://gist.github.com/sanseongKo/1f289f668e1a9da89ea37e391ccc1d01.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
