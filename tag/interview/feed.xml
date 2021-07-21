@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/interview/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-21T20:16:16+09:00</updated>
+  <updated>2021-07-21T20:18:32+09:00</updated>
   <id>https://sanseongko.github.io/tag/interview/feed.xml</id>
 
   
@@ -155,27 +155,9 @@
 &lt;/ul&gt;
 &lt;h1&gt;차이점&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;추상클래스&lt;/td&gt;
-          &lt;td&gt;인터페이스&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;단일 상속&lt;/td&gt;
-          &lt;td&gt;다중 상속&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;b&gt;상속을 받아서 기능을 확장시키는 것이 목적 | 구현하는 모든 모든 클래스에 대해 특정한 메서드가 반드시 존재하도록 강제하는 역할(구현객체가 같은 동작하여야 한다)&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;단일 상속(추상클래스), 다중 상속(인터페이스)&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;상속을 받아서 기능을 확장시키는 것이 목적(추상클래스)&lt;/b&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;구현하는 모든 모든 클래스에 대해 특정한 메서드가 반드시 존재하도록 강제하는 역할(구현객체가 같은 동작하여야 한다, 인터페이스)&lt;/b&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1&gt;*&lt;/h1&gt;
