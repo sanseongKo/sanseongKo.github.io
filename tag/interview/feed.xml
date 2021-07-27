@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://sanseongko.github.io/tag/interview/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://sanseongko.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-07-21T20:18:32+09:00</updated>
+  <updated>2021-07-27T20:01:02+09:00</updated>
   <id>https://sanseongko.github.io/tag/interview/feed.xml</id>
 
   
@@ -83,13 +83,9 @@
 독립성이 유지된다. 연결되어 프로그램에 변경에도 외부에서 변경이 안되기 때문에, 오류의 파급이 적다.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1&gt;객체 지향의 단점&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;실행 속도가 느리다!
-&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
 최근 면접에서 당연히 알고 있는 것이라 생각했던 것이 막상 머리속에 추상적으로는 떠오르는데 단어선택이 안되고 포기해버리게 되는 자신을 발견하고 면접관님한테 너무 죄송했고,
-너무 답답하였다.(내가 당사자였다면 진짜 무례하다고 생각했을 것 같다.)&lt;/li&gt;
-&lt;/ul&gt;</content>
+너무 답답하였다.(내가 당사자였다면 진짜 무례하다고 생각했을 것 같다.)&lt;/p&gt;</content>
 
       
       
